@@ -54,7 +54,8 @@ def run_mvp(rows,width=None,ref=None,pa=None,pb=None,start_usdt=1000.0,init=None
                         if buy(m,P,Lact)<nx: lo=m
                         else: hi=m
                 spend=(hi if nx>0 else 0)+ny
-            frac+=addL/L0; usdt-=spend; nadj+=1; gas+=GAS
+            if addL>=0.01*L0 and spend<=usdt+1e-9:   # skip dust re-adds (leftover budget), never overspend
+                frac+=addL/L0; usdt-=spend; nadj+=1; gas+=GAS
         x,y=amts(L0*frac,P,pa,pb); v=x*P+y+usdt+fees-gas
         peak=v if peak is None else max(peak,v); mdd=max(mdd,1-v/peak)
     x,y=amts(L0*frac,rows[-1][1],pa,pb)

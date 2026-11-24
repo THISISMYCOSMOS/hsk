@@ -1,0 +1,5 @@
+# raw data and run outputs rebuilt by fetch.py and the scripts (large)
+*.json
+out_*.txt
+hist_out.txt
+__pycache__/

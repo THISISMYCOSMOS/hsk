@@ -1,5 +1,5 @@
 import json, statistics as st, datetime as dt, math
-from simpool import load, run
+from simpool import load, win_at, run
 from simmvp import run_mvp, _stay, BPH
 H=json.load(open('hist.json'))
 def blk(tid,kind,i=0): return [e for e in sorted(H[tid]['ev'],key=lambda e:e[1]) if e[0]==kind][i][1]
@@ -23,7 +23,7 @@ for n in ['WETH','WHSK']:
         res=[]; b=start
         while b+30*D<=R[-1][0]:
             if not (b<g1 and b+30*D>g0):
-                win=[r for r in R if b<=r[0]<b+30*D]
+                win=win_at(R,b,b+30*D)
                 if len(win)>=20: res.append(one(win,w))
             b+=7*D
         table(res,f'±{int(w*100)}%'); out[f'pool_{n}_{w}']=res
@@ -38,7 +38,7 @@ t0=dt.datetime(2026,10,24,15,tzinfo=dt.timezone.utc).timestamp(); t1=dt.datetime
 sp=json.load(open('swaps_parsed.json'))
 blkrange={n:(min(r['blk'] for r in sp[n]),max(r['blk'] for r in sp[n])) for n in sp}
 for n in ['WETH','WHSK']:
-    a,b=blkrange[n]; win=[r for r in load(n) if a<=r[0]<=b]
+    a,b=blkrange[n]; win=win_at(load(n),a,b+1)
     for w in [0.10,0.20]:
         r=one(win,w)
         print(f' {n} ±{int(w*100)}% start {win[0][1]:.5g} end {win[-1][1]:.5g} | stay {r[1][0]:.2f} (mdd {r[1][2]*100:.2f}%) | MVP0h {r[3][0]:.2f} adj {r[3][1]} mdd {r[3][2]*100:.2f}% | MVP1h {r[4][0]:.2f} adj {r[4][1]} mdd {r[4][2]*100:.2f}% | MVP6h {r[5][0]:.2f} adj {r[5][1]} | ladder {r[2][0]:.2f}')

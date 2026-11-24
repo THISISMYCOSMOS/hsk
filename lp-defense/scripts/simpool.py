@@ -17,6 +17,13 @@ def sell(dx,P,Lp):
     x=Lp/math.sqrt(P); y=Lp*math.sqrt(P); return y-Lp*Lp/(x+dx*0.997)
 def buy(dy,P,Lp):
     x=Lp/math.sqrt(P); y=Lp*math.sqrt(P); return x-Lp*Lp/(y+dy*0.997)
+import os, bisect
+START=os.environ.get('START','pre')   # 'pre': window starts at the pool price just before the window (team convention, = price an LP opened at that moment gets); 'first': price after the first swap in the window (old rerun)
+def win_at(R,b,e):
+    i=bisect.bisect_left(R,(b,)); j=bisect.bisect_left(R,(e,))
+    w=R[i:j]
+    if START=='pre' and i>0 and w: w=[(b,R[i-1][1],0.0,R[i-1][3])]+w
+    return w
 LAD=[(0.5,0.10),(0.75,0.30),(0.9,0.60),(1.0,1.0)]
 def run(rows,width,mode,ref=None,pa=None,pb=None,start_usdt=1000.0,init=None):
     P0=rows[0][1]

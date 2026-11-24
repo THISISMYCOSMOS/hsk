@@ -1,6 +1,6 @@
 # AI evidence test: does a signal-driven withdrawal ratio beat the fixed (equal) ratio out of sample?
 import json, math, bisect, statistics as st
-from simpool import amts, sell
+from simpool import amts, sell, win_at
 from gapsdef import gaps
 GAS=0.03; D=43200; H=1800
 CUM={'균등':[.25,.5,.75,1],'앞쪽':[.4,.7,.9,1],'뒤쪽':[.1,.3,.6,1]}
@@ -70,7 +70,7 @@ def pool_data(n):
     rows=[r[:4] for r in R]; wins=[]; b=start+7*D
     while b+30*D<=rows[-1][0]:
         if not (b<g1+7*D and b+30*D>g0):
-            win=[r for r in rows if b<=r[0]<b+30*D]
+            win=win_at(rows,b,b+30*D)
             if len(win)>=20: wins.append(win)
         b+=7*D
     return F,wins

@@ -1,5 +1,5 @@
 import json, statistics as st
-from simpool import load, run
+from simpool import load, win_at, run
 H=json.load(open('hist.json'))
 def blk(tid,kind,i=0): return [e for e in sorted(H[tid]['ev'],key=lambda e:e[1]) if e[0]==kind][i][1]
 gaps={'WETH':(blk('20','inc',1), blk('20','dec',-1), blk('35','inc')), 'WHSK':(blk('19','inc'), blk('19','dec',-1), blk('33','inc'))}
@@ -11,7 +11,7 @@ for n in ['WETH','WHSK']:
         res=[]; b=start
         while b+30*D<=R[-1][0]:
             if not (b<g1 and b+30*D>g0):
-                win=[r for r in R if b<=r[0]<b+30*D]
+                win=win_at(R,b,b+30*D)
                 if len(win)>=20:
                     res.append((win[-1][1]/win[0][1]-1,run(win,w,'stay')[0],run(win,w,'full')[0],run(win,w,'ladder')[0],run(win,w,'ladder_re')[0],500+500*win[-1][1]/win[0][1]))
             b+=7*D

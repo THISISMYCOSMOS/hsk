@@ -1,5 +1,5 @@
 import json, statistics as st
-from simpool import load
+from simpool import load, win_at
 from simmvp import _stay, BPH
 from ratio import run_sched, SCHED
 H=json.load(open('hist.json'))
@@ -10,7 +10,7 @@ def windows_pool(n):
     start,g0,g1=gaps[n]; R=[r for r in load(n) if r[0]>=start]; out=[]; b=start
     while b+30*D<=R[-1][0]:
         if not (b<g1 and b+30*D>g0):
-            win=[r for r in R if b<=r[0]<b+30*D]
+            win=win_at(R,b,b+30*D)
             if len(win)>=20: out.append(win)
         b+=7*D
     return out
