@@ -1,6 +1,6 @@
 # 4. HSK Chain에서 실제로 "거래"하는 사람은 누구이고, 얼마나 잃고 있나
 
-작성 2026-11-24 · 기준 블록 약 30,57x,xxx (2026-11-23 23:40 UTC 전후) · 조회는 RPC `eth_getLogs`, Blockscout API v2
+작성 2026-11-24 · 예측시장 기준 블록 30566896 (2026-11-23 23:40 UTC 전후), DEX 기준 블록 30553002 · 조회는 RPC `eth_getLogs`, Blockscout API v2
 
 ## 결론 먼저
 
