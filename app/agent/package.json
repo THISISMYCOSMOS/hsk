@@ -1,0 +1,24 @@
+{
+  "name": "lp-guard-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/unit/*.test.ts",
+    "test:live": "NODE_USE_ENV_PROXY=1 tsx --test test/live/*.test.ts",
+    "read": "NODE_USE_ENV_PROXY=1 tsx src/cli.ts"
+  },
+  "dependencies": {
+    "@hskswap/sdk-core": "1.0.3",
+    "viem": "2.57.17"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  }
+}
