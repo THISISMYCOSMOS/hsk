@@ -1,0 +1,685 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:hsk:engine:0.1",
+  "$defs": {
+    "AgentEvent": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "integer"
+        },
+        "kind": {
+          "title": "Kind",
+          "type": "string"
+        },
+        "payload": {
+          "additionalProperties": true,
+          "title": "Payload",
+          "type": "object"
+        },
+        "at": {
+          "title": "At",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "payload",
+        "at"
+      ],
+      "title": "AgentEvent",
+      "type": "object"
+    },
+    "CostBreakdown": {
+      "additionalProperties": false,
+      "properties": {
+        "dex_lower": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "Dex Lower",
+          "type": "string"
+        },
+        "l1": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "L1",
+          "type": "string"
+        },
+        "l2": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "L2",
+          "type": "string"
+        },
+        "settlement": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "Settlement",
+          "type": "string"
+        },
+        "verification": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "Verification",
+          "type": "string"
+        },
+        "approval": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "Approval",
+          "type": "string"
+        },
+        "service": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "Service",
+          "type": "string"
+        },
+        "other": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "Other",
+          "type": "string"
+        },
+        "margin": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "Margin",
+          "type": "string"
+        }
+      },
+      "required": [
+        "dex_lower",
+        "l1",
+        "l2",
+        "settlement",
+        "verification",
+        "approval",
+        "service",
+        "other",
+        "margin"
+      ],
+      "title": "CostBreakdown",
+      "type": "object"
+    },
+    "DexQuote": {
+      "additionalProperties": false,
+      "properties": {
+        "blockHash": {
+          "pattern": "^0x[0-9a-fA-F]{64}$",
+          "title": "Blockhash",
+          "type": "string"
+        },
+        "blockNumber": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "Blocknumber",
+          "type": "string"
+        },
+        "evidence": {
+          "enum": [
+            "OBSERVED_MAINNET",
+            "EXECUTED_MAINNET",
+            "FORK_SIMULATION",
+            "BACKTEST",
+            "SYNTHETIC",
+            "UNVERIFIED"
+          ],
+          "title": "Evidence",
+          "type": "string"
+        },
+        "tokenIn": {
+          "title": "Tokenin",
+          "type": "string"
+        },
+        "tokenOut": {
+          "title": "Tokenout",
+          "type": "string"
+        },
+        "amountIn": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "Amountin",
+          "type": "string"
+        },
+        "amountOut": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "Amountout",
+          "type": "string"
+        }
+      },
+      "required": [
+        "blockHash",
+        "blockNumber",
+        "evidence",
+        "tokenIn",
+        "tokenOut",
+        "amountIn",
+        "amountOut"
+      ],
+      "title": "DexQuote",
+      "type": "object"
+    },
+    "ExecutionCandidate": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "DEX_ONLY",
+            "DIRECT_MATCH",
+            "MULTI_ORDER_MATCH",
+            "HYBRID_MATCH",
+            "PARTIAL_AND_KEEP",
+            "VALID_DEX_ROUTE"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "fixedFilled": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "Fixedfilled",
+          "type": "string"
+        },
+        "remaining": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "Remaining",
+          "type": "string"
+        },
+        "dexFixed": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "Dexfixed",
+          "type": "string"
+        },
+        "eligible": {
+          "title": "Eligible",
+          "type": "boolean"
+        },
+        "reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Reason"
+        },
+        "fills": {
+          "items": {
+            "$ref": "#/$defs/Fill"
+          },
+          "title": "Fills",
+          "type": "array"
+        },
+        "savings": {
+          "items": {
+            "$ref": "#/$defs/UserSavings"
+          },
+          "title": "Savings",
+          "type": "array"
+        },
+        "totalConservativeSavingUSDT": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Totalconservativesavingusdt"
+        },
+        "gross": {
+          "anyOf": [
+            {
+              "maxLength": 78,
+              "pattern": "^(0|[1-9][0-9]*)$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Gross"
+        },
+        "routeId": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Routeid"
+        }
+      },
+      "required": [
+        "kind",
+        "fixedFilled",
+        "remaining",
+        "dexFixed",
+        "eligible",
+        "reason",
+        "fills",
+        "savings"
+      ],
+      "title": "ExecutionCandidate",
+      "type": "object"
+    },
+    "ExecutionPlan": {
+      "additionalProperties": false,
+      "properties": {
+        "orderId": {
+          "pattern": "^0x[0-9a-fA-F]{64}$",
+          "title": "Orderid",
+          "type": "string"
+        },
+        "blockHash": {
+          "pattern": "^0x[0-9a-fA-F]{64}$",
+          "title": "Blockhash",
+          "type": "string"
+        },
+        "candidate": {
+          "$ref": "#/$defs/ExecutionCandidate"
+        }
+      },
+      "required": [
+        "orderId",
+        "blockHash",
+        "candidate"
+      ],
+      "title": "ExecutionPlan",
+      "type": "object"
+    },
+    "ExecutionReceipt": {
+      "additionalProperties": false,
+      "properties": {
+        "mode": {
+          "title": "Mode",
+          "type": "string"
+        },
+        "evidence": {
+          "enum": [
+            "OBSERVED_MAINNET",
+            "EXECUTED_MAINNET",
+            "FORK_SIMULATION",
+            "BACKTEST",
+            "SYNTHETIC",
+            "UNVERIFIED"
+          ],
+          "title": "Evidence",
+          "type": "string"
+        },
+        "transactionHash": {
+          "anyOf": [
+            {
+              "pattern": "^0x[0-9a-fA-F]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Transactionhash"
+        },
+        "blockHash": {
+          "pattern": "^0x[0-9a-fA-F]{64}$",
+          "title": "Blockhash",
+          "type": "string"
+        },
+        "gasUnits": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "Gasunits",
+          "type": "string"
+        },
+        "effectiveGasPriceWei": {
+          "anyOf": [
+            {
+              "maxLength": 78,
+              "pattern": "^(0|[1-9][0-9]*)$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Effectivegaspricewei"
+        },
+        "walletDeltas": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Walletdeltas",
+          "type": "array"
+        },
+        "participants": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Participants",
+          "type": "array"
+        }
+      },
+      "required": [
+        "mode",
+        "evidence",
+        "transactionHash",
+        "blockHash",
+        "gasUnits",
+        "walletDeltas",
+        "participants"
+      ],
+      "title": "ExecutionReceipt",
+      "type": "object"
+    },
+    "Fill": {
+      "additionalProperties": false,
+      "properties": {
+        "orderId": {
+          "title": "Orderid",
+          "type": "string"
+        },
+        "fixed": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "Fixed",
+          "type": "string"
+        },
+        "cash": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "Cash",
+          "type": "string"
+        }
+      },
+      "required": [
+        "orderId",
+        "fixed",
+        "cash"
+      ],
+      "title": "Fill",
+      "type": "object"
+    },
+    "MarketSnapshot": {
+      "additionalProperties": false,
+      "properties": {
+        "blockHash": {
+          "pattern": "^0x[0-9a-fA-F]{64}$",
+          "title": "Blockhash",
+          "type": "string"
+        },
+        "blockNumber": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "Blocknumber",
+          "type": "string"
+        },
+        "evidence": {
+          "enum": [
+            "OBSERVED_MAINNET",
+            "EXECUTED_MAINNET",
+            "FORK_SIMULATION",
+            "BACKTEST",
+            "SYNTHETIC",
+            "UNVERIFIED"
+          ],
+          "title": "Evidence",
+          "type": "string"
+        }
+      },
+      "required": [
+        "blockHash",
+        "blockNumber",
+        "evidence"
+      ],
+      "title": "MarketSnapshot",
+      "type": "object"
+    },
+    "Order": {
+      "additionalProperties": false,
+      "properties": {
+        "maker": {
+          "pattern": "^0x[0-9a-fA-F]{40}$",
+          "title": "Maker",
+          "type": "string"
+        },
+        "tokenIn": {
+          "pattern": "^0x[0-9a-fA-F]{40}$",
+          "title": "Tokenin",
+          "type": "string"
+        },
+        "tokenOut": {
+          "pattern": "^0x[0-9a-fA-F]{40}$",
+          "title": "Tokenout",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "EXACT_IN",
+            "EXACT_OUT"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "fixedAmount": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "Fixedamount",
+          "type": "string"
+        },
+        "limitAmount": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "Limitamount",
+          "type": "string"
+        },
+        "nonce": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "Nonce",
+          "type": "string"
+        },
+        "expiry": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "Expiry",
+          "type": "string"
+        },
+        "timing": {
+          "enum": [
+            "IMMEDIATE",
+            "LIMIT"
+          ],
+          "title": "Timing",
+          "type": "string"
+        },
+        "allowPartial": {
+          "title": "Allowpartial",
+          "type": "boolean"
+        },
+        "allowDex": {
+          "title": "Allowdex",
+          "type": "boolean"
+        },
+        "allowFallback": {
+          "title": "Allowfallback",
+          "type": "boolean"
+        },
+        "priority": {
+          "enum": [
+            "SAVINGS",
+            "SPEED"
+          ],
+          "title": "Priority",
+          "type": "string"
+        },
+        "maxCost": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "Maxcost",
+          "type": "string"
+        },
+        "minSaving": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "Minsaving",
+          "type": "string"
+        }
+      },
+      "required": [
+        "maker",
+        "tokenIn",
+        "tokenOut",
+        "kind",
+        "fixedAmount",
+        "limitAmount",
+        "nonce",
+        "expiry",
+        "timing",
+        "allowPartial",
+        "allowDex",
+        "allowFallback",
+        "priority",
+        "maxCost",
+        "minSaving"
+      ],
+      "title": "Order",
+      "type": "object"
+    },
+    "SignedOrder": {
+      "additionalProperties": false,
+      "properties": {
+        "order": {
+          "$ref": "#/$defs/Order"
+        },
+        "signature": {
+          "pattern": "^0x[0-9a-fA-F]{130}$",
+          "title": "Signature",
+          "type": "string"
+        }
+      },
+      "required": [
+        "order",
+        "signature"
+      ],
+      "title": "SignedOrder",
+      "type": "object"
+    },
+    "SimulationResult": {
+      "additionalProperties": false,
+      "properties": {
+        "mode": {
+          "title": "Mode",
+          "type": "string"
+        },
+        "evidence": {
+          "enum": [
+            "OBSERVED_MAINNET",
+            "EXECUTED_MAINNET",
+            "FORK_SIMULATION",
+            "BACKTEST",
+            "SYNTHETIC",
+            "UNVERIFIED"
+          ],
+          "title": "Evidence",
+          "type": "string"
+        },
+        "success": {
+          "title": "Success",
+          "type": "boolean"
+        },
+        "reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Reason"
+        },
+        "receipt": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Receipt"
+        }
+      },
+      "required": [
+        "mode",
+        "evidence",
+        "success",
+        "reason",
+        "receipt"
+      ],
+      "title": "SimulationResult",
+      "type": "object"
+    },
+    "UserSavings": {
+      "additionalProperties": false,
+      "properties": {
+        "orderId": {
+          "title": "Orderid",
+          "type": "string"
+        },
+        "token": {
+          "const": "USDT",
+          "title": "Token",
+          "type": "string"
+        },
+        "gross": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "Gross",
+          "type": "string"
+        },
+        "dexGross": {
+          "maxLength": 78,
+          "pattern": "^(0|[1-9][0-9]*)$",
+          "title": "Dexgross",
+          "type": "string"
+        },
+        "conservativeSaving": {
+          "pattern": "^-?(0|[1-9][0-9]*)$",
+          "title": "Conservativesaving",
+          "type": "string"
+        },
+        "costs": {
+          "$ref": "#/$defs/CostBreakdown"
+        }
+      },
+      "required": [
+        "orderId",
+        "token",
+        "gross",
+        "dexGross",
+        "conservativeSaving",
+        "costs"
+      ],
+      "title": "UserSavings",
+      "type": "object"
+    }
+  }
+}
