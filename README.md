@@ -6,6 +6,8 @@ Verification-based AI Optimal Execution Agent · WHSK/USDT · HSK Chain Horizon 
 
 **브라우저에서 포크 정산까지 검증했다.** 매도자 1,000 WHSK 중 600 WHSK가 직접 매칭되고 400 WHSK가 HSKSwap에서 같은 거래로 처리됐다. 매도자는 80.713128 USDT를 받았고 매수자는 48.486163 USDT를 지불했다. 로컬 가스 사용량은 686,104였다. 비용 상한과 주문은 시연용이다. 실현 순절감액은 미측정이다. [포크 실행 증거](docs/agents/agent-d/browser-fork.json) · [3분 데모 영상](docs/agents/agent-d/fork-demo.mp4)
 
+제출용 소스 ZIP은 프로젝트 루트에 풀고 아래 명령을 실행한다. ZIP에 포함된 INTEGRATION-SOURCES.json은 통합 커밋과 A 입력 파일 해시를 기록한다. Git 작업공간에서는 `make package`로 만들 수 있다.
+
 ## 실행
 
 Node 22.23.1, npm 10.9.8, Python 3.12 백엔드, Foundry 1.10.0, solc 0.8.26으로 검증했다. 로컬 Chrome 또는 Playwright Chromium이 필요하다. Foundry는 PATH 또는 `~/.foundry/bin`에서 찾으며 오프라인 빌드를 위해 solc 0.8.26을 미리 설치해야 한다.

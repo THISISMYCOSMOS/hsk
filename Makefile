@@ -33,3 +33,7 @@ interfaces:
 	.runtime/venv/bin/python scripts/integration/interfaces.py
 record-demo:
 	node scripts/demo/record.cjs
+
+.PHONY: package
+package:
+	$(PYTHON) scripts/integration/package.py
