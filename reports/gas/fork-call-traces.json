@@ -1,0 +1,214 @@
+{
+  "evidence": "FORK_SIMULATION",
+  "chainId": 177,
+  "blockNumber": 30592078,
+  "rows": [
+    {
+      "test": "testForkDirect()",
+      "scenario": "direct",
+      "callerMeasuredGas": 575243,
+      "calleeTraceGas": 567140,
+      "calldataBytes": 2052,
+      "nestedCalls": 54,
+      "sstoreOpcodes": 31,
+      "returnData": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "success": true
+    },
+    {
+      "test": "testForkHybridAndExactOut()",
+      "scenario": "hybrid-sell",
+      "callerMeasuredGas": 780403,
+      "calleeTraceGas": 772298,
+      "calldataBytes": 2052,
+      "nestedCalls": 88,
+      "sstoreOpcodes": 52,
+      "returnData": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "success": true
+    },
+    {
+      "test": "testForkHybridBuyRefund()",
+      "scenario": "hybrid-buy",
+      "callerMeasuredGas": 813493,
+      "calleeTraceGas": 805388,
+      "calldataBytes": 2052,
+      "nestedCalls": 93,
+      "sstoreOpcodes": 58,
+      "returnData": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "success": true
+    },
+    {
+      "test": "testForkLiquidityUpdate()",
+      "scenario": "requote-after-LP-deposit",
+      "callerMeasuredGas": 314604,
+      "calleeTraceGas": 306489,
+      "calldataBytes": 2052,
+      "nestedCalls": 34,
+      "sstoreOpcodes": 14,
+      "returnData": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "success": true
+    },
+    {
+      "test": "testForkMulti()",
+      "scenario": "multi",
+      "callerMeasuredGas": 795059,
+      "calleeTraceGas": 785529,
+      "calldataBytes": 2948,
+      "nestedCalls": 81,
+      "sstoreOpcodes": 46,
+      "returnData": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "success": true
+    },
+    {
+      "test": "testForkQuotedAndSequential()",
+      "scenario": "dex-buy",
+      "callerMeasuredGas": 123051,
+      "calleeTraceGas": 119646,
+      "calldataBytes": 228,
+      "nestedCalls": 6,
+      "sstoreOpcodes": 12,
+      "returnData": "0x0000000000000000000000000000000000000000000000000000000004d51a9e",
+      "success": true
+    },
+    {
+      "test": "testForkQuotedAndSequential()",
+      "scenario": "dex-sell",
+      "callerMeasuredGas": 117419,
+      "calleeTraceGas": 114110,
+      "calldataBytes": 228,
+      "nestedCalls": 6,
+      "sstoreOpcodes": 10,
+      "returnData": "0x0000000000000000000000000000000000000000000000000000000004cd3833",
+      "success": true
+    },
+    {
+      "test": "testForkQuotedAndSequential()",
+      "scenario": "dex-buy",
+      "callerMeasuredGas": 114664,
+      "calleeTraceGas": 113758,
+      "calldataBytes": 228,
+      "nestedCalls": 6,
+      "sstoreOpcodes": 11,
+      "returnData": "0x0000000000000000000000000000000000000000000000000000000004d4a100",
+      "success": true
+    },
+    {
+      "test": "testForkRequoteAndConditionalFallback()",
+      "scenario": "before-market-update",
+      "callerMeasuredGas": 557835,
+      "calleeTraceGas": 549734,
+      "calldataBytes": 2052,
+      "nestedCalls": 54,
+      "sstoreOpcodes": 29,
+      "returnData": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "success": true
+    },
+    {
+      "test": "testForkRequoteAndConditionalFallback()",
+      "scenario": "dex-buy",
+      "callerMeasuredGas": 123020,
+      "calleeTraceGas": 119634,
+      "calldataBytes": 228,
+      "nestedCalls": 6,
+      "sstoreOpcodes": 12,
+      "returnData": "0x0000000000000000000000000000000000000000000000000000000004d51a9e",
+      "success": true
+    },
+    {
+      "test": "testForkRequoteAndConditionalFallback()",
+      "scenario": "no-trade",
+      "callerMeasuredGas": 308546,
+      "calleeTraceGas": 300422,
+      "calldataBytes": 2052,
+      "nestedCalls": 34,
+      "sstoreOpcodes": 14,
+      "returnData": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "success": true
+    },
+    {
+      "test": "testForkRequoteAndConditionalFallback()",
+      "scenario": "fallback",
+      "callerMeasuredGas": 569145,
+      "calleeTraceGas": 561002,
+      "calldataBytes": 2052,
+      "nestedCalls": 57,
+      "sstoreOpcodes": 33,
+      "returnData": "0x0000000000000000000000000000000000000000000000000000000000000002",
+      "success": true
+    },
+    {
+      "test": "testForkRevertBenchmark()",
+      "scenario": "revert-revoked-approval",
+      "callerMeasuredGas": 458455,
+      "calleeTraceGas": 455449,
+      "calldataBytes": 2052,
+      "nestedCalls": 42,
+      "sstoreOpcodes": 22,
+      "returnData": "0xfdff204a",
+      "success": false
+    },
+    {
+      "test": "testForkSignedOnlyResearch()",
+      "scenario": "signed-limits-only-direct",
+      "callerMeasuredGas": 359509,
+      "calleeTraceGas": 351686,
+      "calldataBytes": 2052,
+      "nestedCalls": 22,
+      "sstoreOpcodes": 17,
+      "returnData": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "success": true
+    },
+    {
+      "test": "testForkSingleBandResearch()",
+      "scenario": "single-band-direct",
+      "callerMeasuredGas": 381053,
+      "calleeTraceGas": 373230,
+      "calldataBytes": 2052,
+      "nestedCalls": 26,
+      "sstoreOpcodes": 17,
+      "returnData": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "success": true
+    },
+    {
+      "test": "testForkStateMatchResearch()",
+      "scenario": "interval-state-match-direct",
+      "callerMeasuredGas": 372649,
+      "calleeTraceGas": 364826,
+      "calldataBytes": 2052,
+      "nestedCalls": 26,
+      "sstoreOpcodes": 17,
+      "returnData": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "success": true
+    },
+    {
+      "test": "testForkStateMatchResearch()",
+      "scenario": "dex-sell",
+      "callerMeasuredGas": 108748,
+      "calleeTraceGas": 105386,
+      "calldataBytes": 228,
+      "nestedCalls": 6,
+      "sstoreOpcodes": 9,
+      "returnData": "0x0000000000000000000000000000000000000000000000000000000000013abd",
+      "success": true
+    }
+  ],
+  "comparisons": [
+    {
+      "test": "testForkLiquidityUpdate()",
+      "scenario": "sell-after-LP-deposit",
+      "beforeRaw": "80558131",
+      "afterRaw": "80558235"
+    },
+    {
+      "test": "testForkQuotedAndSequential()",
+      "scenario": "independent-buy-vs-sequential-buy",
+      "beforeRaw": "81074846",
+      "afterRaw": "81043712"
+    },
+    {
+      "test": "testForkRequoteAndConditionalFallback()",
+      "scenario": "sell-after-intervening-swap",
+      "beforeRaw": "80573",
+      "afterRaw": "80604"
+    }
+  ]
+}

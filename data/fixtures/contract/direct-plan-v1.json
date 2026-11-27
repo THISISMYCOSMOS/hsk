@@ -1,0 +1,65 @@
+{
+  "planId": "0x0101010101010101010101010101010101010101010101010101010101010101",
+  "executionDeadline": "2000000000",
+  "legs": [
+    {
+      "signedOrder": {
+        "order": {
+          "owner": "0xE6b3367318C5e11a6eED3Cd0D850eC06A02E9b90",
+          "recipient": "0x000000000000000000000000000000000000bEEF",
+          "tokenIn": "0xB210D2120d57b758EE163cFfb43e73728c471Cf1",
+          "tokenOut": "0xF1B50eD67A9e2CC94Ad3c477779E2d4cBfFf9029",
+          "orderKind": 0,
+          "amountIn": "1000000000000000000000",
+          "amountOut": "80000000",
+          "validAfter": "1",
+          "deadline": "2000000000",
+          "nonce": "1",
+          "partiallyFillable": true,
+          "allowDexFallback": true,
+          "executionPriority": 1,
+          "maxFeeAmount": "100",
+          "minImprovementAmount": "2",
+          "allowedExecutor": "0x0000000000000000000000000000000000000000",
+          "allowDex": true,
+          "immediate": true
+        },
+        "signature": "0xc909efd8db764e0848221c6aa933c236cf1924fb67be9dcdce380e54d33b61337c4cad7425cd9bdc2be71a09efd2a88fcd7668d541205c196e677e2776900a6a1c"
+      },
+      "directWHSK": "1000000000000000000000",
+      "directUSDT": "80800000",
+      "feeUSDT": "0"
+    },
+    {
+      "signedOrder": {
+        "order": {
+          "owner": "0x88C0e901bd1fd1a77BdA342f0d2210fDC71Cef6B",
+          "recipient": "0x000000000000000000000000000000000000bEEF",
+          "tokenIn": "0xF1B50eD67A9e2CC94Ad3c477779E2d4cBfFf9029",
+          "tokenOut": "0xB210D2120d57b758EE163cFfb43e73728c471Cf1",
+          "orderKind": 1,
+          "amountIn": "90000000",
+          "amountOut": "1000000000000000000000",
+          "validAfter": "1",
+          "deadline": "2000000000",
+          "nonce": "1",
+          "partiallyFillable": true,
+          "allowDexFallback": true,
+          "executionPriority": 1,
+          "maxFeeAmount": "100",
+          "minImprovementAmount": "2",
+          "allowedExecutor": "0x0000000000000000000000000000000000000000",
+          "allowDex": true,
+          "immediate": true
+        },
+        "signature": "0x92961247a394b8b3e80d366eb2948f0e243fc2d8b88d471a921378d06f9b879f5fe435ccc2451a4db5268ea89c5a295ca9e1b158497ed27ff346461a8931376a1c"
+      },
+      "directWHSK": "1000000000000000000000",
+      "directUSDT": "80800000",
+      "feeUSDT": "0"
+    }
+  ],
+  "dexWHSK": "0",
+  "dexCashLimit": "0",
+  "tryFallback": false
+}

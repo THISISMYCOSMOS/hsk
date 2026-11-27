@@ -1,0 +1,110 @@
+{
+  "evidence": "FORK_SIMULATION",
+  "upstreamChainId": 177,
+  "anvilChainId": 31337,
+  "upstreamBlock": 30592078,
+  "upstreamHash": "0x8e9ec7357cca666d04911b91bb3f5cf0292a7b4e5150a4e6febe30daa1280bda",
+  "hardfork": "cancun",
+  "client": "anvil/v1.10.0",
+  "verifiedRuntimeHash": "0x4d3bb6fa3793be1928f8922e6178c934ea53844343d7e8d67750fcde5ec8acf8",
+  "rows": [
+    {
+      "scenario": "approve-WHSK",
+      "gasUsed": 46261,
+      "calldataBytes": 68,
+      "status": 1,
+      "localTxHash": "0xda24b8cbc51cf07810977b5432880f235422ae72c9569eca036b2a61472735ec"
+    },
+    {
+      "scenario": "approve-USDT",
+      "gasUsed": 46195,
+      "calldataBytes": 68,
+      "status": 1,
+      "localTxHash": "0x55868232f8c545330a53702a55c5c82cd13b56fc5f17bf8897a7c75b121ae247"
+    },
+    {
+      "scenario": "direct",
+      "gasUsed": 470874,
+      "calldataBytes": 2052,
+      "status": 1,
+      "localTxHash": "0x3bf3333f6b96d30206d76e211ba9d5a8b4922bce2fef2734d46bf2d0a5600cb0"
+    },
+    {
+      "scenario": "hybrid-sell",
+      "gasUsed": 656132,
+      "calldataBytes": 2052,
+      "status": 1,
+      "localTxHash": "0xe05d990291a50f15c53ed41a10cffc667490205843e1631785f25cf3cd605a87"
+    },
+    {
+      "scenario": "hybrid-buy",
+      "gasUsed": 666446,
+      "calldataBytes": 2052,
+      "status": 1,
+      "localTxHash": "0xb69cf2a88e314d9292c6cec0f99d466ddb94cf28bb62786494670017ae431313"
+    },
+    {
+      "scenario": "multi",
+      "gasUsed": 669241,
+      "calldataBytes": 2948,
+      "status": 1,
+      "localTxHash": "0x946637cdff68757094bce8d9737e8cc6942e871e6ef8a32feeaef7859cfb2eb6"
+    },
+    {
+      "scenario": "no-trade",
+      "gasUsed": 278466,
+      "calldataBytes": 2052,
+      "status": 1,
+      "localTxHash": "0xe3ae26b1a36417ecd75e19004b7428dc73528ff286afbd120684233619aa105c"
+    },
+    {
+      "scenario": "fallback",
+      "gasUsed": 470922,
+      "calldataBytes": 2052,
+      "status": 1,
+      "localTxHash": "0x81fee34d32d4ee71f783163ec805de14a641970a4ec6c8d29338877eb5c6f872"
+    },
+    {
+      "scenario": "revert",
+      "gasUsed": 455863,
+      "calldataBytes": 2052,
+      "status": 0,
+      "localTxHash": "0x0eb76698ca7c50862217511191056e70bab27373cc0ab41982b3e978ca719f32"
+    },
+    {
+      "scenario": "SingleBandResearch",
+      "gasUsed": 296738,
+      "calldataBytes": 2052,
+      "status": 1,
+      "localTxHash": "0x3f5a7f972e52019c87ccd44c5308cfcbb70c4af41b93db9cc61330bb8429e697"
+    },
+    {
+      "scenario": "StateMatchResearch",
+      "gasUsed": 288372,
+      "calldataBytes": 2052,
+      "status": 1,
+      "localTxHash": "0x97c58424adc9ccfe6d959b1677540fb62dba7995fcc7a7c824b2591153c8ea4b"
+    },
+    {
+      "scenario": "SignedOnlyResearch",
+      "gasUsed": 275236,
+      "calldataBytes": 2052,
+      "status": 1,
+      "localTxHash": "0xde328058a86735c9a4614daa545837e61d2a0982b7ef35028ff04587b3b69787"
+    },
+    {
+      "scenario": "sequential-dex-sell",
+      "gasUsed": 109310,
+      "calldataBytes": 228,
+      "status": 1,
+      "localTxHash": "0xd53592b5d8ceae6e93d80f3116ac27228231e702b22aff95e96cad30e9dd63a4"
+    },
+    {
+      "scenario": "sequential-dex-buy",
+      "gasUsed": 116834,
+      "calldataBytes": 228,
+      "status": 1,
+      "localTxHash": "0xc5efef7748545740719669ee212120edf5693248be2b492ac80c5d498c1a1654"
+    }
+  ]
+}
