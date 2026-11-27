@@ -1,0 +1,734 @@
+{
+  "version": "agent-d-replay/1",
+  "source": "BACKTEST",
+  "archiveHashes": {
+    "HSK_A_Session1.zip": "20c2cce36e306edd7a7aa4725ddd1510ae91c3e14183e877a38b713123f71037",
+    "HSK_B_Session1_Verified.zip": "abe015f1398378f133b81a94f1a3a34ab638c68f53bc0e9348c85d61ed38b6d1",
+    "HSK_Session2_Quotes.zip": "654ea306e6fe5f89812c123e3a906f73e06e1c01f482315a28b18975ec979e4b"
+  },
+  "market": {
+    "matchedLogs": 656,
+    "accepted": 610,
+    "days": [
+      {
+        "day": "2026-11-18",
+        "buy": "69997079",
+        "sell": "2257190039",
+        "count": 128
+      },
+      {
+        "day": "2026-11-19",
+        "buy": "416528230",
+        "sell": "0",
+        "count": 11
+      },
+      {
+        "day": "2026-11-20",
+        "buy": "270174528",
+        "sell": "5625299900",
+        "count": 264
+      },
+      {
+        "day": "2026-11-21",
+        "buy": "3216221",
+        "sell": "1578097397",
+        "count": 95
+      },
+      {
+        "day": "2026-11-22",
+        "buy": "1185140",
+        "sell": "635824141",
+        "count": 45
+      },
+      {
+        "day": "2026-11-23",
+        "buy": "521402952",
+        "sell": "587842419",
+        "count": 78
+      },
+      {
+        "day": "2026-11-24",
+        "buy": "237825672",
+        "sell": "89398446",
+        "count": 35
+      }
+    ]
+  },
+  "quotes": {
+    "chain_id": 177,
+    "block": 30592078,
+    "block_hash": "0x8e9ec7357cca666d04911b91bb3f5cf0292a7b4e5150a4e6febe30daa1280bda",
+    "timestamp_utc": "2026-11-24T14:41:31+00:00",
+    "pool": "0x4ff515761864e7838b0adb8b5b2b8b7a068905dc",
+    "factory": "0x972ca9d1662f5e029cd18327d29026532e84c742",
+    "quoter": "0x603f70466fddbe3f238220b9a74fff419a2bbfdd",
+    "pool_fee_pips": 3000,
+    "token0_whsk_decimals": 18,
+    "token1_usdt_decimals": 6,
+    "starting_tick": -301482,
+    "active_liquidity_raw": "1475813786831558685",
+    "evidence_mode": "archived_state_reconstruction",
+    "order_origin": "team_hypothetical_sizes",
+    "firm": false,
+    "participant_signed_order": null,
+    "execution_receipt": null,
+    "settlement_gas_usdt": null,
+    "quotes": [
+      {
+        "id": "A_full",
+        "kind": "exact_input",
+        "token_in": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_raw": "1000000000000000000000",
+        "amount_out_raw": "80558131",
+        "sqrt_price_after_x96": "22518787216817175517660",
+        "ending_tick": -301485,
+        "request": {
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x603f70466fddbe3f238220b9a74fff419a2bbfdd",
+              "data": "0xc6a5026a000000000000000000000000b210d2120d57b758ee163cffb43e73728c471cf1000000000000000000000000f1b50ed67a9e2cc94ad3c477779e2d4cbfff902900000000000000000000000000000000000000000000003635c9adc5dea000000000000000000000000000000000000000000000000000000000000000000bb80000000000000000000000000000000000000000000000000000000000000000"
+            },
+            "0x1d2cc4e"
+          ]
+        },
+        "direct_response": null
+      },
+      {
+        "id": "B_exact_out",
+        "kind": "exact_output",
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "amount_in_raw": "48641160",
+        "amount_out_raw": "600000000000000000000",
+        "sqrt_price_after_x96": "22525715368040266389565",
+        "ending_tick": -301479,
+        "request": {
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x603f70466fddbe3f238220b9a74fff419a2bbfdd",
+              "data": "0xbd21704a000000000000000000000000f1b50ed67a9e2cc94ad3c477779e2d4cbfff9029000000000000000000000000b210d2120d57b758ee163cffb43e73728c471cf100000000000000000000000000000000000000000000002086ac3510526000000000000000000000000000000000000000000000000000000000000000000bb80000000000000000000000000000000000000000000000000000000000000000"
+            },
+            "0x1d2cc4e"
+          ]
+        },
+        "direct_response": null
+      },
+      {
+        "id": "A_remaining",
+        "kind": "exact_input",
+        "token_in": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_raw": "400000000000000000000",
+        "amount_out_raw": "32226965",
+        "sqrt_price_after_x96": "22521381845967789825016",
+        "ending_tick": -301483,
+        "request": {
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x603f70466fddbe3f238220b9a74fff419a2bbfdd",
+              "data": "0xc6a5026a000000000000000000000000b210d2120d57b758ee163cffb43e73728c471cf1000000000000000000000000f1b50ed67a9e2cc94ad3c477779e2d4cbfff9029000000000000000000000000000000000000000000000015af1d78b58c4000000000000000000000000000000000000000000000000000000000000000000bb80000000000000000000000000000000000000000000000000000000000000000"
+            },
+            "0x1d2cc4e"
+          ]
+        },
+        "direct_response": null
+      }
+    ]
+  },
+  "scenarios": {
+    "source": "SYNTHETIC",
+    "plans": {
+      "direct": {
+        "order_id": "S1-direct",
+        "side": "sell",
+        "kind": "exact_in",
+        "partial_allowed": false,
+        "amount_raw": "1000000000000000000000",
+        "limit_raw": "990000000",
+        "fee_raw": "2000000",
+        "capacity_raw": "600000000000000000000",
+        "maker_partial": false,
+        "other_limit_raw": "603000000",
+        "payment_raw": "599000000",
+        "full_raw": "990000000",
+        "residual_raw": "397000000",
+        "actual_rest_raw": "397000000",
+        "rfq_raw": "1001000000",
+        "lot_raw": "600000000000000000000",
+        "reference_other_raw": "603000000",
+        "rfq_status": "absent",
+        "opposite": true,
+        "same_side": false,
+        "route": "direct+dex",
+        "route_code": 2,
+        "best_for_A": "direct+dex",
+        "greedy_direct_first": "direct+dex",
+        "candidates": [
+          {
+            "route": "dex",
+            "eligible": true,
+            "exclusion": null,
+            "legs": [
+              {
+                "source": "fixed_DEX",
+                "whsk_raw": "1000000000000000000000",
+                "usdt_raw": "990000000"
+              }
+            ],
+            "a_benchmark_raw": "990000000",
+            "b_benchmark_raw": null,
+            "a_net_usdt_raw": "990000000",
+            "b_usdt_raw": null,
+            "a_gain_raw": "0",
+            "b_gain_raw": null,
+            "total_gain_raw": "0",
+            "fee_paid_by_A_raw": "0"
+          },
+          {
+            "route": "direct+dex",
+            "eligible": true,
+            "exclusion": null,
+            "legs": [
+              {
+                "source": "signed_B",
+                "whsk_raw": "600000000000000000000",
+                "usdt_raw": "599000000"
+              },
+              {
+                "source": "fixed_DEX",
+                "whsk_raw": "400000000000000000000",
+                "usdt_raw": "397000000"
+              }
+            ],
+            "a_benchmark_raw": "990000000",
+            "b_benchmark_raw": "603000000",
+            "a_net_usdt_raw": "994000000",
+            "b_usdt_raw": "599000000",
+            "a_gain_raw": "4000000",
+            "b_gain_raw": "4000000",
+            "total_gain_raw": "8000000",
+            "fee_paid_by_A_raw": "2000000"
+          },
+          {
+            "route": "rfq",
+            "eligible": false,
+            "exclusion": "rfq_absent",
+            "legs": [
+              {
+                "source": "signed_R",
+                "whsk_raw": "1000000000000000000000",
+                "usdt_raw": "1001000000"
+              }
+            ],
+            "a_benchmark_raw": "990000000",
+            "b_benchmark_raw": null,
+            "a_net_usdt_raw": "1001000000",
+            "b_usdt_raw": null,
+            "a_gain_raw": "11000000",
+            "b_gain_raw": null,
+            "total_gain_raw": "11000000",
+            "fee_paid_by_A_raw": "0"
+          },
+          {
+            "route": "no_fill",
+            "eligible": true,
+            "exclusion": null,
+            "legs": [],
+            "a_benchmark_raw": "990000000",
+            "b_benchmark_raw": null,
+            "a_net_usdt_raw": null,
+            "b_usdt_raw": null,
+            "a_gain_raw": null,
+            "b_gain_raw": null,
+            "total_gain_raw": null,
+            "fee_paid_by_A_raw": "0"
+          }
+        ],
+        "rule_selection": "direct+dex",
+        "ai_selection": null,
+        "model_version": null,
+        "abstain_reason": "B latency model and validation samples unavailable",
+        "lp_used_raw": "0",
+        "lp_exclusion": "no committed LP capital or bilateral valuation",
+        "gas_estimate_raw": null,
+        "gas_conversion_usdt": null,
+        "gas_reason": "No RPC gas estimate or HSK/USDT rate for synthetic fixture",
+        "costs_basis": "DEX net quote; signed service fee in USDT only on direct+dex"
+      },
+      "too_costly": {
+        "order_id": "S1-too_costly",
+        "side": "sell",
+        "kind": "exact_in",
+        "partial_allowed": false,
+        "amount_raw": "1000000000000000000000",
+        "limit_raw": "990000000",
+        "fee_raw": "11000000",
+        "capacity_raw": "600000000000000000000",
+        "maker_partial": false,
+        "other_limit_raw": "603000000",
+        "payment_raw": "603500000",
+        "full_raw": "990000000",
+        "residual_raw": "397000000",
+        "actual_rest_raw": "397000000",
+        "rfq_raw": "1001000000",
+        "lot_raw": "600000000000000000000",
+        "reference_other_raw": "603000000",
+        "rfq_status": "absent",
+        "opposite": true,
+        "same_side": false,
+        "route": "dex",
+        "route_code": 1,
+        "best_for_A": "dex",
+        "greedy_direct_first": "dex",
+        "candidates": [
+          {
+            "route": "dex",
+            "eligible": true,
+            "exclusion": null,
+            "legs": [
+              {
+                "source": "fixed_DEX",
+                "whsk_raw": "1000000000000000000000",
+                "usdt_raw": "990000000"
+              }
+            ],
+            "a_benchmark_raw": "990000000",
+            "b_benchmark_raw": null,
+            "a_net_usdt_raw": "990000000",
+            "b_usdt_raw": null,
+            "a_gain_raw": "0",
+            "b_gain_raw": null,
+            "total_gain_raw": "0",
+            "fee_paid_by_A_raw": "0"
+          },
+          {
+            "route": "direct+dex",
+            "eligible": false,
+            "exclusion": "cost_exceeds_surplus",
+            "legs": [
+              {
+                "source": "signed_B",
+                "whsk_raw": "600000000000000000000",
+                "usdt_raw": "603500000"
+              },
+              {
+                "source": "fixed_DEX",
+                "whsk_raw": "400000000000000000000",
+                "usdt_raw": "397000000"
+              }
+            ],
+            "a_benchmark_raw": "990000000",
+            "b_benchmark_raw": "603000000",
+            "a_net_usdt_raw": "989500000",
+            "b_usdt_raw": "603500000",
+            "a_gain_raw": "-500000",
+            "b_gain_raw": "-500000",
+            "total_gain_raw": "-1000000",
+            "fee_paid_by_A_raw": "11000000"
+          },
+          {
+            "route": "rfq",
+            "eligible": false,
+            "exclusion": "rfq_absent",
+            "legs": [
+              {
+                "source": "signed_R",
+                "whsk_raw": "1000000000000000000000",
+                "usdt_raw": "1001000000"
+              }
+            ],
+            "a_benchmark_raw": "990000000",
+            "b_benchmark_raw": null,
+            "a_net_usdt_raw": "1001000000",
+            "b_usdt_raw": null,
+            "a_gain_raw": "11000000",
+            "b_gain_raw": null,
+            "total_gain_raw": "11000000",
+            "fee_paid_by_A_raw": "0"
+          },
+          {
+            "route": "no_fill",
+            "eligible": true,
+            "exclusion": null,
+            "legs": [],
+            "a_benchmark_raw": "990000000",
+            "b_benchmark_raw": null,
+            "a_net_usdt_raw": null,
+            "b_usdt_raw": null,
+            "a_gain_raw": null,
+            "b_gain_raw": null,
+            "total_gain_raw": null,
+            "fee_paid_by_A_raw": "0"
+          }
+        ],
+        "rule_selection": "dex",
+        "ai_selection": null,
+        "model_version": null,
+        "abstain_reason": "B latency model and validation samples unavailable",
+        "lp_used_raw": "0",
+        "lp_exclusion": "no committed LP capital or bilateral valuation",
+        "gas_estimate_raw": null,
+        "gas_conversion_usdt": null,
+        "gas_reason": "No RPC gas estimate or HSK/USDT rate for synthetic fixture",
+        "costs_basis": "DEX net quote; signed service fee in USDT only on direct+dex"
+      },
+      "no_opposite": {
+        "order_id": "S1-no_opposite",
+        "side": "sell",
+        "kind": "exact_in",
+        "partial_allowed": false,
+        "amount_raw": "1000000000000000000000",
+        "limit_raw": "990000000",
+        "fee_raw": "2000000",
+        "capacity_raw": "600000000000000000000",
+        "maker_partial": false,
+        "other_limit_raw": "603000000",
+        "payment_raw": "599000000",
+        "full_raw": "990000000",
+        "residual_raw": "397000000",
+        "actual_rest_raw": "397000000",
+        "rfq_raw": "1001000000",
+        "lot_raw": "600000000000000000000",
+        "reference_other_raw": "603000000",
+        "rfq_status": "absent",
+        "opposite": false,
+        "same_side": false,
+        "route": "dex",
+        "route_code": 1,
+        "best_for_A": "dex",
+        "greedy_direct_first": "dex",
+        "candidates": [
+          {
+            "route": "dex",
+            "eligible": true,
+            "exclusion": null,
+            "legs": [
+              {
+                "source": "fixed_DEX",
+                "whsk_raw": "1000000000000000000000",
+                "usdt_raw": "990000000"
+              }
+            ],
+            "a_benchmark_raw": "990000000",
+            "b_benchmark_raw": null,
+            "a_net_usdt_raw": "990000000",
+            "b_usdt_raw": null,
+            "a_gain_raw": "0",
+            "b_gain_raw": null,
+            "total_gain_raw": "0",
+            "fee_paid_by_A_raw": "0"
+          },
+          {
+            "route": "direct+dex",
+            "eligible": false,
+            "exclusion": "absent",
+            "legs": [
+              {
+                "source": "signed_B",
+                "whsk_raw": "600000000000000000000",
+                "usdt_raw": "599000000"
+              },
+              {
+                "source": "fixed_DEX",
+                "whsk_raw": "400000000000000000000",
+                "usdt_raw": "397000000"
+              }
+            ],
+            "a_benchmark_raw": "990000000",
+            "b_benchmark_raw": "603000000",
+            "a_net_usdt_raw": "994000000",
+            "b_usdt_raw": "599000000",
+            "a_gain_raw": "4000000",
+            "b_gain_raw": "4000000",
+            "total_gain_raw": "8000000",
+            "fee_paid_by_A_raw": "2000000"
+          },
+          {
+            "route": "rfq",
+            "eligible": false,
+            "exclusion": "rfq_absent",
+            "legs": [
+              {
+                "source": "signed_R",
+                "whsk_raw": "1000000000000000000000",
+                "usdt_raw": "1001000000"
+              }
+            ],
+            "a_benchmark_raw": "990000000",
+            "b_benchmark_raw": null,
+            "a_net_usdt_raw": "1001000000",
+            "b_usdt_raw": null,
+            "a_gain_raw": "11000000",
+            "b_gain_raw": null,
+            "total_gain_raw": "11000000",
+            "fee_paid_by_A_raw": "0"
+          },
+          {
+            "route": "no_fill",
+            "eligible": true,
+            "exclusion": null,
+            "legs": [],
+            "a_benchmark_raw": "990000000",
+            "b_benchmark_raw": null,
+            "a_net_usdt_raw": null,
+            "b_usdt_raw": null,
+            "a_gain_raw": null,
+            "b_gain_raw": null,
+            "total_gain_raw": null,
+            "fee_paid_by_A_raw": "0"
+          }
+        ],
+        "rule_selection": "dex",
+        "ai_selection": null,
+        "model_version": null,
+        "abstain_reason": "B latency model and validation samples unavailable",
+        "lp_used_raw": "0",
+        "lp_exclusion": "no committed LP capital or bilateral valuation",
+        "gas_estimate_raw": null,
+        "gas_conversion_usdt": null,
+        "gas_reason": "No RPC gas estimate or HSK/USDT rate for synthetic fixture",
+        "costs_basis": "DEX net quote; signed service fee in USDT only on direct+dex"
+      },
+      "no_fill": {
+        "order_id": "S1-no_fill",
+        "side": "sell",
+        "kind": "exact_in",
+        "partial_allowed": false,
+        "amount_raw": "1000000000000000000000",
+        "limit_raw": "1002000000",
+        "fee_raw": "2000000",
+        "capacity_raw": "600000000000000000000",
+        "maker_partial": false,
+        "other_limit_raw": "603000000",
+        "payment_raw": "599000000",
+        "full_raw": "990000000",
+        "residual_raw": "397000000",
+        "actual_rest_raw": "397000000",
+        "rfq_raw": "1001000000",
+        "lot_raw": "600000000000000000000",
+        "reference_other_raw": "603000000",
+        "rfq_status": "absent",
+        "opposite": true,
+        "same_side": false,
+        "route": "no_fill",
+        "route_code": 0,
+        "best_for_A": "no_fill",
+        "greedy_direct_first": "no_fill",
+        "candidates": [
+          {
+            "route": "dex",
+            "eligible": false,
+            "exclusion": "A_signed_limit",
+            "legs": [
+              {
+                "source": "fixed_DEX",
+                "whsk_raw": "1000000000000000000000",
+                "usdt_raw": "990000000"
+              }
+            ],
+            "a_benchmark_raw": "990000000",
+            "b_benchmark_raw": null,
+            "a_net_usdt_raw": "990000000",
+            "b_usdt_raw": null,
+            "a_gain_raw": "0",
+            "b_gain_raw": null,
+            "total_gain_raw": "0",
+            "fee_paid_by_A_raw": "0"
+          },
+          {
+            "route": "direct+dex",
+            "eligible": false,
+            "exclusion": "A_signed_limit",
+            "legs": [
+              {
+                "source": "signed_B",
+                "whsk_raw": "600000000000000000000",
+                "usdt_raw": "599000000"
+              },
+              {
+                "source": "fixed_DEX",
+                "whsk_raw": "400000000000000000000",
+                "usdt_raw": "397000000"
+              }
+            ],
+            "a_benchmark_raw": "990000000",
+            "b_benchmark_raw": "603000000",
+            "a_net_usdt_raw": "994000000",
+            "b_usdt_raw": "599000000",
+            "a_gain_raw": "4000000",
+            "b_gain_raw": "4000000",
+            "total_gain_raw": "8000000",
+            "fee_paid_by_A_raw": "2000000"
+          },
+          {
+            "route": "rfq",
+            "eligible": false,
+            "exclusion": "rfq_absent",
+            "legs": [
+              {
+                "source": "signed_R",
+                "whsk_raw": "1000000000000000000000",
+                "usdt_raw": "1001000000"
+              }
+            ],
+            "a_benchmark_raw": "990000000",
+            "b_benchmark_raw": null,
+            "a_net_usdt_raw": "1001000000",
+            "b_usdt_raw": null,
+            "a_gain_raw": "11000000",
+            "b_gain_raw": null,
+            "total_gain_raw": "11000000",
+            "fee_paid_by_A_raw": "0"
+          },
+          {
+            "route": "no_fill",
+            "eligible": true,
+            "exclusion": null,
+            "legs": [],
+            "a_benchmark_raw": "990000000",
+            "b_benchmark_raw": null,
+            "a_net_usdt_raw": null,
+            "b_usdt_raw": null,
+            "a_gain_raw": null,
+            "b_gain_raw": null,
+            "total_gain_raw": null,
+            "fee_paid_by_A_raw": "0"
+          }
+        ],
+        "rule_selection": "no_fill",
+        "ai_selection": null,
+        "model_version": null,
+        "abstain_reason": "B latency model and validation samples unavailable",
+        "lp_used_raw": "0",
+        "lp_exclusion": "no committed LP capital or bilateral valuation",
+        "gas_estimate_raw": null,
+        "gas_conversion_usdt": null,
+        "gas_reason": "No RPC gas estimate or HSK/USDT rate for synthetic fixture",
+        "costs_basis": "DEX net quote; signed service fee in USDT only on direct+dex"
+      },
+      "buy_direct": {
+        "order_id": "S1-buy_direct",
+        "side": "buy",
+        "kind": "exact_out",
+        "partial_allowed": false,
+        "amount_raw": "1000000000000000000000",
+        "limit_raw": "1010000000",
+        "fee_raw": "2000000",
+        "capacity_raw": "600000000000000000000",
+        "maker_partial": false,
+        "other_limit_raw": "597000000",
+        "payment_raw": "601000000",
+        "full_raw": "1010000000",
+        "residual_raw": "403000000",
+        "actual_rest_raw": "403000000",
+        "rfq_raw": "999000000",
+        "lot_raw": "600000000000000000000",
+        "reference_other_raw": "597000000",
+        "rfq_status": "absent",
+        "opposite": true,
+        "same_side": false,
+        "route": "direct+dex",
+        "route_code": 2,
+        "best_for_A": "direct+dex",
+        "greedy_direct_first": "direct+dex",
+        "candidates": [
+          {
+            "route": "dex",
+            "eligible": true,
+            "exclusion": null,
+            "legs": [
+              {
+                "source": "fixed_DEX",
+                "whsk_raw": "1000000000000000000000",
+                "usdt_raw": "1010000000"
+              }
+            ],
+            "a_benchmark_raw": "1010000000",
+            "b_benchmark_raw": null,
+            "a_net_usdt_raw": "1010000000",
+            "b_usdt_raw": null,
+            "a_gain_raw": "0",
+            "b_gain_raw": null,
+            "total_gain_raw": "0",
+            "fee_paid_by_A_raw": "0"
+          },
+          {
+            "route": "direct+dex",
+            "eligible": true,
+            "exclusion": null,
+            "legs": [
+              {
+                "source": "signed_B",
+                "whsk_raw": "600000000000000000000",
+                "usdt_raw": "601000000"
+              },
+              {
+                "source": "fixed_DEX",
+                "whsk_raw": "400000000000000000000",
+                "usdt_raw": "403000000"
+              }
+            ],
+            "a_benchmark_raw": "1010000000",
+            "b_benchmark_raw": "597000000",
+            "a_net_usdt_raw": "1006000000",
+            "b_usdt_raw": "601000000",
+            "a_gain_raw": "4000000",
+            "b_gain_raw": "4000000",
+            "total_gain_raw": "8000000",
+            "fee_paid_by_A_raw": "2000000"
+          },
+          {
+            "route": "rfq",
+            "eligible": false,
+            "exclusion": "rfq_absent",
+            "legs": [
+              {
+                "source": "signed_R",
+                "whsk_raw": "1000000000000000000000",
+                "usdt_raw": "999000000"
+              }
+            ],
+            "a_benchmark_raw": "1010000000",
+            "b_benchmark_raw": null,
+            "a_net_usdt_raw": "999000000",
+            "b_usdt_raw": null,
+            "a_gain_raw": "11000000",
+            "b_gain_raw": null,
+            "total_gain_raw": "11000000",
+            "fee_paid_by_A_raw": "0"
+          },
+          {
+            "route": "no_fill",
+            "eligible": true,
+            "exclusion": null,
+            "legs": [],
+            "a_benchmark_raw": "1010000000",
+            "b_benchmark_raw": null,
+            "a_net_usdt_raw": null,
+            "b_usdt_raw": null,
+            "a_gain_raw": null,
+            "b_gain_raw": null,
+            "total_gain_raw": null,
+            "fee_paid_by_A_raw": "0"
+          }
+        ],
+        "rule_selection": "direct+dex",
+        "ai_selection": null,
+        "model_version": null,
+        "abstain_reason": "B latency model and validation samples unavailable",
+        "lp_used_raw": "0",
+        "lp_exclusion": "no committed LP capital or bilateral valuation",
+        "gas_estimate_raw": null,
+        "gas_conversion_usdt": null,
+        "gas_reason": "No RPC gas estimate or HSK/USDT rate for synthetic fixture",
+        "costs_basis": "DEX net quote; signed service fee in USDT only on direct+dex"
+      }
+    }
+  },
+  "executionReceipt": null,
+  "realizedSavings": null
+}

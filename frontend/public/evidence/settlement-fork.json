@@ -1,0 +1,194 @@
+{
+  "source": "FORK_SIMULATION",
+  "policy": {
+    "seller_min_total_usdt_raw": "80000000",
+    "buyer_max_usdt_raw": "49000000",
+    "seller_whsk_raw": "1000000000000000000000",
+    "buyer_whsk_raw": "600000000000000000000",
+    "allow_direct_and_residual": true,
+    "immediate": true,
+    "approvals": "both exact allowances established before each scenario"
+  },
+  "sourceBlock": "30592078",
+  "sourceHash": "0x8e9ec7357cca666d04911b91bb3f5cf0292a7b4e5150a4e6febe30daa1280bda",
+  "artifactSha256": "1d5d84d9739e5210dd799168e6402c470cdd2ebe0b4253b98e2790edd732525f",
+  "bytecodeSha256": "4d98c63d6872c911ef7fe1e4c530daa22296a9a6bf230affb115e4a9bd4ef581",
+  "contract": "0x057ef64e23666f000b34ae31332854acbd1c8544",
+  "approvals": [
+    {
+      "payer": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "selector": "095ea7b3",
+      "calldata_bytes": 68,
+      "gas_used": "46261",
+      "local_effective_gas_price": "202972015149",
+      "local_tx_hash": "0xb0e80d49435bfdcfed2a317a6e720687a279bc622d59a42605fe3fc059f342ea"
+    },
+    {
+      "payer": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+      "selector": "095ea7b3",
+      "calldata_bytes": 68,
+      "gas_used": "46207",
+      "local_effective_gas_price": "177803375151",
+      "local_tx_hash": "0xd827acb1d78b931e277a037b2a52c8f1d82f948bb0533b154df9c284becdd8ef"
+    },
+    {
+      "payer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "selector": "095ea7b3",
+      "calldata_bytes": 68,
+      "gas_used": "46207",
+      "local_effective_gas_price": "155771032871",
+      "local_tx_hash": "0x4a48a5f0392b76714c990618e90831a1fb6d409612051690537ed5a6b83754e1"
+    }
+  ],
+  "cases": {
+    "direct": {
+      "local_tx_hash": "0xdc08acb9f8e15ad771db7d06ce685588477339802135fe9efcfe64b88ef51ed7",
+      "gas_used": "505210",
+      "payer": "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+      "quoter_subcalls_gas": "209773",
+      "wallet_deltas": {
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266": {
+          "WHSK": "-600000000000000000000",
+          "USDT": "48480000"
+        },
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8": {
+          "WHSK": "600000000000000000000",
+          "USDT": "-48480000"
+        },
+        "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc": {
+          "WHSK": "0",
+          "USDT": "0"
+        }
+      },
+      "block": "30592089"
+    },
+    "partial": {
+      "local_tx_hash": "0x973ec6fe11b7c4008f2c78522c1c2547a25db738f45d545855ea3c3cc675a308",
+      "gas_used": "680822",
+      "payer": "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+      "quoter_subcalls_gas": "297900",
+      "wallet_deltas": {
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266": {
+          "WHSK": "-1000000000000000000000",
+          "USDT": "80706965"
+        },
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8": {
+          "WHSK": "600000000000000000000",
+          "USDT": "-48480000"
+        },
+        "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc": {
+          "WHSK": "0",
+          "USDT": "0"
+        }
+      },
+      "block": "30592089"
+    },
+    "multi": {
+      "local_tx_hash": "0x5196e61beaee28c055712492c59c5ae463e0d1315feb768a36fec3fcad1a2633",
+      "gas_used": "896361",
+      "payer": "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+      "quoter_subcalls_gas": "404998",
+      "wallet_deltas": {
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266": {
+          "WHSK": "-1000000000000000000000",
+          "USDT": "80706965"
+        },
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8": {
+          "WHSK": "300000000000000000000",
+          "USDT": "-24240000"
+        },
+        "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc": {
+          "WHSK": "300000000000000000000",
+          "USDT": "-24240000"
+        }
+      },
+      "block": "30592089"
+    },
+    "no_trade": {
+      "local_tx_hash": "0x6531cdc8924e6ab8a695b0496c830cbac2069d73d830805562779f17a61438bc",
+      "gas_used": "368626",
+      "payer": "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+      "quoter_subcalls_gas": "297900",
+      "wallet_deltas": {
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266": {
+          "WHSK": "0",
+          "USDT": "0"
+        },
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8": {
+          "WHSK": "0",
+          "USDT": "0"
+        },
+        "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc": {
+          "WHSK": "0",
+          "USDT": "0"
+        }
+      },
+      "block": "30592089"
+    },
+    "fallback": {
+      "local_tx_hash": "0xc12b5ec18d5456caf7b54a9febe749f91b83c513d8f3c7b8fc1513d45d4a1f81",
+      "gas_used": "568542",
+      "payer": "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+      "quoter_subcalls_gas": "297900",
+      "wallet_deltas": {
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266": {
+          "WHSK": "-1000000000000000000000",
+          "USDT": "80558131"
+        },
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8": {
+          "WHSK": "0",
+          "USDT": "0"
+        },
+        "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc": {
+          "WHSK": "0",
+          "USDT": "0"
+        }
+      },
+      "block": "30592089"
+    },
+    "cancel": {
+      "local_tx_hash": "0x8d765f52496d728dc3691a76eea57e99c82bf96327263a6d752dc4b216addf1f",
+      "gas_used": "50344",
+      "payer": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "quoter_subcalls_gas": "0",
+      "wallet_deltas": {
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266": {
+          "WHSK": "0",
+          "USDT": "0"
+        },
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8": {
+          "WHSK": "0",
+          "USDT": "0"
+        },
+        "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc": {
+          "WHSK": "0",
+          "USDT": "0"
+        }
+      },
+      "block": "30592089"
+    },
+    "expired": {
+      "local_tx_hash": "0x58c4422f803533d8901ca038ef54e7017766062efefcd93bbe4c3b695aa1d190",
+      "gas_used": "54960",
+      "payer": "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+      "quoter_subcalls_gas": "0",
+      "wallet_deltas": {
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266": {
+          "WHSK": "0",
+          "USDT": "0"
+        },
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8": {
+          "WHSK": "0",
+          "USDT": "0"
+        },
+        "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc": {
+          "WHSK": "0",
+          "USDT": "0"
+        }
+      },
+      "block": null
+    }
+  },
+  "l1FeeWei": null,
+  "realizedSavings": null
+}

@@ -1,0 +1,58 @@
+{
+  "source": "FORK_SIMULATION",
+  "fixture": "ephemeral local test wallets",
+  "contract": "0x6c36642933C989DaBcc6339E0d2dE243142FfDfD",
+  "operator": "0x9DA7e7e96fF7804f270Ff453D074151aE8068BC2",
+  "anchor": "0x8e9ec7357cca666d04911b91bb3f5cf0292a7b4e5150a4e6febe30daa1280bda",
+  "orderIds": [
+    "0x6a1da0e76265f45ac638e067c3a76c335db6ab6905b1a1afe0db4977f9c6cdfc",
+    "0xf2e46a8b2c05fb7554bdf645c4a4f1c41f00d6f072d1d21d1eb3b4e40d0c2800"
+  ],
+  "route": "HYBRID_MATCH",
+  "gasUsed": "686104",
+  "block": "30592082",
+  "blockHash": "0x33c4fe71580c1765cc37b8a65f8e10c535955bd37f1d6e5704be85356b885050",
+  "txHash": "0x9e961f02a885ad0e49d44cbd780efc044b4b284eb7abd420948112792656418f",
+  "dexWHSK": "400000000000000000000",
+  "participants": [
+    {
+      "orderId": "0x6a1da0e76265f45ac638e067c3a76c335db6ab6905b1a1afe0db4977f9c6cdfc",
+      "settlementDigest": "0x127b8c2cc6deb208e69684a16abf7b7fa9d07ae6e78a75bca15b8e8aa2be6fc0",
+      "spent": "1000000000000000000000",
+      "received": "80713128",
+      "feeUSDT": "0",
+      "cumulativeWHSK": "1000000000000000000000",
+      "benchmarkUSDT": "80558131"
+    },
+    {
+      "orderId": "0xf2e46a8b2c05fb7554bdf645c4a4f1c41f00d6f072d1d21d1eb3b4e40d0c2800",
+      "settlementDigest": "0xf4667b26cfaaa307f207e52d5e33ec0031db76adf56aef5429dc7e93d1f8a9b2",
+      "spent": "48486163",
+      "received": "600000000000000000000",
+      "feeUSDT": "0",
+      "cumulativeWHSK": "600000000000000000000",
+      "benchmarkUSDT": "48641160"
+    }
+  ],
+  "balancesRaw": {
+    "before": [
+      "2000000000000000000000",
+      "0",
+      "0",
+      "200000000"
+    ],
+    "after": [
+      "1000000000000000000000",
+      "80713128",
+      "600000000000000000000",
+      "151513837"
+    ],
+    "fields": [
+      "sellerWHSK",
+      "sellerUSDT",
+      "buyerWHSK",
+      "buyerUSDT"
+    ]
+  },
+  "realizedSavings": null
+}

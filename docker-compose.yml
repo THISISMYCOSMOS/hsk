@@ -1,0 +1,51 @@
+services:
+  frontend:
+    image: nginx:1.28-alpine
+    volumes:
+      - ./frontend/dist:/usr/share/nginx/html:ro
+      - ./scripts/integration/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    ports: ["127.0.0.1:${HSK_WEB_PORT:-5173}:5173"]
+    healthcheck:
+      test: ["CMD","wget","-q","-O","/dev/null","http://127.0.0.1:5173/index.html"]
+      interval: 3s
+      timeout: 3s
+      retries: 15
+    depends_on:
+      backend:
+        condition: service_healthy
+  backend:
+    image: python:3.12-slim
+    working_dir: /engine
+    volumes:
+      - ${AGENT_B_ROOT:-.}:/engine:ro
+    environment:
+      PYTHONDONTWRITEBYTECODE: "1"
+      HSK_EXECUTION_MODE: MOCK
+      HSK_ENGINE_DB: postgresql+psycopg://hsk:hsk_local@db/hsk
+    command: sh -ec 'pip install -r backend/requirements.txt && alembic -c backend/migrations/alembic.ini upgrade head && uvicorn backend.app.api.main:create_app --factory --host 0.0.0.0 --port 8765'
+    healthcheck:
+      test: ["CMD","python","-c","import urllib.request; urllib.request.urlopen('http://localhost:8765/health')"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+    depends_on:
+      db:
+        condition: service_healthy
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: hsk
+      POSTGRES_PASSWORD: hsk_local
+      POSTGRES_DB: hsk
+    volumes: ["order_db:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL","pg_isready -U hsk"]
+      interval: 3s
+      timeout: 3s
+      retries: 15
+  anvil:
+    image: ghcr.io/foundry-rs/foundry:v1.5.1
+    entrypoint: ["anvil","--silent","--host","0.0.0.0","--chain-id","31337"]
+    ports: ["127.0.0.1:${HSK_ANVIL_PORT:-8545}:8545"]
+volumes:
+  order_db:

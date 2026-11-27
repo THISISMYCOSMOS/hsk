@@ -1,0 +1,15 @@
+{
+  "source": "OBSERVED_MAINNET",
+  "provider": "Agent A MarketData via GET /market/quote",
+  "chainId": 177,
+  "side": "SELL",
+  "kind": "EXACT_IN",
+  "tokenIn": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+  "tokenOut": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+  "amountIn": "1000000000000000000",
+  "amountOut": "79197",
+  "block": "30711527",
+  "hash": "0x97afbe061acc84d524c335ea8b52cb9bdb78ff1f581178b01ebbe815e2c5ce18",
+  "at": "2026-11-27T09:03:12.976309+00:00",
+  "feePips": 3000
+}
