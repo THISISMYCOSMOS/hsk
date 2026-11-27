@@ -1,0 +1,127 @@
+{
+  "evidence": "BACKTEST",
+  "block": 30592078,
+  "block_hash": "0x8e9ec7357cca666d04911b91bb3f5cf0292a7b4e5150a4e6febe30daa1280bda",
+  "orders": "SYNTHETIC",
+  "grid": [
+    {
+      "matched_whsk_raw": "1000000000000000000",
+      "gross_lower_usdt_raw": "487",
+      "two_user_price_feasible": true,
+      "payment_min_raw": "80575",
+      "payment_max_raw": "81060"
+    },
+    {
+      "matched_whsk_raw": "5000000000000000000",
+      "gross_lower_usdt_raw": "2429",
+      "two_user_price_feasible": true,
+      "payment_min_raw": "402869",
+      "payment_max_raw": "405295"
+    },
+    {
+      "matched_whsk_raw": "10000000000000000000",
+      "gross_lower_usdt_raw": "4856",
+      "two_user_price_feasible": true,
+      "payment_min_raw": "805739",
+      "payment_max_raw": "810588"
+    },
+    {
+      "matched_whsk_raw": "20000000000000000000",
+      "gross_lower_usdt_raw": "9713",
+      "two_user_price_feasible": true,
+      "payment_min_raw": "1611480",
+      "payment_max_raw": "1621170"
+    },
+    {
+      "matched_whsk_raw": "25000000000000000000",
+      "gross_lower_usdt_raw": "12142",
+      "two_user_price_feasible": true,
+      "payment_min_raw": "2014350",
+      "payment_max_raw": "2026458"
+    },
+    {
+      "matched_whsk_raw": "50000000000000000000",
+      "gross_lower_usdt_raw": "24282",
+      "two_user_price_feasible": true,
+      "payment_min_raw": "4028720",
+      "payment_max_raw": "4052871"
+    },
+    {
+      "matched_whsk_raw": "75000000000000000000",
+      "gross_lower_usdt_raw": "36422",
+      "two_user_price_feasible": true,
+      "payment_min_raw": "6043109",
+      "payment_max_raw": "6079238"
+    },
+    {
+      "matched_whsk_raw": "100000000000000000000",
+      "gross_lower_usdt_raw": "48562",
+      "two_user_price_feasible": true,
+      "payment_min_raw": "8057518",
+      "payment_max_raw": "8105560"
+    },
+    {
+      "matched_whsk_raw": "150000000000000000000",
+      "gross_lower_usdt_raw": "72841",
+      "two_user_price_feasible": true,
+      "payment_min_raw": "12086393",
+      "payment_max_raw": "12158068"
+    },
+    {
+      "matched_whsk_raw": "250000000000000000000",
+      "gross_lower_usdt_raw": "121396",
+      "two_user_price_feasible": true,
+      "payment_min_raw": "20144379",
+      "payment_max_raw": "20262540"
+    },
+    {
+      "matched_whsk_raw": "400000000000000000000",
+      "gross_lower_usdt_raw": "194224",
+      "two_user_price_feasible": true,
+      "payment_min_raw": "32231943",
+      "payment_max_raw": "32417888"
+    },
+    {
+      "matched_whsk_raw": "600000000000000000000",
+      "gross_lower_usdt_raw": "291315",
+      "two_user_price_feasible": true,
+      "payment_min_raw": "48349789",
+      "payment_max_raw": "48622480"
+    }
+  ],
+  "scenarios": [
+    {
+      "fresh_approvals": false,
+      "reverts_per_success": 0,
+      "no_trade_per_success": 0,
+      "offchain_usdt_raw": "0",
+      "assumed_total_cost_raw": "27698",
+      "smallest_tested_whsk_raw": "75000000000000000000"
+    },
+    {
+      "fresh_approvals": false,
+      "reverts_per_success": 1,
+      "no_trade_per_success": 1,
+      "offchain_usdt_raw": "10000",
+      "assumed_total_cost_raw": "54995",
+      "smallest_tested_whsk_raw": "150000000000000000000"
+    },
+    {
+      "fresh_approvals": true,
+      "reverts_per_success": 0,
+      "no_trade_per_success": 0,
+      "offchain_usdt_raw": "0",
+      "assumed_total_cost_raw": "31469",
+      "smallest_tested_whsk_raw": "75000000000000000000"
+    },
+    {
+      "fresh_approvals": true,
+      "reverts_per_success": 1,
+      "no_trade_per_success": 1,
+      "offchain_usdt_raw": "10000",
+      "assumed_total_cost_raw": "58766",
+      "smallest_tested_whsk_raw": "150000000000000000000"
+    }
+  ],
+  "note": "One tick interval. Independent constant historical gas budget from 600-WHSK hybrid, no avoided DEX cost credited. Screened size and payment interval require current quotes, fees, per-user allocation and simulation before use."
+}

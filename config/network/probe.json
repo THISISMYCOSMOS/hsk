@@ -1,0 +1,64 @@
+{
+  "version": "1.0",
+  "queried_at": "2026-11-27T08:37:11.195963+00:00",
+  "chain_id": 177,
+  "latest": {
+    "version": "1.0",
+    "chain_id": 177,
+    "source": "https://mainnet.hsk.xyz",
+    "queried_at": "2026-11-27T08:37:11.699909+00:00",
+    "block_number": 30710748,
+    "block_hash": "0x49efce189c24c7769db0fdfcd73327140144f5c8271980e7fb33ab08bac34438",
+    "error": null,
+    "data": {
+      "timestamp": 1795768631,
+      "parent_hash": "0x1cf833a8d273d7dfdfd8b2d4b494aa41e8f17b203aa0741f6fc81a1c9da78835"
+    },
+    "evidence": "OBSERVED_MAINNET"
+  },
+  "verified_at": 30709982,
+  "block_hash": "0x14d85ce766e5dee02de58c638facd0492eb5cae3d6c7874a9485e81e2a2d6819",
+  "mean_interval_seconds": 2.0,
+  "interval_blocks": 1000,
+  "log_probe": [],
+  "fee_probe": {
+    "version": "1.0",
+    "chain_id": 177,
+    "source": "https://mainnet.hsk.xyz",
+    "queried_at": "2026-11-27T08:37:13.884324+00:00",
+    "block_number": 30710749,
+    "block_hash": "0x9de1221b58a997a8e227b018d01d57446964911460051b3c0dfa9f16d6e62220",
+    "error": null,
+    "data": {
+      "estimated_gas": "21518",
+      "suggested_gas_price_wei": "500001000000",
+      "estimated_l2_wei": "10759021518000000",
+      "l1_fee_wei": null,
+      "total_fee_wei": null,
+      "l1_reason": "requires exact serialized transaction"
+    },
+    "evidence": "OBSERVED_MAINNET"
+  },
+  "historical_samples": {
+    "0": {
+      "hash": "0xa96aea946b763641b616ce0c69f37e61d9cd0abd709ef13a6b833e67b76de208",
+      "whsk_code_bytes": 0
+    },
+    "1": {
+      "hash": "0x3fc7aebcc28e8161e13cc896f5e8ec43193ac79a2be59d8a44e521796b067d35",
+      "whsk_code_bytes": 0
+    },
+    "1000000": {
+      "hash": "0x5a095d15dd35a38120f37bf26ee8a494396155231ad189bb34081c6b29567120",
+      "whsk_code_bytes": 3143
+    },
+    "30592078": {
+      "hash": "0x8e9ec7357cca666d04911b91bb3f5cf0292a7b4e5150a4e6febe30daa1280bda",
+      "whsk_code_bytes": 3143
+    },
+    "30709982": {
+      "hash": "0x14d85ce766e5dee02de58c638facd0492eb5cae3d6c7874a9485e81e2a2d6819",
+      "whsk_code_bytes": 3143
+    }
+  }
+}

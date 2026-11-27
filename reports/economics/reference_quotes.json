@@ -1,0 +1,77 @@
+{
+  "A_full": {
+    "response": {
+      "version": "1.0",
+      "chain_id": 177,
+      "source": "https://mainnet.hsk.xyz",
+      "queried_at": "2026-11-27T08:37:02.325006+00:00",
+      "block_number": 30592078,
+      "block_hash": "0x8e9ec7357cca666d04911b91bb3f5cf0292a7b4e5150a4e6febe30daa1280bda",
+      "error": null,
+      "data": {
+        "kind": "exact_in",
+        "pool": "0x4ff515761864e7838b0adb8b5b2b8b7a068905dc",
+        "token_in": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in": "1000000000000000000000",
+        "amount_out": "80558131",
+        "sqrt_price_after_x96": "22518787216817175517660",
+        "initialized_ticks_crossed": 1,
+        "quoter_gas": "82561",
+        "fee": 3000
+      },
+      "evidence": "OBSERVED_MAINNET"
+    },
+    "agrees": true
+  },
+  "B_exact_out": {
+    "response": {
+      "version": "1.0",
+      "chain_id": 177,
+      "source": "https://mainnet.hsk.xyz",
+      "queried_at": "2026-11-27T08:37:05.596128+00:00",
+      "block_number": 30592078,
+      "block_hash": "0x8e9ec7357cca666d04911b91bb3f5cf0292a7b4e5150a4e6febe30daa1280bda",
+      "error": null,
+      "data": {
+        "kind": "exact_out",
+        "pool": "0x4ff515761864e7838b0adb8b5b2b8b7a068905dc",
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "amount_in": "48641160",
+        "amount_out": "600000000000000000000",
+        "sqrt_price_after_x96": "22525715368040266389565",
+        "initialized_ticks_crossed": 1,
+        "quoter_gas": "83197",
+        "fee": 3000
+      },
+      "evidence": "OBSERVED_MAINNET"
+    },
+    "agrees": true
+  },
+  "A_remaining": {
+    "response": {
+      "version": "1.0",
+      "chain_id": 177,
+      "source": "https://mainnet.hsk.xyz",
+      "queried_at": "2026-11-27T08:37:08.371359+00:00",
+      "block_number": 30592078,
+      "block_hash": "0x8e9ec7357cca666d04911b91bb3f5cf0292a7b4e5150a4e6febe30daa1280bda",
+      "error": null,
+      "data": {
+        "kind": "exact_in",
+        "pool": "0x4ff515761864e7838b0adb8b5b2b8b7a068905dc",
+        "token_in": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in": "400000000000000000000",
+        "amount_out": "32226965",
+        "sqrt_price_after_x96": "22521381845967789825016",
+        "initialized_ticks_crossed": 1,
+        "quoter_gas": "82561",
+        "fee": 3000
+      },
+      "evidence": "OBSERVED_MAINNET"
+    },
+    "agrees": true
+  }
+}

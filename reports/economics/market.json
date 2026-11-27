@@ -1,0 +1,720 @@
+{
+  "evidence": "OBSERVED_MAINNET",
+  "coverage": {
+    "version": "1.0",
+    "evidence": "OBSERVED_MAINNET",
+    "rpc": "https://mainnet.hsk.xyz",
+    "analysis_started_utc": "2026-11-27T08:34:09.464131+00:00",
+    "end_block": 30709982,
+    "end_hash": "0x14d85ce766e5dee02de58c638facd0492eb5cae3d6c7874a9485e81e2a2d6819",
+    "start_block": 29413983,
+    "gaps": [],
+    "utc_start_exclusive": "2026-10-28T08:11:39+00:00",
+    "utc_end_inclusive": "2026-11-27T08:11:39+00:00",
+    "kst_end_inclusive": "2026-11-27T17:11:39+09:00",
+    "analysis_started_kst": "2026-11-27T17:34:09.464131+09:00",
+    "unique_events": 2792,
+    "duplicate_events": 0,
+    "transactions": 2754,
+    "pool_count": 18,
+    "processed": "data/processed/swaps-30709982.json.gz"
+  },
+  "pools": {
+    "0x265aae477d9906f637b871986e5e8f05d3514800": {
+      "token0": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+      "token1": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+      "fee": 500,
+      "active_liquidity": "5254415760005734180028544928",
+      "sqrt_price_x96": "79228162640468783735534928357",
+      "tick": 0,
+      "events": 0,
+      "transactions": 0,
+      "directions": {
+        "sell_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "buy_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "indeterminate": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        }
+      },
+      "token0_trade_size_raw": null,
+      "usdt_notional_raw": null,
+      "usdt_trade_size_raw": null,
+      "unique_tx_senders": 0,
+      "largest_tx_sender_event_count": 0,
+      "largest_gap_seconds_including_window_edges": 2592000,
+      "internal_gap_seconds": null,
+      "gaps_at_least_six_hours": 1,
+      "observed_both_directions": false
+    },
+    "0x9d5efe39d8f72af6289b912d5adefcb0d5adc2e6": {
+      "token0": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+      "token1": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+      "fee": 3000,
+      "active_liquidity": "2307510000000000000115",
+      "sqrt_price_x96": "79228162514264337593543950336",
+      "tick": 0,
+      "events": 0,
+      "transactions": 0,
+      "directions": {
+        "sell_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "buy_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "indeterminate": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        }
+      },
+      "token0_trade_size_raw": null,
+      "usdt_notional_raw": null,
+      "usdt_trade_size_raw": null,
+      "unique_tx_senders": 0,
+      "largest_tx_sender_event_count": 0,
+      "largest_gap_seconds_including_window_edges": 2592000,
+      "internal_gap_seconds": null,
+      "gaps_at_least_six_hours": 1,
+      "observed_both_directions": false
+    },
+    "0x024fb33b16b668533664be2e0b79292f421a22cc": {
+      "token0": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+      "token1": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+      "fee": 3000,
+      "active_liquidity": "1546300298399640966",
+      "sqrt_price_x96": "1736643829811603882450115703882",
+      "tick": 61750,
+      "events": 0,
+      "transactions": 0,
+      "directions": {
+        "sell_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "buy_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "indeterminate": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        }
+      },
+      "token0_trade_size_raw": null,
+      "usdt_notional_raw": null,
+      "usdt_trade_size_raw": null,
+      "unique_tx_senders": 0,
+      "largest_tx_sender_event_count": 0,
+      "largest_gap_seconds_including_window_edges": 2592000,
+      "internal_gap_seconds": null,
+      "gaps_at_least_six_hours": 1,
+      "observed_both_directions": false
+    },
+    "0x4ff515761864e7838b0adb8b5b2b8b7a068905dc": {
+      "token0": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+      "token1": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+      "fee": 3000,
+      "active_liquidity": "1475813786831558685",
+      "sqrt_price_x96": "22329567307916987346357",
+      "tick": -301654,
+      "events": 2421,
+      "transactions": 2421,
+      "directions": {
+        "sell_token0": {
+          "events": 1703,
+          "token0_volume_raw": "418697831435301155190332",
+          "token1_volume_raw": "34789212658"
+        },
+        "buy_token0": {
+          "events": 718,
+          "token0_volume_raw": "152855629720255909187896",
+          "token1_volume_raw": "12683955933"
+        },
+        "indeterminate": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        }
+      },
+      "token0_trade_size_raw": {
+        "p50": "178620000000000000000",
+        "p90": "318410000000000000000",
+        "max": "6017000000000000000000"
+      },
+      "usdt_notional_raw": "47473168591",
+      "usdt_trade_size_raw": {
+        "p50": "14999062",
+        "p90": "25010930",
+        "max": "502147762"
+      },
+      "unique_tx_senders": 31,
+      "largest_tx_sender_event_count": 2304,
+      "largest_gap_seconds_including_window_edges": 159318,
+      "internal_gap_seconds": {
+        "p50": "6",
+        "p90": "916",
+        "max": "159318"
+      },
+      "gaps_at_least_six_hours": 30,
+      "observed_both_directions": true
+    },
+    "0xf5cbc1af0ab6c1a5b24c0ced9da13bbc526a7c25": {
+      "token0": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+      "token1": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+      "fee": 3000,
+      "active_liquidity": "18749999999999999990",
+      "sqrt_price_x96": "899024963526058893394734501457",
+      "tick": 48582,
+      "events": 0,
+      "transactions": 0,
+      "directions": {
+        "sell_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "buy_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "indeterminate": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        }
+      },
+      "token0_trade_size_raw": null,
+      "usdt_notional_raw": null,
+      "usdt_trade_size_raw": null,
+      "unique_tx_senders": 0,
+      "largest_tx_sender_event_count": 0,
+      "largest_gap_seconds_including_window_edges": 2592000,
+      "internal_gap_seconds": null,
+      "gaps_at_least_six_hours": 1,
+      "observed_both_directions": false
+    },
+    "0xe4badb6cd5116cdd8c7afd09a1d0b8f41573da0c": {
+      "token0": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+      "token1": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+      "fee": 3000,
+      "active_liquidity": "4907074101340",
+      "sqrt_price_x96": "1651388353167171154216",
+      "tick": -353743,
+      "events": 0,
+      "transactions": 0,
+      "directions": {
+        "sell_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "buy_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "indeterminate": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        }
+      },
+      "token0_trade_size_raw": null,
+      "usdt_notional_raw": "0",
+      "usdt_trade_size_raw": null,
+      "unique_tx_senders": 0,
+      "largest_tx_sender_event_count": 0,
+      "largest_gap_seconds_including_window_edges": 2592000,
+      "internal_gap_seconds": null,
+      "gaps_at_least_six_hours": 1,
+      "observed_both_directions": false
+    },
+    "0xb580d654ce892181937aac80ea165950cb7d0e02": {
+      "token0": "0x054ed45810dbbab8b27668922d110669c9d88d0a",
+      "token1": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+      "fee": 3000,
+      "active_liquidity": "249999999999",
+      "sqrt_price_x96": "257944478741664417464451675357173796",
+      "tick": 299933,
+      "events": 0,
+      "transactions": 0,
+      "directions": {
+        "sell_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "buy_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "indeterminate": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        }
+      },
+      "token0_trade_size_raw": null,
+      "usdt_notional_raw": null,
+      "usdt_trade_size_raw": null,
+      "unique_tx_senders": 0,
+      "largest_tx_sender_event_count": 0,
+      "largest_gap_seconds_including_window_edges": 2592000,
+      "internal_gap_seconds": null,
+      "gaps_at_least_six_hours": 1,
+      "observed_both_directions": false
+    },
+    "0x9861246b8bdf619cc0e8c0422e0a662b51a2c3f4": {
+      "token0": "0x054ed45810dbbab8b27668922d110669c9d88d0a",
+      "token1": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+      "fee": 10000,
+      "active_liquidity": "0",
+      "sqrt_price_x96": "258690224024130177430264637859036961",
+      "tick": 299991,
+      "events": 0,
+      "transactions": 0,
+      "directions": {
+        "sell_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "buy_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "indeterminate": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        }
+      },
+      "token0_trade_size_raw": null,
+      "usdt_notional_raw": null,
+      "usdt_trade_size_raw": null,
+      "unique_tx_senders": 0,
+      "largest_tx_sender_event_count": 0,
+      "largest_gap_seconds_including_window_edges": 2592000,
+      "internal_gap_seconds": null,
+      "gaps_at_least_six_hours": 1,
+      "observed_both_directions": false
+    },
+    "0xb92b79ed6b370d5cfee2e14b1d0983c258304c16": {
+      "token0": "0xefd4bc9afd210517803f293ababd701caeecdfd0",
+      "token1": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+      "fee": 3000,
+      "active_liquidity": "1012957283335421",
+      "sqrt_price_x96": "3285093576766717374997482",
+      "tick": -201824,
+      "events": 282,
+      "transactions": 282,
+      "directions": {
+        "sell_token0": {
+          "events": 162,
+          "token0_volume_raw": "7622431753725240791",
+          "token1_volume_raw": "14542436328"
+        },
+        "buy_token0": {
+          "events": 120,
+          "token0_volume_raw": "4138975195470004473",
+          "token1_volume_raw": "7633894393"
+        },
+        "indeterminate": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        }
+      },
+      "token0_trade_size_raw": {
+        "p50": "41630000000000000",
+        "p90": "60959546252824364",
+        "max": "477900000000000000"
+      },
+      "usdt_notional_raw": "22176330721",
+      "usdt_trade_size_raw": {
+        "p50": "82265956",
+        "p90": "99992653",
+        "max": "1026177245"
+      },
+      "unique_tx_senders": 19,
+      "largest_tx_sender_event_count": 204,
+      "largest_gap_seconds_including_window_edges": 212948,
+      "internal_gap_seconds": {
+        "p50": "324",
+        "p90": "26686",
+        "max": "212948"
+      },
+      "gaps_at_least_six_hours": 35,
+      "observed_both_directions": true
+    },
+    "0xd9ea2ce468957ba49ccc38c4758ed6ecd561449a": {
+      "token0": "0x6119ca49a79f5825c8b345f8d7ac36b272565b14",
+      "token1": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+      "fee": 3000,
+      "active_liquidity": "1823343427",
+      "sqrt_price_x96": "1948165021360594309184490088001",
+      "tick": 64049,
+      "events": 87,
+      "transactions": 87,
+      "directions": {
+        "sell_token0": {
+          "events": 48,
+          "token0_volume_raw": "16502603",
+          "token1_volume_raw": "11109808225"
+        },
+        "buy_token0": {
+          "events": 39,
+          "token0_volume_raw": "6476447",
+          "token1_volume_raw": "4152311421"
+        },
+        "indeterminate": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        }
+      },
+      "token0_trade_size_raw": {
+        "p50": "124493",
+        "p90": "825000",
+        "max": "1780000"
+      },
+      "usdt_notional_raw": "15262119646",
+      "usdt_trade_size_raw": {
+        "p50": "94640874",
+        "p90": "510097574",
+        "max": "1026639713"
+      },
+      "unique_tx_senders": 13,
+      "largest_tx_sender_event_count": 33,
+      "largest_gap_seconds_including_window_edges": 429618,
+      "internal_gap_seconds": {
+        "p50": "2708",
+        "p90": "74482",
+        "max": "429618"
+      },
+      "gaps_at_least_six_hours": 26,
+      "observed_both_directions": true
+    },
+    "0xa3a69eb7a1cd69008b06487dd78105f4ce5582af": {
+      "token0": "0x8024775a803f049b9505704801e32a2c8630bf2c",
+      "token1": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+      "fee": 3000,
+      "active_liquidity": "0",
+      "sqrt_price_x96": "1165275330663135435534977714510671",
+      "tick": 191932,
+      "events": 0,
+      "transactions": 0,
+      "directions": {
+        "sell_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "buy_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "indeterminate": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        }
+      },
+      "token0_trade_size_raw": null,
+      "usdt_notional_raw": "0",
+      "usdt_trade_size_raw": null,
+      "unique_tx_senders": 0,
+      "largest_tx_sender_event_count": 0,
+      "largest_gap_seconds_including_window_edges": 2592000,
+      "internal_gap_seconds": null,
+      "gaps_at_least_six_hours": 1,
+      "observed_both_directions": false
+    },
+    "0x41767b8a9959b04c7edb42ca7f0d5e97f73d719f": {
+      "token0": "0x14c8a2c497ec878c2dc1b48a5eaec6342d2b6664",
+      "token1": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+      "fee": 3000,
+      "active_liquidity": "0",
+      "sqrt_price_x96": "1399222648434462849182625558182911",
+      "tick": 195591,
+      "events": 0,
+      "transactions": 0,
+      "directions": {
+        "sell_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "buy_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "indeterminate": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        }
+      },
+      "token0_trade_size_raw": null,
+      "usdt_notional_raw": "0",
+      "usdt_trade_size_raw": null,
+      "unique_tx_senders": 0,
+      "largest_tx_sender_event_count": 0,
+      "largest_gap_seconds_including_window_edges": 2592000,
+      "internal_gap_seconds": null,
+      "gaps_at_least_six_hours": 1,
+      "observed_both_directions": false
+    },
+    "0x0f10e271790a5d56df49c42647759766d5506dbf": {
+      "token0": "0xa0f5409937f18853ef068808c81d04a76357dd93",
+      "token1": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+      "fee": 3000,
+      "active_liquidity": "0",
+      "sqrt_price_x96": "2242658256396360514931203297127959",
+      "tick": 205027,
+      "events": 0,
+      "transactions": 0,
+      "directions": {
+        "sell_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "buy_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "indeterminate": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        }
+      },
+      "token0_trade_size_raw": null,
+      "usdt_notional_raw": "0",
+      "usdt_trade_size_raw": null,
+      "unique_tx_senders": 0,
+      "largest_tx_sender_event_count": 0,
+      "largest_gap_seconds_including_window_edges": 2592000,
+      "internal_gap_seconds": null,
+      "gaps_at_least_six_hours": 1,
+      "observed_both_directions": false
+    },
+    "0x959438caea85ca4766f3ecd4f943ea9767af93ce": {
+      "token0": "0x9af0905292075ec25dfa3c9c35c498dc44cf0bbf",
+      "token1": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+      "fee": 3000,
+      "active_liquidity": "0",
+      "sqrt_price_x96": "1612977631356915820221958909713638",
+      "tick": 198435,
+      "events": 0,
+      "transactions": 0,
+      "directions": {
+        "sell_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "buy_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "indeterminate": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        }
+      },
+      "token0_trade_size_raw": null,
+      "usdt_notional_raw": "0",
+      "usdt_trade_size_raw": null,
+      "unique_tx_senders": 0,
+      "largest_tx_sender_event_count": 0,
+      "largest_gap_seconds_including_window_edges": 2592000,
+      "internal_gap_seconds": null,
+      "gaps_at_least_six_hours": 1,
+      "observed_both_directions": false
+    },
+    "0xfc777c8c5345490648d0292c5ba40661be7209ce": {
+      "token0": "0xcfbe9f732c8380d8dd6b2a2746de435f2378f62a",
+      "token1": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+      "fee": 3000,
+      "active_liquidity": "0",
+      "sqrt_price_x96": "755968059903012573096721534721666",
+      "tick": 183277,
+      "events": 0,
+      "transactions": 0,
+      "directions": {
+        "sell_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "buy_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "indeterminate": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        }
+      },
+      "token0_trade_size_raw": null,
+      "usdt_notional_raw": "0",
+      "usdt_trade_size_raw": null,
+      "unique_tx_senders": 0,
+      "largest_tx_sender_event_count": 0,
+      "largest_gap_seconds_including_window_edges": 2592000,
+      "internal_gap_seconds": null,
+      "gaps_at_least_six_hours": 1,
+      "observed_both_directions": false
+    },
+    "0x4adeba4ecec9585d4e213b051c161b3d8dce0aea": {
+      "token0": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+      "token1": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+      "fee": 10000,
+      "active_liquidity": "21523969197153205390",
+      "sqrt_price_x96": "926041015207208176867749126809",
+      "tick": 49174,
+      "events": 0,
+      "transactions": 0,
+      "directions": {
+        "sell_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "buy_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "indeterminate": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        }
+      },
+      "token0_trade_size_raw": null,
+      "usdt_notional_raw": null,
+      "usdt_trade_size_raw": null,
+      "unique_tx_senders": 0,
+      "largest_tx_sender_event_count": 0,
+      "largest_gap_seconds_including_window_edges": 2592000,
+      "internal_gap_seconds": null,
+      "gaps_at_least_six_hours": 1,
+      "observed_both_directions": false
+    },
+    "0x4e385f48d658906638029eaaa697022762f1d36b": {
+      "token0": "0x5edae85b5192b1de50b374818957032e07a78f6b",
+      "token1": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+      "fee": 3000,
+      "active_liquidity": "998302639375522762032330055387",
+      "sqrt_price_x96": "79085791756148556212807",
+      "tick": -276360,
+      "events": 0,
+      "transactions": 0,
+      "directions": {
+        "sell_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "buy_token0": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        },
+        "indeterminate": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        }
+      },
+      "token0_trade_size_raw": null,
+      "usdt_notional_raw": "0",
+      "usdt_trade_size_raw": null,
+      "unique_tx_senders": 0,
+      "largest_tx_sender_event_count": 0,
+      "largest_gap_seconds_including_window_edges": 2592000,
+      "internal_gap_seconds": null,
+      "gaps_at_least_six_hours": 1,
+      "observed_both_directions": false
+    },
+    "0x5199aa8cdd13c1f966b43f0c79eeb4893fb6394f": {
+      "token0": "0x0000000a042e2dfc9ffec9e3d0fafa3f799e7955",
+      "token1": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+      "fee": 10000,
+      "active_liquidity": "1005058332069516000",
+      "sqrt_price_x96": "79228162514266308250143170448",
+      "tick": 0,
+      "events": 2,
+      "transactions": 2,
+      "directions": {
+        "sell_token0": {
+          "events": 1,
+          "token0_volume_raw": "24749",
+          "token1_volume_raw": "24501"
+        },
+        "buy_token0": {
+          "events": 1,
+          "token0_volume_raw": "49499",
+          "token1_volume_raw": "50000"
+        },
+        "indeterminate": {
+          "events": 0,
+          "token0_volume_raw": "0",
+          "token1_volume_raw": "0"
+        }
+      },
+      "token0_trade_size_raw": {
+        "p50": "24749",
+        "p90": "24749",
+        "max": "49499"
+      },
+      "usdt_notional_raw": "74501",
+      "usdt_trade_size_raw": {
+        "p50": "24501",
+        "p90": "24501",
+        "max": "50000"
+      },
+      "unique_tx_senders": 1,
+      "largest_tx_sender_event_count": 2,
+      "largest_gap_seconds_including_window_edges": 2357178,
+      "internal_gap_seconds": {
+        "p50": "10",
+        "p90": "10",
+        "max": "10"
+      },
+      "gaps_at_least_six_hours": 2,
+      "observed_both_directions": true
+    }
+  }
+}

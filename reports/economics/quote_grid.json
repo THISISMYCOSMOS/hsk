@@ -1,0 +1,968 @@
+{
+  "evidence": "OBSERVED_MAINNET",
+  "block_number": 30709982,
+  "block_hash": "0x14d85ce766e5dee02de58c638facd0492eb5cae3d6c7874a9485e81e2a2d6819",
+  "source": "https://mainnet.hsk.xyz",
+  "pools": {
+    "0x265aae477d9906f637b871986e5e8f05d3514800": [
+      {
+        "token_in": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+        "token_out": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+        "amount_in_requested": "10000000000000000",
+        "amount_out": "9995000031823539",
+        "sqrt_after_x96": "79228162640318075165254123549",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 0.0
+      },
+      {
+        "token_in": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+        "token_out": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+        "amount_in_requested": "1000000000000000000",
+        "amount_out": "999500002994129346",
+        "sqrt_after_x96": "79228162625397926710292572424",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 0.0
+      },
+      {
+        "token_in": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+        "token_out": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+        "amount_in_requested": "100000000000000000000",
+        "amount_out": "99949998417167070557",
+        "sqrt_after_x96": "79228161133383109592548177891",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 0.00019
+      },
+      {
+        "token_in": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+        "token_out": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+        "amount_in_requested": "10000000000000000",
+        "amount_out": "9994999968138435",
+        "sqrt_after_x96": "79228162640619492305335885231",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 0.0
+      },
+      {
+        "token_in": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+        "token_out": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+        "amount_in_requested": "1000000000000000000",
+        "amount_out": "999499996625618968",
+        "sqrt_after_x96": "79228162655539640715630615801",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 0.0
+      },
+      {
+        "token_in": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+        "token_out": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+        "amount_in_requested": "100000000000000000000",
+        "amount_out": "99949997780316050839",
+        "sqrt_after_x96": "79228164147554481745103672830",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 0.00019
+      }
+    ],
+    "0x9d5efe39d8f72af6289b912d5adefcb0d5adc2e6": [
+      {
+        "token_in": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+        "token_out": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+        "amount_in_requested": "10000000000000000",
+        "amount_out": "9969956923059695",
+        "sqrt_after_x96": "79227820196628721544922811744",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 0.04321
+      },
+      {
+        "token_in": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+        "token_out": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+        "amount_in_requested": "1000000000000000000",
+        "amount_out": "996569414777603013",
+        "sqrt_after_x96": "79193945386905953345812915365",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 4.31881
+      },
+      {
+        "token_in": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+        "token_out": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+        "amount_in_requested": "100000000000000000000",
+        "amount_out": "95570700935938285401",
+        "sqrt_after_x96": "75946750505061918835853940131",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 414.17242
+      },
+      {
+        "token_in": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+        "token_out": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+        "amount_in_requested": "10000000000000000",
+        "amount_out": "9969956923059695",
+        "sqrt_after_x96": "79228504833378996778312713317",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 0.04321
+      },
+      {
+        "token_in": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+        "token_out": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+        "amount_in_requested": "1000000000000000000",
+        "amount_out": "996569414777603013",
+        "sqrt_after_x96": "79262394425730256070420248444",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 4.31881
+      },
+      {
+        "token_in": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+        "token_out": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+        "amount_in_requested": "100000000000000000000",
+        "amount_out": "95570700935938285401",
+        "sqrt_after_x96": "82651353660856185281173761199",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 414.17242
+      }
+    ],
+    "0x024fb33b16b668533664be2e0b79292f421a22cc": [
+      {
+        "token_in": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "token_out": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+        "amount_in_requested": "10000000000000000",
+        "amount_out": "4197072819747928542",
+        "sqrt_after_x96": "1521597394270369064680450005666",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 1238.28751
+      },
+      {
+        "token_in": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "token_out": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+        "amount_in_requested": "1000000000000000000",
+        "amount_out": "31654409558298516545",
+        "sqrt_after_x96": "114759188533609553303108853103",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 9339.18984
+      },
+      {
+        "token_in": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "token_out": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+        "amount_in_requested": "100000000000000000000",
+        "amount_out": "33870205361606358905",
+        "sqrt_after_x96": "1227922850876763060931780531",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 9992.92933
+      },
+      {
+        "token_in": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+        "token_out": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "amount_in_requested": "10000000000000000",
+        "amount_out": "20744600767070",
+        "sqrt_after_x96": "1737154665113831228158199241219",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 2.94064
+      },
+      {
+        "token_in": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+        "token_out": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "amount_in_requested": "1000000000000000000",
+        "amount_out": "2015776051989775",
+        "sqrt_after_x96": "1787727360034338453258469437669",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 285.74564
+      },
+      {
+        "token_in": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+        "token_out": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "amount_in_requested": "100000000000000000000",
+        "amount_out": "52646598350829169",
+        "sqrt_after_x96": "6844996852085060963205098996382",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 7462.90047
+      }
+    ],
+    "0x4ff515761864e7838b0adb8b5b2b8b7a068905dc": [
+      {
+        "token_in": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "10000000000000000",
+        "amount_out": "791",
+        "sqrt_after_x96": "22329567265401748250677",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 11.96909
+      },
+      {
+        "token_in": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "1000000000000000000",
+        "amount_out": "79194",
+        "sqrt_after_x96": "22329563056393879168550",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 0.09963
+      },
+      {
+        "token_in": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "100000000000000000000",
+        "amount_out": "7919328",
+        "sqrt_after_x96": "22329142163619919543721",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 0.19054
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "amount_in_requested": "10000",
+        "amount_out": "125514442148990078",
+        "sqrt_after_x96": "22329567843150353042899",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 0.00024
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "amount_in_requested": "1000000",
+        "amount_out": "12551414430370825386",
+        "sqrt_after_x96": "22329620831253557000646",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 0.02397
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "amount_in_requested": "100000000",
+        "amount_out": "1254843669123468736568",
+        "sqrt_after_x96": "22334919641573952775273",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 2.3964
+      }
+    ],
+    "0xf5cbc1af0ab6c1a5b24c0ced9da13bbc526a7c25": [
+      {
+        "token_in": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "token_out": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+        "amount_in_requested": "10000000000000000",
+        "amount_out": "1276047820492469596",
+        "sqrt_after_x96": "893633020907501550026785558186",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 59.97545
+      },
+      {
+        "token_in": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "token_out": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+        "amount_in_requested": "1000000000000000000",
+        "amount_out": "80065396511947598767",
+        "sqrt_after_x96": "560708470373120365636867747187",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 3763.14904
+      },
+      {
+        "token_in": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "token_out": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+        "amount_in_requested": "100000000000000000000",
+        "amount_out": "209292979060746896018",
+        "sqrt_after_x96": "14657061759692057794339664205",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 9836.96713
+      },
+      {
+        "token_in": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+        "token_out": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "amount_in_requested": "10000000000000000",
+        "amount_out": "77426650695763",
+        "sqrt_after_x96": "899067091781006478218533376962",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 0.46858
+      },
+      {
+        "token_in": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+        "token_out": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "amount_in_requested": "1000000000000000000",
+        "amount_out": "7706913341485535",
+        "sqrt_after_x96": "903237789020817375774622052040",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 46.64138
+      },
+      {
+        "token_in": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+        "token_out": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "amount_in_requested": "100000000000000000000",
+        "amount_out": "527238942306039832",
+        "sqrt_after_x96": "1320307513001907131383489559764",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 3190.79113
+      }
+    ],
+    "0xe4badb6cd5116cdd8c7afd09a1d0b8f41573da0c": [
+      {
+        "token_in": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "10000000000000000",
+        "amount_out": "4",
+        "sqrt_after_x96": "1651318421641790878641",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 765.241
+      },
+      {
+        "token_in": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "1000000000000000000",
+        "amount_out": "431",
+        "sqrt_after_x96": "1644424396071875681329",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 49.54718
+      },
+      {
+        "token_in": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "100000000000000000000",
+        "amount_out": "30428",
+        "sqrt_after_x96": "1160099098960594637249",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 2975.11883
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+        "amount_in_requested": "10000",
+        "amount_out": "20907644804465623999",
+        "sqrt_after_x96": "1812338528385637555398",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 889.35295
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+        "amount_in_requested": "1000000",
+        "amount_out": "213520477681417913811",
+        "sqrt_after_x96": "17748598910189258997250",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 9069.57014
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+        "amount_in_requested": "100000000",
+        "amount_out": "235183947978915394747",
+        "sqrt_after_x96": "1611377871263207983474514",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 9989.7517
+      }
+    ],
+    "0xb580d654ce892181937aac80ea165950cb7d0e02": [
+      {
+        "token_in": "0x054ed45810dbbab8b27668922d110669c9d88d0a",
+        "token_out": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "amount_in_requested": "10000",
+        "amount_out": "93534598813987009",
+        "sqrt_after_x96": "228302181159381531613691423353362673",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 1149.17356
+      },
+      {
+        "token_in": "0x054ed45810dbbab8b27668922d110669c9d88d0a",
+        "token_out": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "amount_in_requested": "1000000",
+        "amount_out": "755723850931880148",
+        "sqrt_after_x96": "18446030430559715276519121981198630",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 9284.88701
+      },
+      {
+        "token_in": "0x054ed45810dbbab8b27668922d110669c9d88d0a",
+        "token_out": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "amount_in_requested": "100000000",
+        "amount_out": "813302861728481137",
+        "sqrt_after_x96": "198513531271988045211474206542510",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 9992.30402
+      },
+      {
+        "token_in": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "token_out": "0x054ed45810dbbab8b27668922d110669c9d88d0a",
+        "amount_in_requested": "10000000000000000",
+        "amount_out": "929",
+        "sqrt_after_x96": "261104097862745917724166534097612335",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 123.25455
+      },
+      {
+        "token_in": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "token_out": "0x054ed45810dbbab8b27668922d110669c9d88d0a",
+        "amount_in_requested": "1000000000000000000",
+        "amount_out": "42274",
+        "sqrt_after_x96": "573906390849814442973004096981928316",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 5505.6024
+      },
+      {
+        "token_in": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "token_out": "0x054ed45810dbbab8b27668922d110669c9d88d0a",
+        "amount_in_requested": "100000000000000000000",
+        "amount_out": "76163",
+        "sqrt_after_x96": "31854135689556667012418572518000891327",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 9919.02663
+      }
+    ],
+    "0x9861246b8bdf619cc0e8c0422e0a662b51a2c3f4": [
+      {
+        "token_in": "0x054ed45810dbbab8b27668922d110669c9d88d0a",
+        "token_out": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "amount_in_requested": "10000",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0x054ed45810dbbab8b27668922d110669c9d88d0a",
+        "token_out": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "amount_in_requested": "1000000",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0x054ed45810dbbab8b27668922d110669c9d88d0a",
+        "token_out": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "amount_in_requested": "100000000",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "token_out": "0x054ed45810dbbab8b27668922d110669c9d88d0a",
+        "amount_in_requested": "10000000000000000",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "token_out": "0x054ed45810dbbab8b27668922d110669c9d88d0a",
+        "amount_in_requested": "1000000000000000000",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "token_out": "0x054ed45810dbbab8b27668922d110669c9d88d0a",
+        "amount_in_requested": "100000000000000000000",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      }
+    ],
+    "0xb92b79ed6b370d5cfee2e14b1d0983c258304c16": [
+      {
+        "token_in": "0xefd4bc9afd210517803f293ababd701caeecdfd0",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "10000000000000000",
+        "amount_out": "17133823",
+        "sqrt_after_x96": "3283753459720100915952431",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 4.07946
+      },
+      {
+        "token_in": "0xefd4bc9afd210517803f293ababd701caeecdfd0",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "1000000000000000000",
+        "amount_out": "1646871846",
+        "sqrt_after_x96": "3156283969019671282543422",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 392.10332
+      },
+      {
+        "token_in": "0xefd4bc9afd210517803f293ababd701caeecdfd0",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "100000000000000000000",
+        "amount_out": "33734773101",
+        "sqrt_after_x96": "646538003177620273179615",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 8031.90385
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0xefd4bc9afd210517803f293ababd701caeecdfd0",
+        "amount_in_requested": "10000",
+        "amount_out": "5799075093679",
+        "sqrt_after_x96": "3285094356567399261850475",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 0.00237
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0xefd4bc9afd210517803f293ababd701caeecdfd0",
+        "amount_in_requested": "1000000",
+        "amount_out": "579893881764585",
+        "sqrt_after_x96": "3285171556834906060296789",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 0.23737
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0xefd4bc9afd210517803f293ababd701caeecdfd0",
+        "amount_in_requested": "100000000",
+        "amount_out": "57853434830709325",
+        "sqrt_after_x96": "3292891583585585904928259",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 23.68133
+      }
+    ],
+    "0xd9ea2ce468957ba49ccc38c4758ed6ecd561449a": [
+      {
+        "token_in": "0x6119ca49a79f5825c8b345f8d7ac36b272565b14",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "1000000",
+        "amount_out": "594822146",
+        "sqrt_after_x96": "1922318729882698182486845185898",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 132.66993
+      },
+      {
+        "token_in": "0x6119ca49a79f5825c8b345f8d7ac36b272565b14",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "100000000",
+        "amount_out": "25711672815",
+        "sqrt_after_x96": "830937974491175177005707327376",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 5734.76603
+      },
+      {
+        "token_in": "0x6119ca49a79f5825c8b345f8d7ac36b272565b14",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "10000000000",
+        "amount_out": "44503741005",
+        "sqrt_after_x96": "14382513408618199523681749433",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 9926.17405
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0x6119ca49a79f5825c8b345f8d7ac36b272565b14",
+        "amount_in_requested": "10000",
+        "amount_out": "16",
+        "sqrt_after_x96": "1948165454578368081440201193615",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 296.75181
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0x6119ca49a79f5825c8b345f8d7ac36b272565b14",
+        "amount_in_requested": "1000000",
+        "amount_out": "1648",
+        "sqrt_after_x96": "1948208343137971534755600649455",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 5.65437
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0x6119ca49a79f5825c8b345f8d7ac36b272565b14",
+        "amount_in_requested": "100000000",
+        "amount_out": "164527",
+        "sqrt_after_x96": "1952497199098316866295546233458",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 22.21053
+      }
+    ],
+    "0xa3a69eb7a1cd69008b06487dd78105f4ce5582af": [
+      {
+        "token_in": "0x8024775a803f049b9505704801e32a2c8630bf2c",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "1",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0x8024775a803f049b9505704801e32a2c8630bf2c",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "1",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0x8024775a803f049b9505704801e32a2c8630bf2c",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "100",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0x8024775a803f049b9505704801e32a2c8630bf2c",
+        "amount_in_requested": "10000",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0x8024775a803f049b9505704801e32a2c8630bf2c",
+        "amount_in_requested": "1000000",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0x8024775a803f049b9505704801e32a2c8630bf2c",
+        "amount_in_requested": "100000000",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      }
+    ],
+    "0x41767b8a9959b04c7edb42ca7f0d5e97f73d719f": [
+      {
+        "token_in": "0x14c8a2c497ec878c2dc1b48a5eaec6342d2b6664",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "1",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0x14c8a2c497ec878c2dc1b48a5eaec6342d2b6664",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "1",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0x14c8a2c497ec878c2dc1b48a5eaec6342d2b6664",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "100",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0x14c8a2c497ec878c2dc1b48a5eaec6342d2b6664",
+        "amount_in_requested": "10000",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0x14c8a2c497ec878c2dc1b48a5eaec6342d2b6664",
+        "amount_in_requested": "1000000",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0x14c8a2c497ec878c2dc1b48a5eaec6342d2b6664",
+        "amount_in_requested": "100000000",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      }
+    ],
+    "0x0f10e271790a5d56df49c42647759766d5506dbf": [
+      {
+        "token_in": "0xa0f5409937f18853ef068808c81d04a76357dd93",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "1",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0xa0f5409937f18853ef068808c81d04a76357dd93",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "1",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0xa0f5409937f18853ef068808c81d04a76357dd93",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "100",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0xa0f5409937f18853ef068808c81d04a76357dd93",
+        "amount_in_requested": "10000",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0xa0f5409937f18853ef068808c81d04a76357dd93",
+        "amount_in_requested": "1000000",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0xa0f5409937f18853ef068808c81d04a76357dd93",
+        "amount_in_requested": "100000000",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      }
+    ],
+    "0x959438caea85ca4766f3ecd4f943ea9767af93ce": [
+      {
+        "token_in": "0x9af0905292075ec25dfa3c9c35c498dc44cf0bbf",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "1",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0x9af0905292075ec25dfa3c9c35c498dc44cf0bbf",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "1",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0x9af0905292075ec25dfa3c9c35c498dc44cf0bbf",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "100",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0x9af0905292075ec25dfa3c9c35c498dc44cf0bbf",
+        "amount_in_requested": "10000",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0x9af0905292075ec25dfa3c9c35c498dc44cf0bbf",
+        "amount_in_requested": "1000000",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0x9af0905292075ec25dfa3c9c35c498dc44cf0bbf",
+        "amount_in_requested": "100000000",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      }
+    ],
+    "0xfc777c8c5345490648d0292c5ba40661be7209ce": [
+      {
+        "token_in": "0xcfbe9f732c8380d8dd6b2a2746de435f2378f62a",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "1",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0xcfbe9f732c8380d8dd6b2a2746de435f2378f62a",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "1",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0xcfbe9f732c8380d8dd6b2a2746de435f2378f62a",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "100",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0xcfbe9f732c8380d8dd6b2a2746de435f2378f62a",
+        "amount_in_requested": "10000",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0xcfbe9f732c8380d8dd6b2a2746de435f2378f62a",
+        "amount_in_requested": "1000000",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0xcfbe9f732c8380d8dd6b2a2746de435f2378f62a",
+        "amount_in_requested": "100000000",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      }
+    ],
+    "0x4adeba4ecec9585d4e213b051c161b3d8dce0aea": [
+      {
+        "token_in": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "token_out": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+        "amount_in_requested": "10000000000000000",
+        "amount_out": "1345265286543655455",
+        "sqrt_after_x96": "921089191694973456680507800590",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 53.47305
+      },
+      {
+        "token_in": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "token_out": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+        "amount_in_requested": "1000000000000000000",
+        "amount_out": "87961297951860275844",
+        "sqrt_after_x96": "602261885751041447099464219108",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 3496.38001
+      },
+      {
+        "token_in": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "token_out": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+        "amount_in_requested": "100000000000000000000",
+        "amount_out": "246984044416923955900",
+        "sqrt_after_x96": "16910741406108336915355799193",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 9817.38669
+      },
+      {
+        "token_in": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+        "token_out": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "amount_in_requested": "10000000000000000",
+        "amount_out": "72463086324651",
+        "sqrt_after_x96": "926077456385956702371744896978",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 0.3935
+      },
+      {
+        "token_in": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+        "token_out": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "amount_in_requested": "1000000000000000000",
+        "amount_out": "7218189070415780",
+        "sqrt_after_x96": "929685133082060727267326143758",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 39.19733
+      },
+      {
+        "token_in": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+        "token_out": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+        "amount_in_requested": "100000000000000000000",
+        "amount_out": "520022355915656961",
+        "sqrt_after_x96": "1290452802692463216820634659845",
+        "initialized_ticks": 0,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 2823.90636
+      }
+    ],
+    "0x4e385f48d658906638029eaaa697022762f1d36b": [
+      {
+        "token_in": "0x5edae85b5192b1de50b374818957032e07a78f6b",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "10000000000000000",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0x5edae85b5192b1de50b374818957032e07a78f6b",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "1000000000000000000",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0x5edae85b5192b1de50b374818957032e07a78f6b",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "100000000000000000000",
+        "error": "eth_call: {'code': 3, 'message': 'execution reverted: Unexpected error', 'data': '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010556e6578706563746564206572726f7200000000000000000000000000000000'}"
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0x5edae85b5192b1de50b374818957032e07a78f6b",
+        "amount_in_requested": "10000",
+        "amount_out": "10002794643123617",
+        "sqrt_after_x96": "79085791756148556213598",
+        "initialized_ticks": 1,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 3.13193
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0x5edae85b5192b1de50b374818957032e07a78f6b",
+        "amount_in_requested": "1000000",
+        "amount_out": "1000582962506337667",
+        "sqrt_after_x96": "79085791756148556291931",
+        "initialized_ticks": 1,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 0.09874
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0x5edae85b5192b1de50b374818957032e07a78f6b",
+        "amount_in_requested": "100000000",
+        "amount_out": "100059282619764178652",
+        "sqrt_after_x96": "79085791756148564125285",
+        "initialized_ticks": 1,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 0.00017
+      }
+    ],
+    "0x5199aa8cdd13c1f966b43f0c79eeb4893fb6394f": [
+      {
+        "token_in": "0x0000000a042e2dfc9ffec9e3d0fafa3f799e7955",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "10000",
+        "amount_out": "9900",
+        "sqrt_after_x96": "79228162514265527838913430007",
+        "initialized_ticks": 1,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 0.0
+      },
+      {
+        "token_in": "0x0000000a042e2dfc9ffec9e3d0fafa3f799e7955",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "1000000",
+        "amount_out": "24998",
+        "sqrt_after_x96": "4295128740",
+        "initialized_ticks": 1,
+        "price_limit_hit": true,
+        "fee_exclusive_impact_bps": null
+      },
+      {
+        "token_in": "0x0000000a042e2dfc9ffec9e3d0fafa3f799e7955",
+        "token_out": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "amount_in_requested": "100000000",
+        "amount_out": "24998",
+        "sqrt_after_x96": "4295128740",
+        "initialized_ticks": 1,
+        "price_limit_hit": true,
+        "fee_exclusive_impact_bps": null
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0x0000000a042e2dfc9ffec9e3d0fafa3f799e7955",
+        "amount_in_requested": "10000",
+        "amount_out": "9899",
+        "sqrt_after_x96": "79228162514267088661372910858",
+        "initialized_ticks": 1,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 1.0101
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0x0000000a042e2dfc9ffec9e3d0fafa3f799e7955",
+        "amount_in_requested": "1000000",
+        "amount_out": "989999",
+        "sqrt_after_x96": "79228162514344349373117211508",
+        "initialized_ticks": 1,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 0.0101
+      },
+      {
+        "token_in": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+        "token_out": "0x0000000a042e2dfc9ffec9e3d0fafa3f799e7955",
+        "amount_in_requested": "100000000",
+        "amount_out": "98999999",
+        "sqrt_after_x96": "79228162522070420547547276492",
+        "initialized_ticks": 1,
+        "price_limit_hit": false,
+        "fee_exclusive_impact_bps": 0.0001
+      }
+    ]
+  }
+}

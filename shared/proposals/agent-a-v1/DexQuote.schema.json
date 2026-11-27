@@ -1,0 +1,172 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DexQuote proposed 1.0",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": [
+        "version",
+        "chain_id",
+        "source",
+        "queried_at",
+        "evidence",
+        "block_number",
+        "block_hash",
+        "error",
+        "data"
+      ],
+      "properties": {
+        "version": {
+          "const": "1.0"
+        },
+        "chain_id": {
+          "const": 177
+        },
+        "source": {
+          "type": "string"
+        },
+        "queried_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "evidence": {
+          "const": "OBSERVED_MAINNET"
+        },
+        "block_number": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "block_hash": {
+          "type": "string",
+          "pattern": "^0x[0-9a-fA-F]{64}$"
+        },
+        "error": {
+          "const": null
+        },
+        "data": {
+          "type": "object",
+          "required": [
+            "kind",
+            "pool",
+            "token_in",
+            "token_out",
+            "amount_in",
+            "amount_out",
+            "sqrt_price_after_x96",
+            "initialized_ticks_crossed",
+            "quoter_gas",
+            "fee"
+          ],
+          "properties": {
+            "kind": {
+              "enum": [
+                "exact_in",
+                "exact_out"
+              ]
+            },
+            "pool": {
+              "type": "string",
+              "pattern": "^0x[0-9a-fA-F]{40}$"
+            },
+            "token_in": {
+              "type": "string",
+              "pattern": "^0x[0-9a-fA-F]{40}$"
+            },
+            "token_out": {
+              "type": "string",
+              "pattern": "^0x[0-9a-fA-F]{40}$"
+            },
+            "amount_in": {
+              "type": "string",
+              "pattern": "^(0|[1-9][0-9]{0,77})$"
+            },
+            "amount_out": {
+              "type": "string",
+              "pattern": "^(0|[1-9][0-9]{0,77})$"
+            },
+            "sqrt_price_after_x96": {
+              "type": "string",
+              "pattern": "^(0|[1-9][0-9]{0,77})$"
+            },
+            "initialized_ticks_crossed": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "quoter_gas": {
+              "type": "string",
+              "pattern": "^(0|[1-9][0-9]{0,77})$"
+            },
+            "fee": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "required": [
+        "version",
+        "chain_id",
+        "source",
+        "queried_at",
+        "evidence",
+        "block_number",
+        "block_hash",
+        "error",
+        "data"
+      ],
+      "properties": {
+        "version": {
+          "const": "1.0"
+        },
+        "chain_id": {
+          "const": 177
+        },
+        "source": {
+          "type": "string"
+        },
+        "queried_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "evidence": {
+          "const": "UNVERIFIED"
+        },
+        "block_number": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "const": null
+            }
+          ]
+        },
+        "block_hash": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^0x[0-9a-fA-F]{64}$"
+            },
+            {
+              "const": null
+            }
+          ]
+        },
+        "error": {
+          "type": "string",
+          "minLength": 1
+        },
+        "data": {
+          "const": null
+        }
+      },
+      "additionalProperties": false
+    }
+  ]
+}

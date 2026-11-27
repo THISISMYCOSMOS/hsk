@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "evidence": "OBSERVED_MAINNET",
+  "rpc": "https://mainnet.hsk.xyz",
+  "analysis_started_utc": "2026-11-27T08:34:09.464131+00:00",
+  "end_block": 30709982,
+  "end_hash": "0x14d85ce766e5dee02de58c638facd0492eb5cae3d6c7874a9485e81e2a2d6819",
+  "start_block": 29413983,
+  "gaps": [],
+  "utc_start_exclusive": "2026-10-28T08:11:39+00:00",
+  "utc_end_inclusive": "2026-11-27T08:11:39+00:00",
+  "kst_end_inclusive": "2026-11-27T17:11:39+09:00",
+  "analysis_started_kst": "2026-11-27T17:34:09.464131+09:00",
+  "unique_events": 2792,
+  "duplicate_events": 0,
+  "transactions": 2754,
+  "pool_count": 18,
+  "processed": "data/processed/swaps-30709982.json.gz"
+}
