@@ -1,0 +1,160 @@
+{
+  "version": "1.0",
+  "block_number": 30709982,
+  "block_hash": "0x14d85ce766e5dee02de58c638facd0492eb5cae3d6c7874a9485e81e2a2d6819",
+  "rpc": "https://mainnet.hsk.xyz",
+  "queried_at": "2026-11-27T08:37:21.726129+00:00",
+  "contracts": {
+    "WHSK": {
+      "address": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+      "source": "https://docs.hskchain.net/docs/Build-on-HashKey-Chain/Token-Contracts",
+      "bytecode_bytes": 3143,
+      "code_sha256": "81e4d563013c89aa95c8d595bbebef16fc7d732f54a0894790add820a230928b",
+      "calls": {
+        "decimals": {
+          "calldata": "0x313ce567",
+          "response": "0x0000000000000000000000000000000000000000000000000000000000000012"
+        },
+        "symbol": {
+          "calldata": "0x95d89b41",
+          "response": "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000045748534b00000000000000000000000000000000000000000000000000000000"
+        }
+      },
+      "read_verified": true,
+      "abi_source": "https://hsk.blockscout.com/api/v2/smart-contracts/0xb210d2120d57b758ee163cffb43e73728c471cf1",
+      "abi_address": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+      "abi_file": "config/network/abi/WHSK.json",
+      "abi_sha256": "02cdd18f3105cba41020314b4093ad746f1246796fd5daa97c9586ae2453689c"
+    },
+    "USDT": {
+      "address": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+      "source": "https://docs.hskchain.net/docs/Build-on-HashKey-Chain/Token-Contracts",
+      "bytecode_bytes": 5076,
+      "code_sha256": "3525453e931592f0526a99c7c396e337cff94d583c26575de93298235c276876",
+      "calls": {
+        "decimals": {
+          "calldata": "0x313ce567",
+          "response": "0x0000000000000000000000000000000000000000000000000000000000000006"
+        },
+        "symbol": {
+          "calldata": "0x95d89b41",
+          "response": "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000045553445400000000000000000000000000000000000000000000000000000000"
+        }
+      },
+      "read_verified": true,
+      "abi_source": "https://hsk.blockscout.com/api/v2/smart-contracts/0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+      "abi_address": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+      "abi_file": "config/network/abi/USDT.json",
+      "abi_sha256": "ef5dcfe2651626906d409cf7e9d4ed17701b93b62a420eeecbc0d357f242e70a"
+    },
+    "factory": {
+      "address": "0x972ca9d1662f5e029cd18327d29026532e84c742",
+      "source": "backtests/HSK_B_Session1_Verified.zip!raw/HSKSwap_mainnet_handoff.zip!contracts.json",
+      "bytecode_bytes": 24535,
+      "code_sha256": "4a66401a619d34c9bcb1ff656996f3673f8dc90b6f1489f923c5054e912d15ad",
+      "calls": {
+        "getPool": {
+          "calldata": "0x1698ee82000000000000000000000000b210d2120d57b758ee163cffb43e73728c471cf1000000000000000000000000f1b50ed67a9e2cc94ad3c477779e2d4cbfff90290000000000000000000000000000000000000000000000000000000000000bb8",
+          "response": "0x0000000000000000000000004ff515761864e7838b0adb8b5b2b8b7a068905dc"
+        }
+      },
+      "read_verified": true,
+      "abi_source": "https://hsk.blockscout.com/api/v2/smart-contracts/0x972ca9d1662f5e029cd18327d29026532e84c742",
+      "abi_address": "0x972ca9d1662f5e029cd18327d29026532e84c742",
+      "abi_file": "config/network/abi/factory.json",
+      "abi_sha256": "e7bc37747d630760309798f36ea2ccf159a4a3ccc1d5966fe3d6de9d791a6344"
+    },
+    "pool": {
+      "address": "0x4ff515761864e7838b0adb8b5b2b8b7a068905dc",
+      "source": "backtests/HSK_B_Session1_Verified.zip!raw/HSKSwap_mainnet_handoff.zip!contracts.json",
+      "bytecode_bytes": 22142,
+      "code_sha256": "a995dd1c6074e17d3e6f5e2aa7f65106e16719018f9aac21c7f8e618ee75826e",
+      "calls": {
+        "token0": {
+          "calldata": "0x0dfe1681",
+          "response": "0x000000000000000000000000b210d2120d57b758ee163cffb43e73728c471cf1"
+        },
+        "token1": {
+          "calldata": "0xd21220a7",
+          "response": "0x000000000000000000000000f1b50ed67a9e2cc94ad3c477779e2d4cbfff9029"
+        },
+        "fee": {
+          "calldata": "0xddca3f43",
+          "response": "0x0000000000000000000000000000000000000000000000000000000000000bb8"
+        },
+        "liquidity": {
+          "calldata": "0x1a686502",
+          "response": "0x000000000000000000000000000000000000000000000000147b24d1e6b8181d"
+        },
+        "slot0": {
+          "calldata": "0x3850c7bd",
+          "response": "0x0000000000000000000000000000000000000000000004ba7cff376eb7902db5fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffb65aa00000000000000000000000000000000000000000000000000000000000000de00000000000000000000000000000000000000000000000000000000000000f000000000000000000000000000000000000000000000000000000000000000f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001"
+        }
+      },
+      "read_verified": true,
+      "abi_source": "https://hsk.blockscout.com/api/v2/smart-contracts/0x4ff515761864e7838b0adb8b5b2b8b7a068905dc",
+      "abi_address": "0x4ff515761864e7838b0adb8b5b2b8b7a068905dc",
+      "abi_file": "config/network/abi/pool.json",
+      "abi_sha256": "9d1766d41740ef26f2c06eaec0715f06cb0886c018c72a4e2a1f5d584b4b5024"
+    },
+    "router": {
+      "address": "0x2c16f75b95cf1390c328ab70e2cee7f4b80bd8f3",
+      "source": "backtests/HSK_B_Session1_Verified.zip!raw/HSKSwap_mainnet_handoff.zip!contracts.json",
+      "bytecode_bytes": 24497,
+      "code_sha256": "c7b07c49bdfeb39e9acf5776d1f177e9181d7b6b29090697f0d165da03f2d934",
+      "calls": {
+        "factory": {
+          "calldata": "0xc45a0155",
+          "response": "0x000000000000000000000000972ca9d1662f5e029cd18327d29026532e84c742"
+        }
+      },
+      "read_verified": true,
+      "abi_source": "https://hsk.blockscout.com/api/v2/smart-contracts/0x2c16f75b95cf1390c328ab70e2cee7f4b80bd8f3",
+      "abi_address": "0x2c16f75b95cf1390c328ab70e2cee7f4b80bd8f3",
+      "abi_file": "config/network/abi/router.json",
+      "abi_sha256": "08d0321b05b9824f82f7df69cf65a6b712926936c2cb5ad57499a2f23342bf4c"
+    },
+    "quoter": {
+      "address": "0x603f70466fddbe3f238220b9a74fff419a2bbfdd",
+      "source": "backtests/HSK_B_Session1_Verified.zip!raw/HSKSwap_mainnet_handoff.zip!contracts.json",
+      "bytecode_bytes": 8273,
+      "code_sha256": "71345f7d5a5e6ffbba95178535449e8206ca3c246b1ef798557d56808cbbc71e",
+      "calls": {
+        "factory": {
+          "calldata": "0xc45a0155",
+          "response": "0x000000000000000000000000972ca9d1662f5e029cd18327d29026532e84c742"
+        },
+        "quoteExactInputSingle": {
+          "calldata": "0xc6a5026a000000000000000000000000b210d2120d57b758ee163cffb43e73728c471cf1000000000000000000000000f1b50ed67a9e2cc94ad3c477779e2d4cbfff90290000000000000000000000000000000000000000000000000de0b6b3a76400000000000000000000000000000000000000000000000000000000000000000bb80000000000000000000000000000000000000000000000000000000000000000",
+          "response": "0x000000000000000000000000000000000000000000000000000000000001355a0000000000000000000000000000000000000000000004ba7cf01cb1daf22626000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000120b2"
+        }
+      },
+      "read_verified": true,
+      "abi_source": "https://hsk.blockscout.com/api/v2/smart-contracts/0x603f70466fddbe3f238220b9a74fff419a2bbfdd",
+      "abi_address": "0x603f70466fddbe3f238220b9a74fff419a2bbfdd",
+      "abi_file": "config/network/abi/quoter.json",
+      "abi_sha256": "f1555bb6191aba0368f54cc245c9827382cb10a5d188f81d6b3f1507d3bf22db"
+    },
+    "oracle": {
+      "address": "0x420000000000000000000000000000000000000f",
+      "source": "https://specs.optimism.io/protocol/predeploys.html",
+      "bytecode_bytes": 2059,
+      "code_sha256": "30ccc4ce49c00fae11d7118fc244f29a13788fb32cd4022ee69acc2f15c0e2f5",
+      "calls": {
+        "version": {
+          "calldata": "0x54fd4d50",
+          "response": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000c312e332e312d626574612e310000000000000000000000000000000000000000"
+        },
+        "l1BaseFee": {
+          "calldata": "0x519b4bd3",
+          "response": "0x000000000000000000000000000000000000000000000000000000000ccac8a8"
+        }
+      },
+      "read_verified": true,
+      "abi_source": "https://hsk.blockscout.com/api/v2/smart-contracts/0x4f1db3c6abd250ba86e0928471a8f7db3afd88f1",
+      "abi_address": "0x4f1db3c6abd250ba86e0928471a8f7db3afd88f1",
+      "abi_file": "config/network/abi/oracle.json",
+      "abi_sha256": "ce6d0d2d39414771ffb00350a9caa304dc40bca47ed6e425148f710d7b78353f"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "url": "wss://mainnet.hsk.xyz",
+  "queried_at": "2026-11-27T08:41:35.018Z",
+  "method": "eth_subscribe",
+  "evidence": "UNVERIFIED",
+  "error": "Received network error or non-101 status code."
+}

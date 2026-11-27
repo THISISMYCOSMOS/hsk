@@ -1,0 +1,147 @@
+{
+  "evidence": "BACKTEST",
+  "realized_profit": null,
+  "scenarios": [
+    {
+      "hours": 0,
+      "order_origin": "SYNTHETIC",
+      "matched_cash_raw": "0",
+      "fills": 0,
+      "fixed_assumed_monthly_usdt_raw": "0",
+      "successful_settlement_cost_raw": "27698",
+      "break_even_fee_bps": null,
+      "modeled_operator_profit_raw": {
+        "5": "0",
+        "10": "0",
+        "30": "0"
+      }
+    },
+    {
+      "hours": 0,
+      "order_origin": "SYNTHETIC",
+      "matched_cash_raw": "0",
+      "fills": 0,
+      "fixed_assumed_monthly_usdt_raw": "10000000",
+      "successful_settlement_cost_raw": "27698",
+      "break_even_fee_bps": null,
+      "modeled_operator_profit_raw": {
+        "5": "-10000000",
+        "10": "-10000000",
+        "30": "-10000000"
+      }
+    },
+    {
+      "hours": 1,
+      "order_origin": "SYNTHETIC",
+      "matched_cash_raw": "49959567",
+      "fills": 45,
+      "fixed_assumed_monthly_usdt_raw": "0",
+      "successful_settlement_cost_raw": "27698",
+      "break_even_fee_bps": 250,
+      "modeled_operator_profit_raw": {
+        "5": "-1221431",
+        "10": "-1196451",
+        "30": "-1096532"
+      }
+    },
+    {
+      "hours": 1,
+      "order_origin": "SYNTHETIC",
+      "matched_cash_raw": "49959567",
+      "fills": 45,
+      "fixed_assumed_monthly_usdt_raw": "10000000",
+      "successful_settlement_cost_raw": "27698",
+      "break_even_fee_bps": 2252,
+      "modeled_operator_profit_raw": {
+        "5": "-11221431",
+        "10": "-11196451",
+        "30": "-11096532"
+      }
+    },
+    {
+      "hours": 6,
+      "order_origin": "SYNTHETIC",
+      "matched_cash_raw": "439173889",
+      "fills": 91,
+      "fixed_assumed_monthly_usdt_raw": "0",
+      "successful_settlement_cost_raw": "27698",
+      "break_even_fee_bps": 58,
+      "modeled_operator_profit_raw": {
+        "5": "-2300932",
+        "10": "-2081345",
+        "30": "-1202997"
+      }
+    },
+    {
+      "hours": 6,
+      "order_origin": "SYNTHETIC",
+      "matched_cash_raw": "439173889",
+      "fills": 91,
+      "fixed_assumed_monthly_usdt_raw": "10000000",
+      "successful_settlement_cost_raw": "27698",
+      "break_even_fee_bps": 286,
+      "modeled_operator_profit_raw": {
+        "5": "-12300932",
+        "10": "-12081345",
+        "30": "-11202997"
+      }
+    },
+    {
+      "hours": 12,
+      "order_origin": "SYNTHETIC",
+      "matched_cash_raw": "670958778",
+      "fills": 104,
+      "fixed_assumed_monthly_usdt_raw": "0",
+      "successful_settlement_cost_raw": "27698",
+      "break_even_fee_bps": 43,
+      "modeled_operator_profit_raw": {
+        "5": "-2545113",
+        "10": "-2209634",
+        "30": "-867716"
+      }
+    },
+    {
+      "hours": 12,
+      "order_origin": "SYNTHETIC",
+      "matched_cash_raw": "670958778",
+      "fills": 104,
+      "fixed_assumed_monthly_usdt_raw": "10000000",
+      "successful_settlement_cost_raw": "27698",
+      "break_even_fee_bps": 192,
+      "modeled_operator_profit_raw": {
+        "5": "-12545113",
+        "10": "-12209634",
+        "30": "-10867716"
+      }
+    },
+    {
+      "hours": 24,
+      "order_origin": "SYNTHETIC",
+      "matched_cash_raw": "1131550192",
+      "fills": 121,
+      "fixed_assumed_monthly_usdt_raw": "0",
+      "successful_settlement_cost_raw": "27698",
+      "break_even_fee_bps": 30,
+      "modeled_operator_profit_raw": {
+        "5": "-2785683",
+        "10": "-2219908",
+        "30": "43192"
+      }
+    },
+    {
+      "hours": 24,
+      "order_origin": "SYNTHETIC",
+      "matched_cash_raw": "1131550192",
+      "fills": 121,
+      "fixed_assumed_monthly_usdt_raw": "10000000",
+      "successful_settlement_cost_raw": "27698",
+      "break_even_fee_bps": 118,
+      "modeled_operator_profit_raw": {
+        "5": "-12785683",
+        "10": "-12219908",
+        "30": "-9956808"
+      }
+    }
+  ],
+  "note": "One reference hybrid transaction per pair fill; no batching, cancellations or failed submission in this sensitivity. Fixed monthly spending is hypothetical."
+}

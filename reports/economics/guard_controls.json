@@ -1,0 +1,111 @@
+{
+  "commit": "9092e56",
+  "block": 30592078,
+  "evidence": "FORK_SIMULATION",
+  "scope": "Caller gas delta inside Foundry test transaction, excludes initial cache build and L1",
+  "tests": 11,
+  "rows": [
+    {
+      "test": "testForkDirect()",
+      "scenario": "direct",
+      "call_gas": "575243",
+      "calldata_bytes": 2052
+    },
+    {
+      "test": "testForkHybridAndExactOut()",
+      "scenario": "hybrid-sell",
+      "call_gas": "780403",
+      "calldata_bytes": 2052
+    },
+    {
+      "test": "testForkHybridBuyRefund()",
+      "scenario": "hybrid-buy",
+      "call_gas": "813493",
+      "calldata_bytes": 2052
+    },
+    {
+      "test": "testForkLiquidityUpdate()",
+      "scenario": "requote-after-LP-deposit",
+      "call_gas": "314604",
+      "calldata_bytes": 2052
+    },
+    {
+      "test": "testForkMulti()",
+      "scenario": "multi",
+      "call_gas": "795059",
+      "calldata_bytes": 2948
+    },
+    {
+      "test": "testForkQuotedAndSequential()",
+      "scenario": "dex-buy",
+      "call_gas": "123051",
+      "calldata_bytes": 228
+    },
+    {
+      "test": "testForkQuotedAndSequential()",
+      "scenario": "dex-sell",
+      "call_gas": "117419",
+      "calldata_bytes": 228
+    },
+    {
+      "test": "testForkQuotedAndSequential()",
+      "scenario": "dex-buy",
+      "call_gas": "114664",
+      "calldata_bytes": 228
+    },
+    {
+      "test": "testForkRequoteAndConditionalFallback()",
+      "scenario": "before-market-update",
+      "call_gas": "557835",
+      "calldata_bytes": 2052
+    },
+    {
+      "test": "testForkRequoteAndConditionalFallback()",
+      "scenario": "dex-buy",
+      "call_gas": "123020",
+      "calldata_bytes": 228
+    },
+    {
+      "test": "testForkRequoteAndConditionalFallback()",
+      "scenario": "no-trade",
+      "call_gas": "308546",
+      "calldata_bytes": 2052
+    },
+    {
+      "test": "testForkRequoteAndConditionalFallback()",
+      "scenario": "fallback",
+      "call_gas": "569145",
+      "calldata_bytes": 2052
+    },
+    {
+      "test": "testForkRevertBenchmark()",
+      "scenario": "revert-revoked-approval",
+      "call_gas": "458455",
+      "calldata_bytes": 2052
+    },
+    {
+      "test": "testForkSignedOnlyResearch()",
+      "scenario": "signed-limits-only-direct",
+      "call_gas": "359509",
+      "calldata_bytes": 2052
+    },
+    {
+      "test": "testForkSingleBandResearch()",
+      "scenario": "single-band-direct",
+      "call_gas": "381053",
+      "calldata_bytes": 2052
+    },
+    {
+      "test": "testForkStateMatchResearch()",
+      "scenario": "interval-state-match-direct",
+      "call_gas": "372649",
+      "calldata_bytes": 2052
+    },
+    {
+      "test": "testForkStateMatchResearch()",
+      "scenario": "dex-sell",
+      "call_gas": "108748",
+      "calldata_bytes": 228
+    }
+  ]
+}

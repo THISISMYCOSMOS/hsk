@@ -1,0 +1,182 @@
+[
+  {
+    "mode": "poll_60s",
+    "evidence": "BACKTEST",
+    "orders": "SYNTHETIC",
+    "interval": [
+      1793185909,
+      1793272309
+    ],
+    "observed_events": 112,
+    "worker_evaluations": 1440,
+    "distinct_event_states_evaluated": 36,
+    "missed_event_states": 76,
+    "repeat_state_evaluations": 1404,
+    "wall_seconds": 3.018296957947314,
+    "cpu_seconds": 2.994977,
+    "peak_process_rss_bytes": 100515840,
+    "worker_step_p50_ms": 1.9321665167808533,
+    "event_to_trigger_p50_seconds": 9057.0,
+    "order_evaluations": 2880,
+    "order_evaluation_p50_ms": 0.5005407147109509,
+    "step_latency_scope": "includes evaluations of two open orders and DB commit",
+    "db_reads": 7200,
+    "db_writes": 27360,
+    "market_requests": 1440,
+    "replayed_rpc_calls": 17280,
+    "replayed_rpc_by_method": {
+      "eth_getBlockByNumber": 8640,
+      "eth_call": 8640
+    },
+    "live_rpc_calls": 0,
+    "ai_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "literal_intents_parsed": 0,
+    "user_realized_savings": null,
+    "operator_cloud_bill": null,
+    "source_sha256": {
+      "agent/worker.py": "e1835c379d0ac65925a185dc760f420e085fbac0d8eb1d92a74a1caaf0e83368",
+      "agent/intent.py": "a1ce92b0130b3317ccec2ef8be69d00c076cc7b2087b947d64959f5974ead112",
+      "orderbook/store.py": "dabe2e47aa870ce08233699e4f2a99450aaa4cc92c10ae4ca4d03bef6c7bc537",
+      "optimizer/search.py": "4a0ec4f29e566ddc157726ab7f015d48fc67893a8c92c49a2152c704ca67fe88",
+      "quote_engine/market.py": "a1b52d0c4f178c184fe295a456364ceb8e2abb596be3d9d23500d15785e6a501",
+      "quote_engine/provider.py": "5031a61fb4ea2bb4eb8a19261746e61adb4a80f060336c94f5096dcab4cb5506"
+    }
+  },
+  {
+    "mode": "event",
+    "evidence": "BACKTEST",
+    "orders": "SYNTHETIC",
+    "interval": [
+      1793185909,
+      1793272309
+    ],
+    "observed_events": 112,
+    "worker_evaluations": 124,
+    "distinct_event_states_evaluated": 112,
+    "missed_event_states": 0,
+    "repeat_state_evaluations": 12,
+    "wall_seconds": 0.26309687504544854,
+    "cpu_seconds": 0.262007,
+    "peak_process_rss_bytes": 94502912,
+    "worker_step_p50_ms": 1.9530418794602156,
+    "event_to_trigger_p50_seconds": 0.0,
+    "order_evaluations": 248,
+    "order_evaluation_p50_ms": 0.5038543604314327,
+    "step_latency_scope": "includes evaluations of two open orders and DB commit",
+    "db_reads": 620,
+    "db_writes": 2356,
+    "market_requests": 124,
+    "replayed_rpc_calls": 1488,
+    "replayed_rpc_by_method": {
+      "eth_getBlockByNumber": 744,
+      "eth_call": 744
+    },
+    "live_rpc_calls": 0,
+    "ai_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "literal_intents_parsed": 0,
+    "user_realized_savings": null,
+    "operator_cloud_bill": null,
+    "source_sha256": {
+      "agent/worker.py": "e1835c379d0ac65925a185dc760f420e085fbac0d8eb1d92a74a1caaf0e83368",
+      "agent/intent.py": "a1ce92b0130b3317ccec2ef8be69d00c076cc7b2087b947d64959f5974ead112",
+      "orderbook/store.py": "dabe2e47aa870ce08233699e4f2a99450aaa4cc92c10ae4ca4d03bef6c7bc537",
+      "optimizer/search.py": "4a0ec4f29e566ddc157726ab7f015d48fc67893a8c92c49a2152c704ca67fe88",
+      "quote_engine/market.py": "a1b52d0c4f178c184fe295a456364ceb8e2abb596be3d9d23500d15785e6a501",
+      "quote_engine/provider.py": "5031a61fb4ea2bb4eb8a19261746e61adb4a80f060336c94f5096dcab4cb5506"
+    }
+  },
+  {
+    "mode": "event_cached",
+    "evidence": "BACKTEST",
+    "orders": "SYNTHETIC",
+    "interval": [
+      1793185909,
+      1793272309
+    ],
+    "observed_events": 112,
+    "worker_evaluations": 112,
+    "distinct_event_states_evaluated": 112,
+    "missed_event_states": 0,
+    "repeat_state_evaluations": 0,
+    "wall_seconds": 0.24515666579827666,
+    "cpu_seconds": 0.24323000000000006,
+    "peak_process_rss_bytes": 95125504,
+    "worker_step_p50_ms": 1.9701039418578148,
+    "event_to_trigger_p50_seconds": 0.0,
+    "order_evaluations": 224,
+    "order_evaluation_p50_ms": 0.5120413843542337,
+    "step_latency_scope": "includes evaluations of two open orders and DB commit",
+    "db_reads": 684,
+    "db_writes": 2128,
+    "market_requests": 112,
+    "replayed_rpc_calls": 1336,
+    "replayed_rpc_by_method": {
+      "eth_getBlockByNumber": 670,
+      "eth_call": 666
+    },
+    "live_rpc_calls": 0,
+    "ai_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "literal_intents_parsed": 0,
+    "user_realized_savings": null,
+    "operator_cloud_bill": null,
+    "source_sha256": {
+      "agent/worker.py": "e1835c379d0ac65925a185dc760f420e085fbac0d8eb1d92a74a1caaf0e83368",
+      "agent/intent.py": "a1ce92b0130b3317ccec2ef8be69d00c076cc7b2087b947d64959f5974ead112",
+      "orderbook/store.py": "dabe2e47aa870ce08233699e4f2a99450aaa4cc92c10ae4ca4d03bef6c7bc537",
+      "optimizer/search.py": "4a0ec4f29e566ddc157726ab7f015d48fc67893a8c92c49a2152c704ca67fe88",
+      "quote_engine/market.py": "a1b52d0c4f178c184fe295a456364ceb8e2abb596be3d9d23500d15785e6a501",
+      "quote_engine/provider.py": "5031a61fb4ea2bb4eb8a19261746e61adb4a80f060336c94f5096dcab4cb5506"
+    }
+  },
+  {
+    "mode": "event_selective_ai",
+    "evidence": "BACKTEST",
+    "orders": "SYNTHETIC",
+    "interval": [
+      1793185909,
+      1793272309
+    ],
+    "observed_events": 112,
+    "worker_evaluations": 112,
+    "distinct_event_states_evaluated": 112,
+    "missed_event_states": 0,
+    "repeat_state_evaluations": 0,
+    "wall_seconds": 0.24254600005224347,
+    "cpu_seconds": 0.24157300000000004,
+    "peak_process_rss_bytes": 93437952,
+    "worker_step_p50_ms": 1.9483957439661026,
+    "event_to_trigger_p50_seconds": 0.0,
+    "order_evaluations": 224,
+    "order_evaluation_p50_ms": 0.5079586990177631,
+    "step_latency_scope": "includes evaluations of two open orders and DB commit",
+    "db_reads": 684,
+    "db_writes": 2128,
+    "market_requests": 112,
+    "replayed_rpc_calls": 1336,
+    "replayed_rpc_by_method": {
+      "eth_getBlockByNumber": 670,
+      "eth_call": 666
+    },
+    "live_rpc_calls": 0,
+    "ai_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "literal_intents_parsed": 1,
+    "user_realized_savings": null,
+    "operator_cloud_bill": null,
+    "source_sha256": {
+      "agent/worker.py": "e1835c379d0ac65925a185dc760f420e085fbac0d8eb1d92a74a1caaf0e83368",
+      "agent/intent.py": "a1ce92b0130b3317ccec2ef8be69d00c076cc7b2087b947d64959f5974ead112",
+      "orderbook/store.py": "dabe2e47aa870ce08233699e4f2a99450aaa4cc92c10ae4ca4d03bef6c7bc537",
+      "optimizer/search.py": "4a0ec4f29e566ddc157726ab7f015d48fc67893a8c92c49a2152c704ca67fe88",
+      "quote_engine/market.py": "a1b52d0c4f178c184fe295a456364ceb8e2abb596be3d9d23500d15785e6a501",
+      "quote_engine/provider.py": "5031a61fb4ea2bb4eb8a19261746e61adb4a80f060336c94f5096dcab4cb5506"
+    }
+  }
+]

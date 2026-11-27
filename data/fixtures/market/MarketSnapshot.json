@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "chain_id": 177,
+  "source": "https://mainnet.hsk.xyz",
+  "queried_at": "2026-11-27T09:11:34.509165+00:00",
+  "block_number": 30709982,
+  "block_hash": "0x14d85ce766e5dee02de58c638facd0492eb5cae3d6c7874a9485e81e2a2d6819",
+  "error": null,
+  "data": {
+    "pool": "0x4ff515761864e7838b0adb8b5b2b8b7a068905dc",
+    "token0": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+    "token1": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+    "fee": 3000,
+    "active_liquidity": "1475813786831558685",
+    "sqrt_price_x96": "22329567307916987346357",
+    "tick": -301654
+  },
+  "evidence": "OBSERVED_MAINNET"
+}

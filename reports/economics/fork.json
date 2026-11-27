@@ -1,0 +1,108 @@
+{
+  "evidence": "FORK_SIMULATION",
+  "orders": "SYNTHETIC",
+  "source_block": 30592078,
+  "source_hash": "0x8e9ec7357cca666d04911b91bb3f5cf0292a7b4e5150a4e6febe30daa1280bda",
+  "version": "1.0",
+  "anvil": "anvil Version: 1.10.0",
+  "policy": {
+    "seller_min_total_usdt_raw": "80000000",
+    "buyer_max_usdt_raw": "49000000",
+    "seller_whsk_raw": "1000000000000000000000",
+    "buyer_whsk_raw": "600000000000000000000",
+    "allow_direct_and_residual": true,
+    "immediate": true,
+    "approvals": "both exact allowances established before each scenario"
+  },
+  "atomic_settlement_measured": false,
+  "approvals": [
+    {
+      "payer": "0x000000000000000000000000000000000000a101",
+      "selector": "095ea7b3",
+      "gas_used": "46273",
+      "local_effective_gas_price": "337061218971",
+      "local_tx_hash": "0x79da70a584a70ecd93af43bab98aaf1438306bc8c507f04a05eea4945726174f"
+    },
+    {
+      "payer": "0x000000000000000000000000000000000000b202",
+      "selector": "095ea7b3",
+      "gas_used": "46219",
+      "local_effective_gas_price": "295183154607",
+      "local_tx_hash": "0x7efb5bbaf833dd0a66facfd0be7af87f76068c33ac1f2194af26bd31860f2493"
+    }
+  ],
+  "scenarios": {
+    "A_sell_first": {
+      "seller_receives_usdt_raw": "80558131",
+      "buyer_pays_usdt_raw": "48622481",
+      "joint_cash_usdt_raw": "31935650",
+      "receipts": [
+        {
+          "payer": "0x000000000000000000000000000000000000a101",
+          "selector": "04e45aaf",
+          "gas_used": "121382",
+          "local_effective_gas_price": "258523567375",
+          "local_tx_hash": "0x8299d75a779e0c91a8e79e292ec735ae2807f21d2a2aba0eca08c64003348b3a"
+        },
+        {
+          "payer": "0x000000000000000000000000000000000000b202",
+          "selector": "5023b4df",
+          "gas_used": "133734",
+          "local_effective_gas_price": "226593610834",
+          "local_tx_hash": "0x7256c46a3f4098febc74752e29f59928a40ad81139395d5477d1eb3981f51a7c"
+        }
+      ]
+    },
+    "B_buy_first": {
+      "seller_receives_usdt_raw": "80576753",
+      "buyer_pays_usdt_raw": "48641160",
+      "joint_cash_usdt_raw": "31935593",
+      "receipts": [
+        {
+          "payer": "0x000000000000000000000000000000000000b202",
+          "selector": "5023b4df",
+          "gas_used": "133734",
+          "local_effective_gas_price": "258523567375",
+          "local_tx_hash": "0x1545288d15297090575a13287180e89d4d827b2dba4f4415b538ff43b78a642e"
+        },
+        {
+          "payer": "0x000000000000000000000000000000000000a101",
+          "selector": "04e45aaf",
+          "gas_used": "121382",
+          "local_effective_gas_price": "226620118593",
+          "local_tx_hash": "0xdb95727760129d4a57ac2f6e57c219724f751c427fba4c331859816ae85ac112"
+        }
+      ]
+    },
+    "C_transfer_legs": {
+      "seller_receives_usdt_raw": "80706965",
+      "buyer_pays_usdt_raw": "48480000",
+      "joint_cash_usdt_raw": "32226965",
+      "receipts": [
+        {
+          "payer": "0x000000000000000000000000000000000000a101",
+          "selector": "a9059cbb",
+          "gas_used": "51222",
+          "local_effective_gas_price": "258523567375",
+          "local_tx_hash": "0xa213bd099d88e03a01248550b65bf4b1da23011614636b9c827def8fb8393ef4"
+        },
+        {
+          "payer": "0x000000000000000000000000000000000000b202",
+          "selector": "a9059cbb",
+          "gas_used": "51256",
+          "local_effective_gas_price": "226443045388",
+          "local_tx_hash": "0x1169cd5d306b31c5bd8f194a308dad204cf8de63bb327c3b8e710c5486621d5c"
+        },
+        {
+          "payer": "0x000000000000000000000000000000000000a101",
+          "selector": "04e45aaf",
+          "gas_used": "109082",
+          "local_effective_gas_price": "198358958954",
+          "local_tx_hash": "0x360f85e26efdf3ad742af986407334ae071d0e73860e86f7c0815f16d66664df"
+        }
+      ]
+    }
+  },
+  "l1_fee_wei": null,
+  "realized_savings_usdt": null
+}

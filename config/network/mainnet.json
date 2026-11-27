@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "rpc": "https://mainnet.hsk.xyz",
+  "chain_id": 177,
+  "explorer": "https://hsk.blockscout.com",
+  "network_source": "https://docs.hskchain.net/docs/Build-on-HashKey-Chain/network-info",
+  "token_source": "https://docs.hskchain.net/docs/Build-on-HashKey-Chain/Token-Contracts",
+  "dex_address_source": "backtests/HSK_B_Session1_Verified.zip!raw/HSKSwap_mainnet_handoff.zip!contracts.json",
+  "reference_block": 30592078,
+  "addresses": {
+    "WHSK": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+    "USDT": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+    "factory": "0x972ca9d1662f5e029cd18327d29026532e84c742",
+    "pool": "0x4ff515761864e7838b0adb8b5b2b8b7a068905dc",
+    "router": "0x2c16f75b95cf1390c328ab70e2cee7f4b80bd8f3",
+    "quoter": "0x603f70466fddbe3f238220b9a74fff419a2bbfdd",
+    "oracle": "0x420000000000000000000000000000000000000f"
+  }
+}

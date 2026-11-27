@@ -1,0 +1,22 @@
+{
+  "evidence": "OBSERVED_MAINNET",
+  "source_block": 30709982,
+  "unique_transactions": 2421,
+  "l1_fee_available": 2421,
+  "l1_fee_wei": {
+    "p50": "11749126615375",
+    "p90": "219233040806805",
+    "max": "23106673802238021"
+  },
+  "l2_execution_wei": {
+    "p50": "58904073000000000",
+    "p90": "59281326000000000",
+    "max": "470969941938000000"
+  },
+  "gas_used": {
+    "p50": "117573",
+    "p90": "118326",
+    "max": "941938"
+  },
+  "note": "Whole observed transaction fees. A transaction may contain multiple swaps or other actions."
+}

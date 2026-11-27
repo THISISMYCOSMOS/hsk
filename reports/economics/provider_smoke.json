@@ -1,0 +1,122 @@
+{
+  "chain": {
+    "version": "1.0",
+    "chain_id": 177,
+    "source": "https://mainnet.hsk.xyz",
+    "queried_at": "2026-11-27T09:11:33.852487+00:00",
+    "block_number": 30711779,
+    "block_hash": "0x34e3d3c416e99525721fdfef4a85fad3204b91f36a26b66c9146ef18ef30ac5a",
+    "error": null,
+    "evidence": "OBSERVED_MAINNET"
+  },
+  "pool": {
+    "version": "1.0",
+    "chain_id": 177,
+    "source": "https://mainnet.hsk.xyz",
+    "queried_at": "2026-11-27T09:11:34.509165+00:00",
+    "block_number": 30709982,
+    "block_hash": "0x14d85ce766e5dee02de58c638facd0492eb5cae3d6c7874a9485e81e2a2d6819",
+    "error": null,
+    "evidence": "OBSERVED_MAINNET"
+  },
+  "token": {
+    "version": "1.0",
+    "chain_id": 177,
+    "source": "https://mainnet.hsk.xyz",
+    "queried_at": "2026-11-27T09:11:35.945636+00:00",
+    "block_number": 30709982,
+    "block_hash": "0x14d85ce766e5dee02de58c638facd0492eb5cae3d6c7874a9485e81e2a2d6819",
+    "error": null,
+    "evidence": "OBSERVED_MAINNET"
+  },
+  "wrapped": {
+    "version": "1.0",
+    "chain_id": 177,
+    "source": "https://mainnet.hsk.xyz",
+    "queried_at": "2026-11-27T09:11:37.038355+00:00",
+    "block_number": 30709982,
+    "block_hash": "0x14d85ce766e5dee02de58c638facd0492eb5cae3d6c7874a9485e81e2a2d6819",
+    "error": null,
+    "evidence": "OBSERVED_MAINNET"
+  },
+  "balance": {
+    "version": "1.0",
+    "chain_id": 177,
+    "source": "https://mainnet.hsk.xyz",
+    "queried_at": "2026-11-27T09:11:38.162958+00:00",
+    "block_number": 29419387,
+    "block_hash": "0x47d26e60f037cd017aaf6a59de21375ac81fc93a664b42ed51919f27461ccfed",
+    "error": null,
+    "evidence": "OBSERVED_MAINNET"
+  },
+  "allowance": {
+    "version": "1.0",
+    "chain_id": 177,
+    "source": "https://mainnet.hsk.xyz",
+    "queried_at": "2026-11-27T09:11:39.254664+00:00",
+    "block_number": 29419387,
+    "block_hash": "0x47d26e60f037cd017aaf6a59de21375ac81fc93a664b42ed51919f27461ccfed",
+    "error": null,
+    "evidence": "OBSERVED_MAINNET"
+  },
+  "exact_in": {
+    "version": "1.0",
+    "chain_id": 177,
+    "source": "https://mainnet.hsk.xyz",
+    "queried_at": "2026-11-27T09:11:40.248642+00:00",
+    "block_number": 30592078,
+    "block_hash": "0x8e9ec7357cca666d04911b91bb3f5cf0292a7b4e5150a4e6febe30daa1280bda",
+    "error": null,
+    "evidence": "OBSERVED_MAINNET"
+  },
+  "exact_out": {
+    "version": "1.0",
+    "chain_id": 177,
+    "source": "https://mainnet.hsk.xyz",
+    "queried_at": "2026-11-27T09:11:42.019288+00:00",
+    "block_number": 30592078,
+    "block_hash": "0x8e9ec7357cca666d04911b91bb3f5cf0292a7b4e5150a4e6febe30daa1280bda",
+    "error": null,
+    "evidence": "OBSERVED_MAINNET"
+  },
+  "gas": {
+    "version": "1.0",
+    "chain_id": 177,
+    "source": "https://mainnet.hsk.xyz",
+    "queried_at": "2026-11-27T09:11:43.734923+00:00",
+    "block_number": 30711784,
+    "block_hash": "0xdf876302ad02a294ab657e43552adc4f836f36cd75d1cc0e45313ccb12a3ad98",
+    "error": null,
+    "evidence": "OBSERVED_MAINNET"
+  },
+  "receipt": {
+    "version": "1.0",
+    "chain_id": 177,
+    "source": "https://mainnet.hsk.xyz",
+    "queried_at": "2026-11-27T09:11:45.592349+00:00",
+    "block_number": 29419387,
+    "block_hash": "0x47d26e60f037cd017aaf6a59de21375ac81fc93a664b42ed51919f27461ccfed",
+    "error": null,
+    "evidence": "OBSERVED_MAINNET"
+  },
+  "events": {
+    "version": "1.0",
+    "chain_id": 177,
+    "source": "https://mainnet.hsk.xyz",
+    "queried_at": "2026-11-27T09:11:47.101678+00:00",
+    "block_number": 29419387,
+    "block_hash": "0x47d26e60f037cd017aaf6a59de21375ac81fc93a664b42ed51919f27461ccfed",
+    "error": null,
+    "evidence": "OBSERVED_MAINNET"
+  },
+  "subscription": {
+    "version": "1.0",
+    "chain_id": 177,
+    "source": "https://mainnet.hsk.xyz",
+    "queried_at": "2026-11-27T09:11:48.584987+00:00",
+    "block_number": 29424386,
+    "block_hash": "0xe00c83aacdaaedfc5a024830880778c19ddccbeb3b7acf15145caebe37a4f8e8",
+    "error": null,
+    "evidence": "OBSERVED_MAINNET"
+  }
+}

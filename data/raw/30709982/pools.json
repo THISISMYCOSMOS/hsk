@@ -1,0 +1,164 @@
+{
+  "pools": {
+    "0x265aae477d9906f637b871986e5e8f05d3514800": {
+      "token0": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+      "token1": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+      "fee": 500,
+      "active_liquidity": "5254415760005734180028544928",
+      "sqrt_price_x96": "79228162640468783735534928357",
+      "tick": 0
+    },
+    "0x9d5efe39d8f72af6289b912d5adefcb0d5adc2e6": {
+      "token0": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+      "token1": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+      "fee": 3000,
+      "active_liquidity": "2307510000000000000115",
+      "sqrt_price_x96": "79228162514264337593543950336",
+      "tick": 0
+    },
+    "0x024fb33b16b668533664be2e0b79292f421a22cc": {
+      "token0": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+      "token1": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+      "fee": 3000,
+      "active_liquidity": "1546300298399640966",
+      "sqrt_price_x96": "1736643829811603882450115703882",
+      "tick": 61750
+    },
+    "0x4ff515761864e7838b0adb8b5b2b8b7a068905dc": {
+      "token0": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+      "token1": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+      "fee": 3000,
+      "active_liquidity": "1475813786831558685",
+      "sqrt_price_x96": "22329567307916987346357",
+      "tick": -301654
+    },
+    "0xf5cbc1af0ab6c1a5b24c0ced9da13bbc526a7c25": {
+      "token0": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+      "token1": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+      "fee": 3000,
+      "active_liquidity": "18749999999999999990",
+      "sqrt_price_x96": "899024963526058893394734501457",
+      "tick": 48582
+    },
+    "0xe4badb6cd5116cdd8c7afd09a1d0b8f41573da0c": {
+      "token0": "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606",
+      "token1": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+      "fee": 3000,
+      "active_liquidity": "4907074101340",
+      "sqrt_price_x96": "1651388353167171154216",
+      "tick": -353743
+    },
+    "0xb580d654ce892181937aac80ea165950cb7d0e02": {
+      "token0": "0x054ed45810dbbab8b27668922d110669c9d88d0a",
+      "token1": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+      "fee": 3000,
+      "active_liquidity": "249999999999",
+      "sqrt_price_x96": "257944478741664417464451675357173796",
+      "tick": 299933
+    },
+    "0x9861246b8bdf619cc0e8c0422e0a662b51a2c3f4": {
+      "token0": "0x054ed45810dbbab8b27668922d110669c9d88d0a",
+      "token1": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+      "fee": 10000,
+      "active_liquidity": "0",
+      "sqrt_price_x96": "258690224024130177430264637859036961",
+      "tick": 299991
+    },
+    "0xb92b79ed6b370d5cfee2e14b1d0983c258304c16": {
+      "token0": "0xefd4bc9afd210517803f293ababd701caeecdfd0",
+      "token1": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+      "fee": 3000,
+      "active_liquidity": "1012957283335421",
+      "sqrt_price_x96": "3285093576766717374997482",
+      "tick": -201824
+    },
+    "0xd9ea2ce468957ba49ccc38c4758ed6ecd561449a": {
+      "token0": "0x6119ca49a79f5825c8b345f8d7ac36b272565b14",
+      "token1": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+      "fee": 3000,
+      "active_liquidity": "1823343427",
+      "sqrt_price_x96": "1948165021360594309184490088001",
+      "tick": 64049
+    },
+    "0xa3a69eb7a1cd69008b06487dd78105f4ce5582af": {
+      "token0": "0x8024775a803f049b9505704801e32a2c8630bf2c",
+      "token1": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+      "fee": 3000,
+      "active_liquidity": "0",
+      "sqrt_price_x96": "1165275330663135435534977714510671",
+      "tick": 191932
+    },
+    "0x41767b8a9959b04c7edb42ca7f0d5e97f73d719f": {
+      "token0": "0x14c8a2c497ec878c2dc1b48a5eaec6342d2b6664",
+      "token1": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+      "fee": 3000,
+      "active_liquidity": "0",
+      "sqrt_price_x96": "1399222648434462849182625558182911",
+      "tick": 195591
+    },
+    "0x0f10e271790a5d56df49c42647759766d5506dbf": {
+      "token0": "0xa0f5409937f18853ef068808c81d04a76357dd93",
+      "token1": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+      "fee": 3000,
+      "active_liquidity": "0",
+      "sqrt_price_x96": "2242658256396360514931203297127959",
+      "tick": 205027
+    },
+    "0x959438caea85ca4766f3ecd4f943ea9767af93ce": {
+      "token0": "0x9af0905292075ec25dfa3c9c35c498dc44cf0bbf",
+      "token1": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+      "fee": 3000,
+      "active_liquidity": "0",
+      "sqrt_price_x96": "1612977631356915820221958909713638",
+      "tick": 198435
+    },
+    "0xfc777c8c5345490648d0292c5ba40661be7209ce": {
+      "token0": "0xcfbe9f732c8380d8dd6b2a2746de435f2378f62a",
+      "token1": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+      "fee": 3000,
+      "active_liquidity": "0",
+      "sqrt_price_x96": "755968059903012573096721534721666",
+      "tick": 183277
+    },
+    "0x4adeba4ecec9585d4e213b051c161b3d8dce0aea": {
+      "token0": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+      "token1": "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a",
+      "fee": 10000,
+      "active_liquidity": "21523969197153205390",
+      "sqrt_price_x96": "926041015207208176867749126809",
+      "tick": 49174
+    },
+    "0x4e385f48d658906638029eaaa697022762f1d36b": {
+      "token0": "0x5edae85b5192b1de50b374818957032e07a78f6b",
+      "token1": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+      "fee": 3000,
+      "active_liquidity": "998302639375522762032330055387",
+      "sqrt_price_x96": "79085791756148556212807",
+      "tick": -276360
+    },
+    "0x5199aa8cdd13c1f966b43f0c79eeb4893fb6394f": {
+      "token0": "0x0000000a042e2dfc9ffec9e3d0fafa3f799e7955",
+      "token1": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+      "fee": 10000,
+      "active_liquidity": "1005058332069516000",
+      "sqrt_price_x96": "79228162514266308250143170448",
+      "tick": 0
+    }
+  },
+  "decimals": {
+    "0x0000000a042e2dfc9ffec9e3d0fafa3f799e7955": 6,
+    "0x054ed45810dbbab8b27668922d110669c9d88d0a": 6,
+    "0x14c8a2c497ec878c2dc1b48a5eaec6342d2b6664": 0,
+    "0x5edae85b5192b1de50b374818957032e07a78f6b": 18,
+    "0x6119ca49a79f5825c8b345f8d7ac36b272565b14": 8,
+    "0x8024775a803f049b9505704801e32a2c8630bf2c": 0,
+    "0x9af0905292075ec25dfa3c9c35c498dc44cf0bbf": 0,
+    "0xa0f5409937f18853ef068808c81d04a76357dd93": 0,
+    "0xb210d2120d57b758ee163cffb43e73728c471cf1": 18,
+    "0xcf9bec9f2769ecc09107c58fa5eb0199d989a606": 18,
+    "0xcfbe9f732c8380d8dd6b2a2746de435f2378f62a": 0,
+    "0xe4577dcf1c44f04cf489aa995e01e988f461cc4a": 18,
+    "0xefd4bc9afd210517803f293ababd701caeecdfd0": 18,
+    "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029": 6
+  }
+}

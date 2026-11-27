@@ -1,0 +1,401 @@
+{
+  "evidence": "BACKTEST",
+  "fork_evidence": "FORK_SIMULATION",
+  "block": 30592078,
+  "hash": "0x8e9ec7357cca666d04911b91bb3f5cf0292a7b4e5150a4e6febe30daa1280bda",
+  "source": "https://mainnet.hsk.xyz",
+  "base_fee_per_gas_wei": "500000000000",
+  "assumed_tip_wei": "1000000000",
+  "conversion": "1 HSK = 1 WHSK. QuoterV2 fixed-block exact-in for avoided fees, exact-out for replenishment.",
+  "charges": [
+    {
+      "name": "A_sell_first_0",
+      "payer": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "gas_used": "121598",
+      "l2_wei": "60920598000000000",
+      "unsigned_tx_length_upper": 484,
+      "l1_fee_upper_wei": "126424154087865",
+      "chain_operator_fee_wei": "0",
+      "avoided_cost_lower_usdt_raw": "4908",
+      "replenishment_upper_usdt_raw": "4949"
+    },
+    {
+      "name": "A_sell_first_1",
+      "payer": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+      "gas_used": "133950",
+      "l2_wei": "67108950000000000",
+      "unsigned_tx_length_upper": 484,
+      "l1_fee_upper_wei": "126424154087865",
+      "chain_operator_fee_wei": "0",
+      "avoided_cost_lower_usdt_raw": "5407",
+      "replenishment_upper_usdt_raw": "5451"
+    },
+    {
+      "name": "B_buy_first_0",
+      "payer": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+      "gas_used": "133950",
+      "l2_wei": "67108950000000000",
+      "unsigned_tx_length_upper": 484,
+      "l1_fee_upper_wei": "126424154087865",
+      "chain_operator_fee_wei": "0",
+      "avoided_cost_lower_usdt_raw": "5407",
+      "replenishment_upper_usdt_raw": "5451"
+    },
+    {
+      "name": "B_buy_first_1",
+      "payer": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "gas_used": "121598",
+      "l2_wei": "60920598000000000",
+      "unsigned_tx_length_upper": 484,
+      "l1_fee_upper_wei": "126424154087865",
+      "chain_operator_fee_wei": "0",
+      "avoided_cost_lower_usdt_raw": "4908",
+      "replenishment_upper_usdt_raw": "4949"
+    },
+    {
+      "name": "dex_approval_0",
+      "payer": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "gas_used": "46273",
+      "l2_wei": "23182773000000000",
+      "unsigned_tx_length_upper": 324,
+      "l1_fee_upper_wei": "87212726436280",
+      "chain_operator_fee_wei": "0",
+      "avoided_cost_lower_usdt_raw": "1867",
+      "replenishment_upper_usdt_raw": "1887"
+    },
+    {
+      "name": "dex_approval_1",
+      "payer": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+      "gas_used": "46219",
+      "l2_wei": "23155719000000000",
+      "unsigned_tx_length_upper": 324,
+      "l1_fee_upper_wei": "87212726436280",
+      "chain_operator_fee_wei": "0",
+      "avoided_cost_lower_usdt_raw": "1865",
+      "replenishment_upper_usdt_raw": "1885"
+    },
+    {
+      "name": "settlement_approval_0",
+      "payer": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "gas_used": "46261",
+      "l2_wei": "23176761000000000",
+      "unsigned_tx_length_upper": 324,
+      "l1_fee_upper_wei": "87212726436280",
+      "chain_operator_fee_wei": "0",
+      "avoided_cost_lower_usdt_raw": "1867",
+      "replenishment_upper_usdt_raw": "1887"
+    },
+    {
+      "name": "settlement_approval_1",
+      "payer": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+      "gas_used": "46207",
+      "l2_wei": "23149707000000000",
+      "unsigned_tx_length_upper": 324,
+      "l1_fee_upper_wei": "87212726436280",
+      "chain_operator_fee_wei": "0",
+      "avoided_cost_lower_usdt_raw": "1865",
+      "replenishment_upper_usdt_raw": "1884"
+    },
+    {
+      "name": "settlement_approval_2",
+      "payer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "gas_used": "46207",
+      "l2_wei": "23149707000000000",
+      "unsigned_tx_length_upper": 324,
+      "l1_fee_upper_wei": "87212726436280",
+      "chain_operator_fee_wei": "0",
+      "avoided_cost_lower_usdt_raw": "1865",
+      "replenishment_upper_usdt_raw": "1884"
+    },
+    {
+      "name": "direct",
+      "payer": "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+      "gas_used": "505198",
+      "l2_wei": "253104198000000000",
+      "unsigned_tx_length_upper": 2308,
+      "l1_fee_upper_wei": "572362812659609",
+      "chain_operator_fee_wei": "0",
+      "avoided_cost_lower_usdt_raw": "20393",
+      "replenishment_upper_usdt_raw": "20564"
+    },
+    {
+      "name": "partial",
+      "payer": "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+      "gas_used": "680872",
+      "l2_wei": "341116872000000000",
+      "unsigned_tx_length_upper": 2308,
+      "l1_fee_upper_wei": "572362812659609",
+      "chain_operator_fee_wei": "0",
+      "avoided_cost_lower_usdt_raw": "27485",
+      "replenishment_upper_usdt_raw": "27698"
+    },
+    {
+      "name": "multi",
+      "payer": "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+      "gas_used": "896411",
+      "l2_wei": "449101911000000000",
+      "unsigned_tx_length_upper": 3204,
+      "l1_fee_upper_wei": "791313579484294",
+      "chain_operator_fee_wei": "0",
+      "avoided_cost_lower_usdt_raw": "36185",
+      "replenishment_upper_usdt_raw": "36469"
+    },
+    {
+      "name": "multi_sell_first_0",
+      "payer": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "gas_used": "121598",
+      "l2_wei": "60920598000000000",
+      "unsigned_tx_length_upper": 484,
+      "l1_fee_upper_wei": "126424154087865",
+      "chain_operator_fee_wei": "0",
+      "avoided_cost_lower_usdt_raw": "4908",
+      "replenishment_upper_usdt_raw": "4949"
+    },
+    {
+      "name": "multi_sell_first_1",
+      "payer": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+      "gas_used": "133966",
+      "l2_wei": "67116966000000000",
+      "unsigned_tx_length_upper": 484,
+      "l1_fee_upper_wei": "126424154087865",
+      "chain_operator_fee_wei": "0",
+      "avoided_cost_lower_usdt_raw": "5407",
+      "replenishment_upper_usdt_raw": "5452"
+    },
+    {
+      "name": "multi_sell_first_2",
+      "payer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "gas_used": "133938",
+      "l2_wei": "67102938000000000",
+      "unsigned_tx_length_upper": 484,
+      "l1_fee_upper_wei": "126424154087865",
+      "chain_operator_fee_wei": "0",
+      "avoided_cost_lower_usdt_raw": "5406",
+      "replenishment_upper_usdt_raw": "5451"
+    },
+    {
+      "name": "multi_buy_first_0",
+      "payer": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+      "gas_used": "132992",
+      "l2_wei": "66628992000000000",
+      "unsigned_tx_length_upper": 484,
+      "l1_fee_upper_wei": "126424154087865",
+      "chain_operator_fee_wei": "0",
+      "avoided_cost_lower_usdt_raw": "5368",
+      "replenishment_upper_usdt_raw": "5412"
+    },
+    {
+      "name": "multi_buy_first_1",
+      "payer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "gas_used": "133938",
+      "l2_wei": "67102938000000000",
+      "unsigned_tx_length_upper": 484,
+      "l1_fee_upper_wei": "126424154087865",
+      "chain_operator_fee_wei": "0",
+      "avoided_cost_lower_usdt_raw": "5406",
+      "replenishment_upper_usdt_raw": "5451"
+    },
+    {
+      "name": "multi_buy_first_2",
+      "payer": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "gas_used": "121598",
+      "l2_wei": "60920598000000000",
+      "unsigned_tx_length_upper": 484,
+      "l1_fee_upper_wei": "126424154087865",
+      "chain_operator_fee_wei": "0",
+      "avoided_cost_lower_usdt_raw": "4908",
+      "replenishment_upper_usdt_raw": "4949"
+    },
+    {
+      "name": "no_trade",
+      "payer": "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+      "gas_used": "368626",
+      "l2_wei": "184681626000000000",
+      "unsigned_tx_length_upper": 2308,
+      "l1_fee_upper_wei": "572362812659609",
+      "chain_operator_fee_wei": "0",
+      "avoided_cost_lower_usdt_raw": "14880",
+      "replenishment_upper_usdt_raw": "15018"
+    },
+    {
+      "name": "fallback",
+      "payer": "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+      "gas_used": "568604",
+      "l2_wei": "284870604000000000",
+      "unsigned_tx_length_upper": 2308,
+      "l1_fee_upper_wei": "572362812659609",
+      "chain_operator_fee_wei": "0",
+      "avoided_cost_lower_usdt_raw": "22953",
+      "replenishment_upper_usdt_raw": "23139"
+    },
+    {
+      "name": "cancel",
+      "payer": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "gas_used": "50344",
+      "l2_wei": "25222344000000000",
+      "unsigned_tx_length_upper": 836,
+      "l1_fee_upper_wei": "212397035833264",
+      "chain_operator_fee_wei": "0",
+      "avoided_cost_lower_usdt_raw": "2032",
+      "replenishment_upper_usdt_raw": "2063"
+    },
+    {
+      "name": "expired",
+      "payer": "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+      "gas_used": "54960",
+      "l2_wei": "27534960000000000",
+      "unsigned_tx_length_upper": 2308,
+      "l1_fee_upper_wei": "572362812659609",
+      "chain_operator_fee_wei": "0",
+      "avoided_cost_lower_usdt_raw": "2218",
+      "replenishment_upper_usdt_raw": "2279"
+    }
+  ],
+  "partial_match": [
+    {
+      "baseline": "A_sell_first",
+      "fresh_approvals": false,
+      "no_trade_per_success": 0,
+      "expired_reverts_per_success": 0,
+      "offchain_assumption_usdt_raw": "0",
+      "seller_gain_before_service_fee_raw": "153742",
+      "buyer_gain_before_service_fee_raw": "147888",
+      "operator_cost_upper_raw": "27698",
+      "combined_modeled_lower_raw": "273932",
+      "operator_break_even_bps_on_direct_cash": 6,
+      "operator_profit_by_fee_bps": {
+        "0": "-27698",
+        "5": "-3458",
+        "10": "20782",
+        "30": "117742"
+      }
+    },
+    {
+      "baseline": "A_sell_first",
+      "fresh_approvals": false,
+      "no_trade_per_success": 1,
+      "expired_reverts_per_success": 1,
+      "offchain_assumption_usdt_raw": "10000",
+      "seller_gain_before_service_fee_raw": "153742",
+      "buyer_gain_before_service_fee_raw": "147888",
+      "operator_cost_upper_raw": "54995",
+      "combined_modeled_lower_raw": "246635",
+      "operator_break_even_bps_on_direct_cash": 12,
+      "operator_profit_by_fee_bps": {
+        "0": "-54995",
+        "5": "-30755",
+        "10": "-6515",
+        "30": "90445"
+      }
+    },
+    {
+      "baseline": "A_sell_first",
+      "fresh_approvals": true,
+      "no_trade_per_success": 0,
+      "expired_reverts_per_success": 0,
+      "offchain_assumption_usdt_raw": "0",
+      "seller_gain_before_service_fee_raw": "153722",
+      "buyer_gain_before_service_fee_raw": "147869",
+      "operator_cost_upper_raw": "27698",
+      "combined_modeled_lower_raw": "273893",
+      "operator_break_even_bps_on_direct_cash": 6,
+      "operator_profit_by_fee_bps": {
+        "0": "-27698",
+        "5": "-3458",
+        "10": "20782",
+        "30": "117742"
+      }
+    },
+    {
+      "baseline": "A_sell_first",
+      "fresh_approvals": true,
+      "no_trade_per_success": 1,
+      "expired_reverts_per_success": 1,
+      "offchain_assumption_usdt_raw": "10000",
+      "seller_gain_before_service_fee_raw": "153722",
+      "buyer_gain_before_service_fee_raw": "147869",
+      "operator_cost_upper_raw": "54995",
+      "combined_modeled_lower_raw": "246596",
+      "operator_break_even_bps_on_direct_cash": 12,
+      "operator_profit_by_fee_bps": {
+        "0": "-54995",
+        "5": "-30755",
+        "10": "-6515",
+        "30": "90445"
+      }
+    },
+    {
+      "baseline": "B_buy_first",
+      "fresh_approvals": false,
+      "no_trade_per_success": 0,
+      "expired_reverts_per_success": 0,
+      "offchain_assumption_usdt_raw": "0",
+      "seller_gain_before_service_fee_raw": "135120",
+      "buyer_gain_before_service_fee_raw": "166567",
+      "operator_cost_upper_raw": "27698",
+      "combined_modeled_lower_raw": "273989",
+      "operator_break_even_bps_on_direct_cash": 6,
+      "operator_profit_by_fee_bps": {
+        "0": "-27698",
+        "5": "-3458",
+        "10": "20782",
+        "30": "117742"
+      }
+    },
+    {
+      "baseline": "B_buy_first",
+      "fresh_approvals": false,
+      "no_trade_per_success": 1,
+      "expired_reverts_per_success": 1,
+      "offchain_assumption_usdt_raw": "10000",
+      "seller_gain_before_service_fee_raw": "135120",
+      "buyer_gain_before_service_fee_raw": "166567",
+      "operator_cost_upper_raw": "54995",
+      "combined_modeled_lower_raw": "246692",
+      "operator_break_even_bps_on_direct_cash": 12,
+      "operator_profit_by_fee_bps": {
+        "0": "-54995",
+        "5": "-30755",
+        "10": "-6515",
+        "30": "90445"
+      }
+    },
+    {
+      "baseline": "B_buy_first",
+      "fresh_approvals": true,
+      "no_trade_per_success": 0,
+      "expired_reverts_per_success": 0,
+      "offchain_assumption_usdt_raw": "0",
+      "seller_gain_before_service_fee_raw": "135100",
+      "buyer_gain_before_service_fee_raw": "166548",
+      "operator_cost_upper_raw": "27698",
+      "combined_modeled_lower_raw": "273950",
+      "operator_break_even_bps_on_direct_cash": 6,
+      "operator_profit_by_fee_bps": {
+        "0": "-27698",
+        "5": "-3458",
+        "10": "20782",
+        "30": "117742"
+      }
+    },
+    {
+      "baseline": "B_buy_first",
+      "fresh_approvals": true,
+      "no_trade_per_success": 1,
+      "expired_reverts_per_success": 1,
+      "offchain_assumption_usdt_raw": "10000",
+      "seller_gain_before_service_fee_raw": "135100",
+      "buyer_gain_before_service_fee_raw": "166548",
+      "operator_cost_upper_raw": "54995",
+      "combined_modeled_lower_raw": "246653",
+      "operator_break_even_bps_on_direct_cash": 12,
+      "operator_profit_by_fee_bps": {
+        "0": "-54995",
+        "5": "-30755",
+        "10": "-6515",
+        "30": "90445"
+      }
+    }
+  ],
+  "realized_net_usdt": null
+}

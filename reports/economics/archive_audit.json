@@ -1,0 +1,59 @@
+{
+  "zip_sha256": {
+    "HSK_A_Session1.zip": "20c2cce36e306edd7a7aa4725ddd1510ae91c3e14183e877a38b713123f71037",
+    "HSK_A_Session2_Check(2).zip": "de1545252f7ccfe39199c9d410717e7b44befd41e32c7587aee33f5f8cf700a6",
+    "HSK_B_Session1_Verified.zip": "abe015f1398378f133b81a94f1a3a34ab638c68f53bc0e9348c85d61ed38b6d1",
+    "HSK_Session2_Quotes.zip": "654ea306e6fe5f89812c123e3a906f73e06e1c01f482315a28b18975ec979e4b"
+  },
+  "runs": {
+    "B_replay": {
+      "exit_code": 0,
+      "command": [
+        "python3",
+        "verify.py"
+      ],
+      "output": "PASS: 656 decoded logs, archive results byte-identical, 610 decisions x 3 costs, 10 controls, same-block integer quote.\nPASS: 7 economic fixtures.\nPASS: block binding, expiry, late quote, funding, wrong chain, reorg.\nPASS: 50 S1-direct comparisons including all account deltas.\n"
+    },
+    "A_routes": {
+      "exit_code": 0,
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-v"
+      ],
+      "output": "test_balance_limit (test_routes.Routing.test_balance_limit) ... ok\ntest_buy (test_routes.Routing.test_buy) ... ok\ntest_common_order (test_routes.Routing.test_common_order) ... ok\ntest_odd_micro (test_routes.Routing.test_odd_micro) ... ok\ntest_partial_buy_signed_max (test_routes.Routing.test_partial_buy_signed_max) ... ok\ntest_rfq_beats_greedy (test_routes.Routing.test_rfq_beats_greedy) ... ok\ntest_unfilled (test_routes.Routing.test_unfilled) ... ok\ntest_unsupported (test_routes.Routing.test_unsupported) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.000s\n\nOK\n"
+    },
+    "A_mock_settlement": {
+      "exit_code": 0,
+      "command": [
+        "forge",
+        "test",
+        "--offline",
+        "-vv"
+      ],
+      "output": "Compiling 3 files with Solc 0.8.26\nSolc 0.8.26 finished in 6.11s\nCompiler run successful!\n\nRan 30 tests for test/Session.t.sol:SessionTest\n[PASS] testBalance() (gas: 731585)\n[PASS] testBuyDirect() (gas: 799383)\n[PASS] testBuyRfq() (gas: 748955)\n[PASS] testBuyRollback() (gas: 833876)\n[PASS] testCancel() (gas: 607225)\n[PASS] testCompetingPartial() (gas: 817065)\n[PASS] testDirect() (gas: 804122)\n[PASS] testExpiredFirmOnly() (gas: 571719)\n[PASS] testExpiredRFQFallback() (gas: 814825)\n[PASS] testExpiredSignature() (gas: 507784)\n[PASS] testMakerFullConstraint() (gas: 686618)\n[PASS] testMakerLimitFallback() (gas: 686629)\n[PASS] testMakerPartial() (gas: 804454)\n[PASS] testMakerPriceBound() (gas: 604784)\n[PASS] testMakerSide() (gas: 562040)\n[PASS] testNoFill() (gas: 642181)\n[PASS] testNoGain() (gas: 687264)\n[PASS] testNoOpposite() (gas: 674071)\n[PASS] testPaused() (gas: 546503)\n[PASS] testRFQBoundRecipient() (gas: 573184)\n[PASS] testRFQWins() (gas: 749078)\n[PASS] testReplay() (gas: 754537)\n[PASS] testResidualReverts() (gas: 833602)\n[PASS] testRevoked() (gas: 662348)\n[PASS] testSameSideFallback() (gas: 686186)\n[PASS] testTakerMaxEnforced() (gas: 705882)\n[PASS] testTakerMinEnforced() (gas: 710304)\n[PASS] testTooCostly() (gas: 686628)\n[PASS] testWrongDomain() (gas: 508841)\n[PASS] testWrongSigner() (gas: 572407)\nSuite result: ok. 30 passed; 0 failed; 0 skipped; finished in 18.09ms (79.84ms CPU time)\n\nRan 1 test suite in 19.90ms (18.09ms CPU time): 30 tests passed, 0 failed, 0 skipped (30 total tests)\n"
+    },
+    "A2_mock_settlement": {
+      "exit_code": 0,
+      "command": [
+        "forge",
+        "test",
+        "--offline",
+        "--match-test",
+        "test(Direct|NoGain|TooCostly)\\(",
+        "-vv"
+      ],
+      "output": "No files changed, compilation skipped\n\nRan 3 tests for test/Session.t.sol:SessionTest\n[PASS] testDirect() (gas: 773272)\n[PASS] testNoGain() (gas: 685832)\n[PASS] testTooCostly() (gas: 685196)\nSuite result: ok. 3 passed; 0 failed; 0 skipped; finished in 1.59ms (3.09ms CPU time)\n\nRan 1 test suite in 1.82ms (1.59ms CPU time): 3 tests passed, 0 failed, 0 skipped (3 total tests)\n"
+    },
+    "archived_exact_math": {
+      "exit_code": 0,
+      "command": [
+        "python3",
+        "quotes.py"
+      ],
+      "output": "{\n  \"chain_id\": 177,\n  \"block\": 30592078,\n  \"block_hash\": \"0x8e9ec7357cca666d04911b91bb3f5cf0292a7b4e5150a4e6febe30daa1280bda\",\n  \"timestamp_utc\": \"2026-11-24T14:41:31+00:00\",\n  \"pool\": \"0x4ff515761864e7838b0adb8b5b2b8b7a068905dc\",\n  \"factory\": \"0x972ca9d1662f5e029cd18327d29026532e84c742\",\n  \"quoter\": \"0x603f70466fddbe3f238220b9a74fff419a2bbfdd\",\n  \"pool_fee_pips\": 3000,\n  \"token0_whsk_decimals\": 18,\n  \"token1_usdt_decimals\": 6,\n  \"starting_tick\": -301482,\n  \"active_liquidity_raw\": \"1475813786831558685\",\n  \"evidence_mode\": \"archived_state_reconstruction\",\n  \"order_origin\": \"team_hypothetical_sizes\",\n  \"firm\": false,\n  \"participant_signed_order\": null,\n  \"execution_receipt\": null,\n  \"settlement_gas_usdt\": null,\n  \"quotes\": [\n    {\n      \"id\": \"A_full\",\n      \"kind\": \"exact_input\",\n      \"token_in\": \"0xb210d2120d57b758ee163cffb43e73728c471cf1\",\n      \"token_out\": \"0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029\",\n      \"amount_in_raw\": \"1000000000000000000000\",\n      \"amount_out_raw\": \"80558131\",\n      \"sqrt_price_after_x96\": \"22518787216817175517660\",\n      \"ending_tick\": -301485,\n      \"request\": {\n        \"method\": \"eth_call\",\n        \"params\": [\n          {\n            \"to\": \"0x603f70466fddbe3f238220b9a74fff419a2bbfdd\",\n            \"data\": \"0xc6a5026a000000000000000000000000b210d2120d57b758ee163cffb43e73728c471cf1000000000000000000000000f1b50ed67a9e2cc94ad3c477779e2d4cbfff902900000000000000000000000000000000000000000000003635c9adc5dea000000000000000000000000000000000000000000000000000000000000000000bb80000000000000000000000000000000000000000000000000000000000000000\"\n          },\n          \"0x1d2cc4e\"\n        ]\n      },\n      \"direct_response\": null\n    },\n    {\n      \"id\": \"B_exact_out\",\n      \"kind\": \"exact_output\",\n      \"token_in\": \"0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029\",\n      \"token_out\": \"0xb210d2120d57b758ee163cffb43e73728c471cf1\",\n      \"amount_in_raw\": \"48641160\",\n      \"amount_out_raw\": \"600000000000000000000\",\n      \"sqrt_price_after_x96\": \"22525715368040266389565\",\n      \"ending_tick\": -301479,\n      \"request\": {\n        \"method\": \"eth_call\",\n        \"params\": [\n          {\n            \"to\": \"0x603f70466fddbe3f238220b9a74fff419a2bbfdd\",\n            \"data\": \"0xbd21704a000000000000000000000000f1b50ed67a9e2cc94ad3c477779e2d4cbfff9029000000000000000000000000b210d2120d57b758ee163cffb43e73728c471cf100000000000000000000000000000000000000000000002086ac3510526000000000000000000000000000000000000000000000000000000000000000000bb80000000000000000000000000000000000000000000000000000000000000000\"\n          },\n          \"0x1d2cc4e\"\n        ]\n      },\n      \"direct_response\": null\n    },\n    {\n      \"id\": \"A_remaining\",\n      \"kind\": \"exact_input\",\n      \"token_in\": \"0xb210d2120d57b758ee163cffb43e73728c471cf1\",\n      \"token_out\": \"0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029\",\n      \"amount_in_raw\": \"400000000000000000000\",\n      \"amount_out_raw\": \"32226965\",\n      \"sqrt_price_after_x96\": \"22521381845967789825016\",\n      \"ending_tick\": -301483,\n      \"request\": {\n        \"method\": \"eth_call\",\n        \"params\": [\n          {\n            \"to\": \"0x603f70466fddbe3f238220b9a74fff419a2bbfdd\",\n            \"data\": \"0xc6a5026a000000000000000000000000b210d2120d57b758ee163cffb43e73728c471cf1000000000000000000000000f1b50ed67a9e2cc94ad3c477779e2d4cbfff9029000000000000000000000000000000000000000000000015af1d78b58c4000000000000000000000000000000000000000000000000000000000000000000bb80000000000000000000000000000000000000000000000000000000000000000\"\n          },\n          \"0x1d2cc4e\"\n        ]\n      },\n      \"direct_response\": null\n    }\n  ]\n}\n"
+    }
+  }
+}
