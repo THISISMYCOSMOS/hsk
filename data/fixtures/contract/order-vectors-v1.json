@@ -1,0 +1,259 @@
+{
+  "evidence": "SYNTHETIC",
+  "vectors": [
+    {
+      "typedData": {
+        "types": {
+          "EIP712Domain": [
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "version",
+              "type": "string"
+            },
+            {
+              "name": "chainId",
+              "type": "uint256"
+            },
+            {
+              "name": "verifyingContract",
+              "type": "address"
+            }
+          ],
+          "Order": [
+            {
+              "type": "address",
+              "name": "owner"
+            },
+            {
+              "type": "address",
+              "name": "recipient"
+            },
+            {
+              "type": "address",
+              "name": "tokenIn"
+            },
+            {
+              "type": "address",
+              "name": "tokenOut"
+            },
+            {
+              "type": "uint8",
+              "name": "orderKind"
+            },
+            {
+              "type": "uint256",
+              "name": "amountIn"
+            },
+            {
+              "type": "uint256",
+              "name": "amountOut"
+            },
+            {
+              "type": "uint256",
+              "name": "validAfter"
+            },
+            {
+              "type": "uint256",
+              "name": "deadline"
+            },
+            {
+              "type": "uint256",
+              "name": "nonce"
+            },
+            {
+              "type": "bool",
+              "name": "partiallyFillable"
+            },
+            {
+              "type": "bool",
+              "name": "allowDexFallback"
+            },
+            {
+              "type": "uint8",
+              "name": "executionPriority"
+            },
+            {
+              "type": "uint256",
+              "name": "maxFeeAmount"
+            },
+            {
+              "type": "uint256",
+              "name": "minImprovementAmount"
+            },
+            {
+              "type": "address",
+              "name": "allowedExecutor"
+            },
+            {
+              "type": "bool",
+              "name": "allowDex"
+            },
+            {
+              "type": "bool",
+              "name": "immediate"
+            }
+          ]
+        },
+        "domain": {
+          "name": "HSK Smart Execution",
+          "version": "1",
+          "chainId": 31337,
+          "verifyingContract": "0x0000000000000000000000000000000000001234"
+        },
+        "primaryType": "Order",
+        "message": {
+          "owner": "0xE6b3367318C5e11a6eED3Cd0D850eC06A02E9b90",
+          "recipient": "0x000000000000000000000000000000000000bEEF",
+          "tokenIn": "0xB210D2120d57b758EE163cFfb43e73728c471Cf1",
+          "tokenOut": "0xF1B50eD67A9e2CC94Ad3c477779E2d4cBfFf9029",
+          "orderKind": 0,
+          "amountIn": "1000000000000000000000",
+          "amountOut": "80000000",
+          "validAfter": "1",
+          "deadline": "2000000000",
+          "nonce": "1",
+          "partiallyFillable": true,
+          "allowDexFallback": true,
+          "executionPriority": 1,
+          "maxFeeAmount": "100",
+          "minImprovementAmount": "2",
+          "allowedExecutor": "0x0000000000000000000000000000000000000000",
+          "allowDex": true,
+          "immediate": true
+        }
+      },
+      "orderHash": "0xe9b4da4f7d7a255883e3ab74f0d94806404952abcdb35949492698a80c6e0a4d",
+      "signature": "0xc909efd8db764e0848221c6aa933c236cf1924fb67be9dcdce380e54d33b61337c4cad7425cd9bdc2be71a09efd2a88fcd7668d541205c196e677e2776900a6a1c"
+    },
+    {
+      "typedData": {
+        "types": {
+          "EIP712Domain": [
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "version",
+              "type": "string"
+            },
+            {
+              "name": "chainId",
+              "type": "uint256"
+            },
+            {
+              "name": "verifyingContract",
+              "type": "address"
+            }
+          ],
+          "Order": [
+            {
+              "type": "address",
+              "name": "owner"
+            },
+            {
+              "type": "address",
+              "name": "recipient"
+            },
+            {
+              "type": "address",
+              "name": "tokenIn"
+            },
+            {
+              "type": "address",
+              "name": "tokenOut"
+            },
+            {
+              "type": "uint8",
+              "name": "orderKind"
+            },
+            {
+              "type": "uint256",
+              "name": "amountIn"
+            },
+            {
+              "type": "uint256",
+              "name": "amountOut"
+            },
+            {
+              "type": "uint256",
+              "name": "validAfter"
+            },
+            {
+              "type": "uint256",
+              "name": "deadline"
+            },
+            {
+              "type": "uint256",
+              "name": "nonce"
+            },
+            {
+              "type": "bool",
+              "name": "partiallyFillable"
+            },
+            {
+              "type": "bool",
+              "name": "allowDexFallback"
+            },
+            {
+              "type": "uint8",
+              "name": "executionPriority"
+            },
+            {
+              "type": "uint256",
+              "name": "maxFeeAmount"
+            },
+            {
+              "type": "uint256",
+              "name": "minImprovementAmount"
+            },
+            {
+              "type": "address",
+              "name": "allowedExecutor"
+            },
+            {
+              "type": "bool",
+              "name": "allowDex"
+            },
+            {
+              "type": "bool",
+              "name": "immediate"
+            }
+          ]
+        },
+        "domain": {
+          "name": "HSK Smart Execution",
+          "version": "1",
+          "chainId": 31337,
+          "verifyingContract": "0x0000000000000000000000000000000000001234"
+        },
+        "primaryType": "Order",
+        "message": {
+          "owner": "0x88C0e901bd1fd1a77BdA342f0d2210fDC71Cef6B",
+          "recipient": "0x000000000000000000000000000000000000bEEF",
+          "tokenIn": "0xF1B50eD67A9e2CC94Ad3c477779E2d4cBfFf9029",
+          "tokenOut": "0xB210D2120d57b758EE163cFfb43e73728c471Cf1",
+          "orderKind": 1,
+          "amountIn": "90000000",
+          "amountOut": "1000000000000000000000",
+          "validAfter": "1",
+          "deadline": "2000000000",
+          "nonce": "1",
+          "partiallyFillable": true,
+          "allowDexFallback": true,
+          "executionPriority": 1,
+          "maxFeeAmount": "100",
+          "minImprovementAmount": "2",
+          "allowedExecutor": "0x0000000000000000000000000000000000000000",
+          "allowDex": true,
+          "immediate": true
+        }
+      },
+      "orderHash": "0xf1d3e20a38934117749c54aaadddaeb5c2a94f981b5e6897a44f7c170cafb459",
+      "signature": "0x92961247a394b8b3e80d366eb2948f0e243fc2d8b88d471a921378d06f9b879f5fe435ccc2451a4db5268ea89c5a295ca9e1b158497ed27ff346461a8931376a1c"
+    }
+  ]
+}

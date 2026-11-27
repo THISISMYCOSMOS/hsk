@@ -1,0 +1,21 @@
+{
+  "version": "1",
+  "evidenceBlock": 30592078,
+  "abi": {
+    "QuoterV2-177.json": {
+      "sha256": "1d8c736ca37eca3ceb352e255c342d73fb322793e079c2cb2a76dd87db702f45",
+      "source": "https://hsk.blockscout.com/api/v2/smart-contracts/0x603f70466fddbe3f238220b9a74fff419a2bbfdd",
+      "kind": "verified periphery ABI subset"
+    },
+    "SwapRouter02-177.json": {
+      "sha256": "37e6cbbb1626a806791e63f0962cdb99782672e167cd1590cc6f6ba3025739fd",
+      "source": "https://hsk.blockscout.com/api/v2/smart-contracts/0x2c16f75b95cf1390c328ab70e2cee7f4b80bd8f3",
+      "kind": "verified periphery ABI subset"
+    },
+    "Settlement-v1.json": {
+      "sha256": "548c994864b0d1a59518e99eb5e473508d09f4fc06be2879d4e065690cbaa263",
+      "source": "contracts/src/Settlement.sol (solc 0.8.26)",
+      "kind": "compiled full ABI"
+    }
+  }
+}

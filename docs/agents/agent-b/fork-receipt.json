@@ -1,0 +1,42 @@
+{
+  "lostReplyRecovered": true,
+  "settlementBroadcasts": 1,
+  "evidence": "FORK_SIMULATION",
+  "forkBlock": "30592078",
+  "forkHash": "0x8e9ec7357cca666d04911b91bb3f5cf0292a7b4e5150a4e6febe30daa1280bda",
+  "chainId": "31337",
+  "settlementCodeHash": "0xb4daf338d423fc190bd83d571d1429551c113c88bcfc08a8e38481533a5ef2bb",
+  "forkTxHash": "0x81d347ca76732b13a53c7b0d212d591b82c6f87f9cf48209af8e1712ac50ff9c",
+  "market": "HSKSwap single pool",
+  "orderCount": 3,
+  "route": "MULTI_ORDER_MATCH",
+  "gasEstimate": "808348",
+  "gasUsed": "701938",
+  "fills": {
+    "0x3fb5eb0afe30cdeaed75fbd54c4f8c0fdb3378524a76b998f2587e1a1a942e28": {
+      "spent": "1000000000000000000000",
+      "received": "80812643",
+      "feeUSDT": "0",
+      "cumulativeWHSK": "1000000000000000000000",
+      "benchmarkUSDT": "80558131"
+    },
+    "0x8bdf72059e94370f3308f188bb314329ab36848ab88e1d35656a79200593cf26": {
+      "spent": "48513806",
+      "received": "600000000000000000000",
+      "feeUSDT": "0",
+      "cumulativeWHSK": "600000000000000000000",
+      "benchmarkUSDT": "48641160"
+    },
+    "0xb465a2c07a3b0b25153cc95a07c31b02a58a2f7c111ccaadd5640ee276161654": {
+      "spent": "32298837",
+      "received": "400000000000000000000",
+      "feeUSDT": "0",
+      "cumulativeWHSK": "400000000000000000000",
+      "benchmarkUSDT": "32426191"
+    }
+  },
+  "userCostBasis": "SYNTHETIC upper bounds",
+  "operatorProfit": null,
+  "orderOrigin": "ephemeral signed test orders",
+  "confirmedMainnetReceipt": null
+}

@@ -1,0 +1,319 @@
+{
+  "SYNTHETIC": {
+    "test/Invariants.t.sol:InvariantTest": {
+      "invariant_accounting()": {
+        "status": "Success",
+        "kind": {
+          "Invariant": {
+            "runs": 96,
+            "calls": 2304,
+            "reverts": 0,
+            "workers": 1,
+            "metrics": {
+              "test/Invariants.t.sol:SeriesHandler.fill": {
+                "calls": 1171,
+                "reverts": 0,
+                "discards": 0
+              },
+              "test/Invariants.t.sol:SeriesHandler.cancel": {
+                "calls": 1133,
+                "reverts": 0,
+                "discards": 0
+              }
+            },
+            "failed_corpus_replays": 0,
+            "optimization_best_value": null
+          }
+        },
+        "reason": null
+      }
+    },
+    "test/Math.t.sol:MathTest": {
+      "testUint256AndFractionalRounding()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 896
+          }
+        },
+        "reason": null
+      }
+    },
+    "test/Settlement.t.sol:SettlementTest": {
+      "testAtomicRouterFailure()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 457870
+          }
+        },
+        "reason": null
+      },
+      "testBoundNonceAndFutureOrder()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 508703
+          }
+        },
+        "reason": null
+      },
+      "testExpiryAndCancellation()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 392404
+          }
+        },
+        "reason": null
+      },
+      "testFullDirectFeesRecipient()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 405381
+          }
+        },
+        "reason": null
+      },
+      "testFuzzPartialBounds(uint96)": {
+        "status": "Success",
+        "kind": {
+          "Fuzz": {
+            "first_case": {
+              "gas": 390348,
+              "stipend": 21216
+            },
+            "runs": 256,
+            "mean_gas": 369119,
+            "median_gas": 369132,
+            "failed_corpus_replays": 0
+          }
+        },
+        "reason": null
+      },
+      "testHardPriceLimit()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 161535
+          }
+        },
+        "reason": null
+      },
+      "testHybridBuyRefund()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 407970
+          }
+        },
+        "reason": null
+      },
+      "testHybridSell()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 391756
+          }
+        },
+        "reason": null
+      },
+      "testInvalidMarketRecipientOperatorAndPause()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 1055082
+          }
+        },
+        "reason": null
+      },
+      "testNoTradeAndFallbackPolicy()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 663066
+          }
+        },
+        "reason": null
+      },
+      "testPartialDisabledAndFeeCap()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 263612
+          }
+        },
+        "reason": null
+      },
+      "testPartialMultiAndReplay()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 653895
+          }
+        },
+        "reason": null
+      },
+      "testQuoteFailure()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 183904
+          }
+        },
+        "reason": null
+      },
+      "testRetainsPreExistingBalancesAndHonorsImprovementFloor()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 510779
+          }
+        },
+        "reason": null
+      },
+      "testSignatureDomains()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 2829057
+          }
+        },
+        "reason": null
+      },
+      "testSignedExecutorAndResidualPermission()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 201919
+          }
+        },
+        "reason": null
+      },
+      "testUnfundedOrRevokedRestores()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 714420
+          }
+        },
+        "reason": null
+      }
+    },
+    "test/Vectors.t.sol:VectorTest": {
+      "testWalletVectors()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 16757
+          }
+        },
+        "reason": null
+      }
+    }
+  },
+  "FORK_SIMULATION": {
+    "test/Fork.t.sol:ForkTest": {
+      "testForkDirect()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 810756
+          }
+        },
+        "reason": null
+      },
+      "testForkHybridAndExactOut()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 1132466
+          }
+        },
+        "reason": null
+      },
+      "testForkHybridBuyRefund()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 1149903
+          }
+        },
+        "reason": null
+      },
+      "testForkLiquidityUpdate()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 940043
+          }
+        },
+        "reason": null
+      },
+      "testForkMulti()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 1302283
+          }
+        },
+        "reason": null
+      },
+      "testForkQuotedAndSequential()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 1113243
+          }
+        },
+        "reason": null
+      },
+      "testForkRequoteAndConditionalFallback()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 1761991
+          }
+        },
+        "reason": null
+      },
+      "testForkRevertBenchmark()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 816309
+          }
+        },
+        "reason": null
+      },
+      "testForkSignedOnlyResearch()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 3177786
+          }
+        },
+        "reason": null
+      },
+      "testForkSingleBandResearch()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 5030505
+          }
+        },
+        "reason": null
+      },
+      "testForkStateMatchResearch()": {
+        "status": "Success",
+        "kind": {
+          "Unit": {
+            "gas": 4373497
+          }
+        },
+        "reason": null
+      }
+    }
+  }
+}

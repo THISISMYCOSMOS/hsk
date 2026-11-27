@@ -1,0 +1,453 @@
+{
+  "version": "0.1",
+  "evidence": "SYNTHETIC",
+  "signedOrders": [
+    {
+      "order": {
+        "maker": "0x8a31823eb2db2Fa6AF41E3e7519Ac5CEDE690547",
+        "tokenIn": "0xB210D2120d57b758EE163cFfb43e73728c471Cf1",
+        "tokenOut": "0xF1B50eD67A9e2CC94Ad3c477779E2d4cBfFf9029",
+        "kind": "EXACT_IN",
+        "fixedAmount": "1000000000000000000000",
+        "limitAmount": "79000000",
+        "nonce": "1",
+        "expiry": "1700001000",
+        "timing": "LIMIT",
+        "allowPartial": false,
+        "allowDex": false,
+        "allowFallback": false,
+        "priority": "SAVINGS",
+        "maxCost": "100000",
+        "minSaving": "1"
+      },
+      "signature": "0xff8c799b70f3c5dd8c388a76f7b57a040c75580a2db800e75442157e27ea974446cd01f7e7c673ff454a231b5846118d6ef5e1d18b762dfce6bf10fd478891691b"
+    },
+    {
+      "order": {
+        "maker": "0xaa13B02DDFf862EF6Be8431FC4ee3dc7803fe489",
+        "tokenIn": "0xF1B50eD67A9e2CC94Ad3c477779E2d4cBfFf9029",
+        "tokenOut": "0xB210D2120d57b758EE163cFfb43e73728c471Cf1",
+        "kind": "EXACT_OUT",
+        "fixedAmount": "1000000000000000000000",
+        "limitAmount": "84000000",
+        "nonce": "1",
+        "expiry": "1700001000",
+        "timing": "LIMIT",
+        "allowPartial": false,
+        "allowDex": false,
+        "allowFallback": false,
+        "priority": "SAVINGS",
+        "maxCost": "100000",
+        "minSaving": "1"
+      },
+      "signature": "0x6ad3f1026bdb0f161f48752749b3bd08fecc65ac33f2b874a1aa62888fb5413c7c8274d25943aae898b3e4351f07f8eacf2e76ada7de9d6ac59717752f3b3ef01c"
+    }
+  ],
+  "typedData": {
+    "domain": {
+      "name": "HSK Smart Execution Sandbox",
+      "version": "0.1",
+      "chainId": 31337,
+      "verifyingContract": "0x0000000000000000000000000000000000000001"
+    },
+    "primaryType": "SandboxOrder",
+    "message": {
+      "maker": "0x8a31823eb2db2Fa6AF41E3e7519Ac5CEDE690547",
+      "tokenIn": "0xB210D2120d57b758EE163cFfb43e73728c471Cf1",
+      "tokenOut": "0xF1B50eD67A9e2CC94Ad3c477779E2d4cBfFf9029",
+      "kind": "EXACT_IN",
+      "fixedAmount": "1000000000000000000000",
+      "limitAmount": "79000000",
+      "nonce": "1",
+      "expiry": "1700001000",
+      "timing": "LIMIT",
+      "allowPartial": false,
+      "allowDex": false,
+      "allowFallback": false,
+      "priority": "SAVINGS",
+      "maxCost": "100000",
+      "minSaving": "1"
+    },
+    "types": {
+      "EIP712Domain": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "version",
+          "type": "string"
+        },
+        {
+          "name": "chainId",
+          "type": "uint256"
+        },
+        {
+          "name": "verifyingContract",
+          "type": "address"
+        }
+      ],
+      "SandboxOrder": [
+        {
+          "name": "maker",
+          "type": "address"
+        },
+        {
+          "name": "tokenIn",
+          "type": "address"
+        },
+        {
+          "name": "tokenOut",
+          "type": "address"
+        },
+        {
+          "name": "kind",
+          "type": "string"
+        },
+        {
+          "name": "fixedAmount",
+          "type": "uint256"
+        },
+        {
+          "name": "limitAmount",
+          "type": "uint256"
+        },
+        {
+          "name": "nonce",
+          "type": "uint256"
+        },
+        {
+          "name": "expiry",
+          "type": "uint256"
+        },
+        {
+          "name": "timing",
+          "type": "string"
+        },
+        {
+          "name": "allowPartial",
+          "type": "bool"
+        },
+        {
+          "name": "allowDex",
+          "type": "bool"
+        },
+        {
+          "name": "allowFallback",
+          "type": "bool"
+        },
+        {
+          "name": "priority",
+          "type": "string"
+        },
+        {
+          "name": "maxCost",
+          "type": "uint256"
+        },
+        {
+          "name": "minSaving",
+          "type": "uint256"
+        }
+      ]
+    }
+  },
+  "examples": {
+    "Order": {
+      "maker": "0x8a31823eb2db2Fa6AF41E3e7519Ac5CEDE690547",
+      "tokenIn": "0xB210D2120d57b758EE163cFfb43e73728c471Cf1",
+      "tokenOut": "0xF1B50eD67A9e2CC94Ad3c477779E2d4cBfFf9029",
+      "kind": "EXACT_IN",
+      "fixedAmount": "1000000000000000000000",
+      "limitAmount": "79000000",
+      "nonce": "1",
+      "expiry": "1700001000",
+      "timing": "LIMIT",
+      "allowPartial": false,
+      "allowDex": false,
+      "allowFallback": false,
+      "priority": "SAVINGS",
+      "maxCost": "100000",
+      "minSaving": "1"
+    },
+    "SignedOrder": {
+      "order": {
+        "maker": "0x8a31823eb2db2Fa6AF41E3e7519Ac5CEDE690547",
+        "tokenIn": "0xB210D2120d57b758EE163cFfb43e73728c471Cf1",
+        "tokenOut": "0xF1B50eD67A9e2CC94Ad3c477779E2d4cBfFf9029",
+        "kind": "EXACT_IN",
+        "fixedAmount": "1000000000000000000000",
+        "limitAmount": "79000000",
+        "nonce": "1",
+        "expiry": "1700001000",
+        "timing": "LIMIT",
+        "allowPartial": false,
+        "allowDex": false,
+        "allowFallback": false,
+        "priority": "SAVINGS",
+        "maxCost": "100000",
+        "minSaving": "1"
+      },
+      "signature": "0xff8c799b70f3c5dd8c388a76f7b57a040c75580a2db800e75442157e27ea974446cd01f7e7c673ff454a231b5846118d6ef5e1d18b762dfce6bf10fd478891691b"
+    },
+    "MarketSnapshot": {
+      "evidence": "SYNTHETIC",
+      "blockNumber": "1",
+      "blockHash": "0xabababababababababababababababababababababababababababababababab"
+    },
+    "DexQuote": {
+      "evidence": "SYNTHETIC",
+      "blockNumber": "1",
+      "blockHash": "0xabababababababababababababababababababababababababababababababab",
+      "tokenIn": "0xB210D2120d57b758EE163cFfb43e73728c471Cf1",
+      "tokenOut": "0xF1B50eD67A9e2CC94Ad3c477779E2d4cBfFf9029",
+      "amountIn": "1000000000000000000000",
+      "amountOut": "80676565"
+    },
+    "ExecutionCandidate": {
+      "kind": "DIRECT_MATCH",
+      "fixedFilled": "1000000000000000000000",
+      "remaining": "0",
+      "dexFixed": "0",
+      "eligible": true,
+      "reason": null,
+      "fills": [
+        {
+          "orderId": "0xee2d0892a07dfe99dfd50c6cc2c428e2bcb5465ce84cbbfbfa9541fbe50f8c4c",
+          "fixed": "1000000000000000000000",
+          "cash": "81000811"
+        }
+      ],
+      "savings": [
+        {
+          "orderId": "0xa3aa32d31e7079a7f696b03e041d103a56dc0332dafddb1c2041f5fe60c85650",
+          "token": "USDT",
+          "gross": "81000811",
+          "dexGross": "80676565",
+          "conservativeSaving": "324026",
+          "costs": {
+            "dex_lower": "0",
+            "l1": "50",
+            "l2": "100",
+            "settlement": "20",
+            "verification": "40",
+            "approval": "0",
+            "service": "0",
+            "other": "0",
+            "margin": "10"
+          }
+        },
+        {
+          "orderId": "0xee2d0892a07dfe99dfd50c6cc2c428e2bcb5465ce84cbbfbfa9541fbe50f8c4c",
+          "token": "USDT",
+          "gross": "81000811",
+          "dexGross": "81325057",
+          "conservativeSaving": "324026",
+          "costs": {
+            "dex_lower": "0",
+            "l1": "50",
+            "l2": "100",
+            "settlement": "20",
+            "verification": "40",
+            "approval": "0",
+            "service": "0",
+            "other": "0",
+            "margin": "10"
+          }
+        }
+      ],
+      "totalConservativeSavingUSDT": "648052",
+      "gross": null,
+      "routeId": null
+    },
+    "ExecutionPlan": {
+      "orderId": "0xa3aa32d31e7079a7f696b03e041d103a56dc0332dafddb1c2041f5fe60c85650",
+      "blockHash": "0xabababababababababababababababababababababababababababababababab",
+      "candidate": {
+        "kind": "DIRECT_MATCH",
+        "fixedFilled": "1000000000000000000000",
+        "remaining": "0",
+        "dexFixed": "0",
+        "eligible": true,
+        "reason": null,
+        "fills": [
+          {
+            "orderId": "0xee2d0892a07dfe99dfd50c6cc2c428e2bcb5465ce84cbbfbfa9541fbe50f8c4c",
+            "fixed": "1000000000000000000000",
+            "cash": "81000811"
+          }
+        ],
+        "savings": [
+          {
+            "orderId": "0xa3aa32d31e7079a7f696b03e041d103a56dc0332dafddb1c2041f5fe60c85650",
+            "token": "USDT",
+            "gross": "81000811",
+            "dexGross": "80676565",
+            "conservativeSaving": "324026",
+            "costs": {
+              "dex_lower": "0",
+              "l1": "50",
+              "l2": "100",
+              "settlement": "20",
+              "verification": "40",
+              "approval": "0",
+              "service": "0",
+              "other": "0",
+              "margin": "10"
+            }
+          },
+          {
+            "orderId": "0xee2d0892a07dfe99dfd50c6cc2c428e2bcb5465ce84cbbfbfa9541fbe50f8c4c",
+            "token": "USDT",
+            "gross": "81000811",
+            "dexGross": "81325057",
+            "conservativeSaving": "324026",
+            "costs": {
+              "dex_lower": "0",
+              "l1": "50",
+              "l2": "100",
+              "settlement": "20",
+              "verification": "40",
+              "approval": "0",
+              "service": "0",
+              "other": "0",
+              "margin": "10"
+            }
+          }
+        ],
+        "totalConservativeSavingUSDT": "648052",
+        "gross": null,
+        "routeId": null
+      }
+    },
+    "CostBreakdown": {
+      "dex_lower": "0",
+      "l1": "50",
+      "l2": "100",
+      "settlement": "20",
+      "verification": "40",
+      "approval": "0",
+      "service": "0",
+      "other": "0",
+      "margin": "10"
+    },
+    "UserSavings": {
+      "orderId": "0xa3aa32d31e7079a7f696b03e041d103a56dc0332dafddb1c2041f5fe60c85650",
+      "token": "USDT",
+      "gross": "81000811",
+      "dexGross": "80676565",
+      "conservativeSaving": "324026",
+      "costs": {
+        "dex_lower": "0",
+        "l1": "50",
+        "l2": "100",
+        "settlement": "20",
+        "verification": "40",
+        "approval": "0",
+        "service": "0",
+        "other": "0",
+        "margin": "10"
+      }
+    },
+    "SimulationResult": {
+      "mode": "MOCK",
+      "evidence": "SYNTHETIC",
+      "success": true,
+      "reason": null,
+      "receipt": {
+        "evidence": "SYNTHETIC",
+        "mode": "MOCK",
+        "blockHash": "0xabababababababababababababababababababababababababababababababab",
+        "gasUnits": "120000",
+        "walletDeltas": [
+          {
+            "maker": "0x8a31823eb2db2Fa6AF41E3e7519Ac5CEDE690547",
+            "token": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+            "change": "-1000000000000000000000",
+            "debited": "1000000000000000000000"
+          },
+          {
+            "maker": "0x8a31823eb2db2Fa6AF41E3e7519Ac5CEDE690547",
+            "token": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+            "change": "81000591",
+            "debited": "0"
+          },
+          {
+            "maker": "0xaa13B02DDFf862EF6Be8431FC4ee3dc7803fe489",
+            "token": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+            "change": "1000000000000000000000",
+            "debited": "0"
+          },
+          {
+            "maker": "0xaa13B02DDFf862EF6Be8431FC4ee3dc7803fe489",
+            "token": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+            "change": "-81001031",
+            "debited": "81001031"
+          }
+        ],
+        "transactionHash": null,
+        "participants": [
+          {
+            "orderId": "0xa3aa32d31e7079a7f696b03e041d103a56dc0332dafddb1c2041f5fe60c85650",
+            "fixed": "1000000000000000000000"
+          },
+          {
+            "orderId": "0xee2d0892a07dfe99dfd50c6cc2c428e2bcb5465ce84cbbfbfa9541fbe50f8c4c",
+            "fixed": "1000000000000000000000"
+          }
+        ]
+      }
+    },
+    "ExecutionReceipt": {
+      "mode": "MOCK",
+      "evidence": "SYNTHETIC",
+      "transactionHash": null,
+      "blockHash": "0xabababababababababababababababababababababababababababababababab",
+      "gasUnits": "120000",
+      "effectiveGasPriceWei": null,
+      "walletDeltas": [
+        {
+          "maker": "0x8a31823eb2db2Fa6AF41E3e7519Ac5CEDE690547",
+          "token": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+          "change": "-1000000000000000000000",
+          "debited": "1000000000000000000000"
+        },
+        {
+          "maker": "0x8a31823eb2db2Fa6AF41E3e7519Ac5CEDE690547",
+          "token": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+          "change": "81000591",
+          "debited": "0"
+        },
+        {
+          "maker": "0xaa13B02DDFf862EF6Be8431FC4ee3dc7803fe489",
+          "token": "0xb210d2120d57b758ee163cffb43e73728c471cf1",
+          "change": "1000000000000000000000",
+          "debited": "0"
+        },
+        {
+          "maker": "0xaa13B02DDFf862EF6Be8431FC4ee3dc7803fe489",
+          "token": "0xf1b50ed67a9e2cc94ad3c477779e2d4cbfff9029",
+          "change": "-81001031",
+          "debited": "81001031"
+        }
+      ],
+      "participants": [
+        {
+          "orderId": "0xa3aa32d31e7079a7f696b03e041d103a56dc0332dafddb1c2041f5fe60c85650",
+          "fixed": "1000000000000000000000"
+        },
+        {
+          "orderId": "0xee2d0892a07dfe99dfd50c6cc2c428e2bcb5465ce84cbbfbfa9541fbe50f8c4c",
+          "fixed": "1000000000000000000000"
+        }
+      ]
+    },
+    "AgentEvent": {
+      "id": 1,
+      "kind": "ORDER_CREATED",
+      "payload": {
+        "orderId": "0xa3aa32d31e7079a7f696b03e041d103a56dc0332dafddb1c2041f5fe60c85650"
+      },
+      "at": 1700000000
+    }
+  }
+}
