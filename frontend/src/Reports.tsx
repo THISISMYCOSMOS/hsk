@@ -12,7 +12,7 @@ interface Observed {
   operations: {
     mode: string;
     worker_evaluations: number;
-    market_loads: number;
+    market_requests: number;
     ai_calls: number;
     live_rpc_calls: number;
   }[];
@@ -222,7 +222,7 @@ export function Observations() {
             <tr>
               <th>실행 방식</th>
               <th>재평가</th>
-              <th>시장 로드</th>
+              <th>시장 요청</th>
               <th>실제 RPC</th>
               <th>LLM</th>
             </tr>
@@ -232,7 +232,7 @@ export function Observations() {
               <tr key={o.mode}>
                 <td>{o.mode}</td>
                 <td>{o.worker_evaluations}</td>
-                <td>{o.market_loads}</td>
+                <td>{o.market_requests}</td>
                 <td>{o.live_rpc_calls}</td>
                 <td>{o.ai_calls}</td>
               </tr>

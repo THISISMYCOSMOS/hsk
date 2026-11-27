@@ -754,7 +754,7 @@
           "evidence": "BACKTEST",
           "observed_events": 112,
           "worker_evaluations": 1440,
-          "market_loads": 1440,
+          "market_requests": 1440,
           "live_rpc_calls": 0,
           "ai_calls": 0,
           "operator_cloud_bill": null
@@ -764,7 +764,7 @@
           "evidence": "BACKTEST",
           "observed_events": 112,
           "worker_evaluations": 124,
-          "market_loads": 124,
+          "market_requests": 124,
           "live_rpc_calls": 0,
           "ai_calls": 0,
           "operator_cloud_bill": null
@@ -774,7 +774,7 @@
           "evidence": "BACKTEST",
           "observed_events": 112,
           "worker_evaluations": 112,
-          "market_loads": 110,
+          "market_requests": 112,
           "live_rpc_calls": 0,
           "ai_calls": 0,
           "operator_cloud_bill": null
@@ -784,7 +784,7 @@
           "evidence": "BACKTEST",
           "observed_events": 112,
           "worker_evaluations": 112,
-          "market_loads": 110,
+          "market_requests": 112,
           "live_rpc_calls": 0,
           "ai_calls": 0,
           "operator_cloud_bill": null
@@ -1149,6 +1149,9 @@
       },
       "scenarios": [
         {
+          "pair_fills": 0,
+          "open_at_cutoff_whsk_raw": "0",
+          "expired_or_immediate_unfilled_whsk_raw": "571384143776283367105695",
           "evidence": "BACKTEST",
           "order_origin": "SYNTHETIC",
           "hours": 0,
@@ -1172,6 +1175,9 @@
           "realized_user_savings": null
         },
         {
+          "pair_fills": 45,
+          "open_at_cutoff_whsk_raw": "3162690000000000000000",
+          "expired_or_immediate_unfilled_whsk_raw": "567034535023588425600455",
           "evidence": "BACKTEST",
           "order_origin": "SYNTHETIC",
           "hours": 1,
@@ -1195,6 +1201,9 @@
           "realized_user_savings": null
         },
         {
+          "pair_fills": 91,
+          "open_at_cutoff_whsk_raw": "5536010000000000000000",
+          "expired_or_immediate_unfilled_whsk_raw": "555364933134232179551363",
           "evidence": "BACKTEST",
           "order_origin": "SYNTHETIC",
           "hours": 6,
@@ -1218,6 +1227,9 @@
           "realized_user_savings": null
         },
         {
+          "pair_fills": 104,
+          "open_at_cutoff_whsk_raw": "6102070000000000000000",
+          "expired_or_immediate_unfilled_whsk_raw": "549296608020565530313207",
           "evidence": "BACKTEST",
           "order_origin": "SYNTHETIC",
           "hours": 12,
@@ -1241,6 +1253,9 @@
           "realized_user_savings": null
         },
         {
+          "pair_fills": 121,
+          "open_at_cutoff_whsk_raw": "23645860000000000000000",
+          "expired_or_immediate_unfilled_whsk_raw": "520750493291790498616111",
           "evidence": "BACKTEST",
           "order_origin": "SYNTHETIC",
           "hours": 24,
@@ -1264,6 +1279,9 @@
           "realized_user_savings": null
         },
         {
+          "pair_fills": 18,
+          "open_at_cutoff_whsk_raw": "5536010000000000000000",
+          "expired_or_immediate_unfilled_whsk_raw": "555057048116717756743980",
           "evidence": "BACKTEST",
           "order_origin": "SYNTHETIC",
           "hours": 6,
@@ -1287,6 +1305,9 @@
           "realized_user_savings": null
         },
         {
+          "pair_fills": 26,
+          "open_at_cutoff_whsk_raw": "5536010000000000000000",
+          "expired_or_immediate_unfilled_whsk_raw": "556002242843306220266453",
           "evidence": "BACKTEST",
           "order_origin": "SYNTHETIC",
           "hours": 6,
@@ -1310,6 +1331,9 @@
           "realized_user_savings": null
         },
         {
+          "pair_fills": 47,
+          "open_at_cutoff_whsk_raw": "5536010000000000000000",
+          "expired_or_immediate_unfilled_whsk_raw": "555912903531068464605071",
           "evidence": "BACKTEST",
           "order_origin": "SYNTHETIC",
           "hours": 6,
@@ -1333,6 +1357,9 @@
           "realized_user_savings": null
         },
         {
+          "pair_fills": 0,
+          "open_at_cutoff_whsk_raw": "5536010000000000000000",
+          "expired_or_immediate_unfilled_whsk_raw": "565848133776283367105695",
           "evidence": "BACKTEST",
           "order_origin": "SYNTHETIC",
           "hours": 6,
@@ -1356,6 +1383,9 @@
           "realized_user_savings": null
         },
         {
+          "pair_fills": 96,
+          "open_at_cutoff_whsk_raw": "5536010000000000000000",
+          "expired_or_immediate_unfilled_whsk_raw": "552987696429961364814659",
           "evidence": "BACKTEST",
           "order_origin": "SYNTHETIC",
           "hours": 6,
@@ -1379,6 +1409,9 @@
           "realized_user_savings": null
         },
         {
+          "pair_fills": 1,
+          "open_at_cutoff_whsk_raw": "5536010000000000000000",
+          "expired_or_immediate_unfilled_whsk_raw": "565825227231207695906703",
           "evidence": "BACKTEST",
           "order_origin": "SYNTHETIC",
           "hours": 6,
@@ -1402,6 +1435,9 @@
           "realized_user_savings": null
         },
         {
+          "pair_fills": 19,
+          "open_at_cutoff_whsk_raw": "5536010000000000000000",
+          "expired_or_immediate_unfilled_whsk_raw": "556886023385075702643671",
           "evidence": "BACKTEST",
           "order_origin": "SYNTHETIC",
           "hours": 6,
@@ -1425,6 +1461,9 @@
           "realized_user_savings": null
         },
         {
+          "pair_fills": 8,
+          "open_at_cutoff_whsk_raw": "5536010000000000000000",
+          "expired_or_immediate_unfilled_whsk_raw": "558405493776283367105695",
           "evidence": "BACKTEST",
           "order_origin": "SYNTHETIC",
           "hours": 6,
@@ -1448,6 +1487,9 @@
           "realized_user_savings": null
         },
         {
+          "pair_fills": 91,
+          "open_at_cutoff_whsk_raw": "5536010000000000000000",
+          "expired_or_immediate_unfilled_whsk_raw": "555364933134232179551363",
           "evidence": "BACKTEST",
           "order_origin": "SYNTHETIC",
           "hours": 6,
@@ -1471,6 +1513,9 @@
           "realized_user_savings": null
         },
         {
+          "pair_fills": 90,
+          "open_at_cutoff_whsk_raw": "5536010000000000000000",
+          "expired_or_immediate_unfilled_whsk_raw": "555367257013251037829601",
           "evidence": "BACKTEST",
           "order_origin": "SYNTHETIC",
           "hours": 6,
@@ -1494,6 +1539,9 @@
           "realized_user_savings": null
         },
         {
+          "pair_fills": 13,
+          "open_at_cutoff_whsk_raw": "5536010000000000000000",
+          "expired_or_immediate_unfilled_whsk_raw": "557661313776283367105695",
           "evidence": "BACKTEST",
           "order_origin": "SYNTHETIC",
           "hours": 6,
@@ -1517,6 +1565,9 @@
           "realized_user_savings": null
         },
         {
+          "pair_fills": 19,
+          "open_at_cutoff_whsk_raw": "5536010000000000000000",
+          "expired_or_immediate_unfilled_whsk_raw": "556886023385075702643671",
           "evidence": "BACKTEST",
           "order_origin": "SYNTHETIC",
           "hours": 6,
@@ -1540,6 +1591,9 @@
           "realized_user_savings": null
         },
         {
+          "pair_fills": 89,
+          "open_at_cutoff_whsk_raw": "5536010000000000000000",
+          "expired_or_immediate_unfilled_whsk_raw": "558798004803978747865347",
           "evidence": "BACKTEST",
           "order_origin": "SYNTHETIC",
           "hours": 6,
@@ -1563,6 +1617,9 @@
           "realized_user_savings": null
         },
         {
+          "pair_fills": 91,
+          "open_at_cutoff_whsk_raw": "5536010000000000000000",
+          "expired_or_immediate_unfilled_whsk_raw": "555364933134232179551363",
           "evidence": "BACKTEST",
           "order_origin": "SYNTHETIC",
           "hours": 6,

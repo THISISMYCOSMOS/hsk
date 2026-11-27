@@ -42,7 +42,7 @@ def main():
     if fees["source_block"]!=coverage["end_block"]:raise ValueError("fee block mismatch")
     operations=json.loads((folder/"operations.json").read_text())
     fee_model=json.loads((folder/"fee_model.json").read_text())
-    payload=dict(operations=[{k:v[k] for k in ("mode","evidence","observed_events","worker_evaluations","market_loads","live_rpc_calls","ai_calls","operator_cloud_bill")} for v in operations],modeledEconomics=fee_model["partial_match"],source="OBSERVED_MAINNET",start=coverage["utc_start_exclusive"],end=coverage["utc_end_inclusive"],
+    payload=dict(operations=[{k:v[k] for k in ("mode","evidence","observed_events","worker_evaluations","market_requests","live_rpc_calls","ai_calls","operator_cloud_bill")} for v in operations],modeledEconomics=fee_model["partial_match"],source="OBSERVED_MAINNET",start=coverage["utc_start_exclusive"],end=coverage["utc_end_inclusive"],
                  block=str(coverage["end_block"]),hash=coverage["end_hash"],pool=pool,matchedLogs=group["events"],
                  days=[dict(day=day,count=r["count"],buy=str(r["buy"]),sell=str(r["sell"])) for day,r in sorted(byday.items())],
                  fees=fees,scenarios=scenarios["scenarios"],poolMetrics=group)
