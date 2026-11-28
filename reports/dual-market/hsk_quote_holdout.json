@@ -1,0 +1,328 @@
+{
+  "sample": "Preselected KST 00:00/06:00/12:00/18:00, Nov 25-27, after Nov 18-24 calibration; block at or before slot",
+  "limitations": "Public read-only same-block independent DEX quotes; simulated signed orders, costs, price midpoint and operator fees; no DEX sequential execution, buy/sell submission, approval estimate, or live matching demand. Fixed fee is a policy comparison, charged only if user conditions pass. Dynamic result is before operating subsidy budget.",
+  "costs_micro_usdt": {
+    "seller_incremental": 50000,
+    "buyer_incremental": 0,
+    "each_fixed": 30000
+  },
+  "summary": {
+    "slots_planned": 12,
+    "complete_slots": 12,
+    "quotes_observed": 36,
+    "mixed_candidates_before_fairness": 0,
+    "fails_before_fairness": {
+      "seller_signed_minimum": 12
+    },
+    "independent_dex_quotes_meet_both_limits": 0,
+    "fairness_counts": {
+      "gain_sum": {
+        "1": 0,
+        "2": 0,
+        "3": 0
+      },
+      "matched_payment": {
+        "1": 0,
+        "2": 0,
+        "3": 0
+      }
+    },
+    "free_pass": 0,
+    "fixed_fee_pass": 0,
+    "dynamic_pass": 0,
+    "dynamic_fee_positive_by_cost": {
+      "5000": 0,
+      "8000": 0
+    }
+  },
+  "rows": [
+    {
+      "kst": "2026-11-25T00:00:00+09:00",
+      "block": 30592632,
+      "block_time_kst": "2026-11-24T23:59:59+09:00",
+      "block_hash": "0xd42aac99c58822481b1b3e24a1d3158e70939c6f3639e5ed6656b2efc6258570",
+      "quotes_micro_usdt": {
+        "sell_1000": 80558084,
+        "buy_600": 48641132,
+        "sell_remainder_400": 32226946
+      },
+      "missing_quotes": {},
+      "comparison": {
+        "independent_dex_quotes_meet_both_limits": false,
+        "mixed": {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 48773054,
+          "upper": 48641131,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        }
+      }
+    },
+    {
+      "kst": "2026-11-25T06:00:00+09:00",
+      "block": 30603432,
+      "block_time_kst": "2026-11-25T05:59:59+09:00",
+      "block_hash": "0xa44f0087d68d4ab290190561ad58c152ca4ee545758bc55d7c418c196624f874",
+      "quotes_micro_usdt": {
+        "sell_1000": 80558084,
+        "buy_600": 48641132,
+        "sell_remainder_400": 32226946
+      },
+      "missing_quotes": {},
+      "comparison": {
+        "independent_dex_quotes_meet_both_limits": false,
+        "mixed": {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 48773054,
+          "upper": 48641131,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        }
+      }
+    },
+    {
+      "kst": "2026-11-25T12:00:00+09:00",
+      "block": 30614232,
+      "block_time_kst": "2026-11-25T11:59:59+09:00",
+      "block_hash": "0x455450f03e5542c571573b27584bed958b6b52d1a0a13392a661dd705519cba5",
+      "quotes_micro_usdt": {
+        "sell_1000": 80562678,
+        "buy_600": 48643906,
+        "sell_remainder_400": 32228784
+      },
+      "missing_quotes": {},
+      "comparison": {
+        "independent_dex_quotes_meet_both_limits": false,
+        "mixed": {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 48771216,
+          "upper": 48643905,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        }
+      }
+    },
+    {
+      "kst": "2026-11-25T18:00:00+09:00",
+      "block": 30625032,
+      "block_time_kst": "2026-11-25T17:59:59+09:00",
+      "block_hash": "0xa3dc2305f811586a0de2b808304ab74ed787276cf3e1d4bee455a7f67c160aba",
+      "quotes_micro_usdt": {
+        "sell_1000": 80535401,
+        "buy_600": 48627433,
+        "sell_remainder_400": 32217871
+      },
+      "missing_quotes": {},
+      "comparison": {
+        "independent_dex_quotes_meet_both_limits": false,
+        "mixed": {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 48782129,
+          "upper": 48627432,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        }
+      }
+    },
+    {
+      "kst": "2026-11-26T00:00:00+09:00",
+      "block": 30635832,
+      "block_time_kst": "2026-11-25T23:59:59+09:00",
+      "block_hash": "0x5528b37138036c25fc2c1d300afa3f4c3e878fe8df17f4318b5ba52f8567de4e",
+      "quotes_micro_usdt": {
+        "sell_1000": 80502012,
+        "buy_600": 48607270,
+        "sell_remainder_400": 32204514
+      },
+      "missing_quotes": {},
+      "comparison": {
+        "independent_dex_quotes_meet_both_limits": false,
+        "mixed": {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 48795486,
+          "upper": 48607269,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        }
+      }
+    },
+    {
+      "kst": "2026-11-26T06:00:00+09:00",
+      "block": 30646632,
+      "block_time_kst": "2026-11-26T05:59:59+09:00",
+      "block_hash": "0xa88242ee8667d1be9ac1aa77ddd1d804e22697929023f9643cae4c615b1ef51f",
+      "quotes_micro_usdt": {
+        "sell_1000": 78254730,
+        "buy_600": 47250152,
+        "sell_remainder_400": 31305446
+      },
+      "missing_quotes": {},
+      "comparison": {
+        "independent_dex_quotes_meet_both_limits": false,
+        "mixed": {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 49694554,
+          "upper": 47250151,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        }
+      }
+    },
+    {
+      "kst": "2026-11-26T12:00:00+09:00",
+      "block": 30657432,
+      "block_time_kst": "2026-11-26T11:59:59+09:00",
+      "block_hash": "0x267af600c641e72c2a7e72d01736879d06213ee196cca55b50197ff9da5cc8fd",
+      "quotes_micro_usdt": {
+        "sell_1000": 78007606,
+        "buy_600": 47100916,
+        "sell_remainder_400": 31206580
+      },
+      "missing_quotes": {},
+      "comparison": {
+        "independent_dex_quotes_meet_both_limits": false,
+        "mixed": {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 49793420,
+          "upper": 47100915,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        }
+      }
+    },
+    {
+      "kst": "2026-11-26T18:00:00+09:00",
+      "block": 30668232,
+      "block_time_kst": "2026-11-26T17:59:59+09:00",
+      "block_hash": "0xfebcbdf69907898957632a39526f59e86ee116ddd613c88ed23520d50f078627",
+      "quotes_micro_usdt": {
+        "sell_1000": 78480841,
+        "buy_600": 47386699,
+        "sell_remainder_400": 31395906
+      },
+      "missing_quotes": {},
+      "comparison": {
+        "independent_dex_quotes_meet_both_limits": false,
+        "mixed": {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 49604094,
+          "upper": 47386698,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        }
+      }
+    },
+    {
+      "kst": "2026-11-27T00:00:00+09:00",
+      "block": 30679032,
+      "block_time_kst": "2026-11-26T23:59:59+09:00",
+      "block_hash": "0x977ef8970ba3f5286900503121b380e6ce7c0dd1f98afdeca622ab6ff6a07075",
+      "quotes_micro_usdt": {
+        "sell_1000": 78967083,
+        "buy_600": 47680337,
+        "sell_remainder_400": 31590436
+      },
+      "missing_quotes": {},
+      "comparison": {
+        "independent_dex_quotes_meet_both_limits": false,
+        "mixed": {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 49409564,
+          "upper": 47680336,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        }
+      }
+    },
+    {
+      "kst": "2026-11-27T06:00:00+09:00",
+      "block": 30689832,
+      "block_time_kst": "2026-11-27T05:59:59+09:00",
+      "block_hash": "0xa0c18bf76d825c17060660c4b8d6d04a7e8706115f14f678b1e1b5a1424d442c",
+      "quotes_micro_usdt": {
+        "sell_1000": 78995512,
+        "buy_600": 47697505,
+        "sell_remainder_400": 31601810
+      },
+      "missing_quotes": {},
+      "comparison": {
+        "independent_dex_quotes_meet_both_limits": false,
+        "mixed": {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 49398190,
+          "upper": 47697504,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        }
+      }
+    },
+    {
+      "kst": "2026-11-27T12:00:00+09:00",
+      "block": 30700632,
+      "block_time_kst": "2026-11-27T11:59:59+09:00",
+      "block_hash": "0x0a4dcff983d718091ba5fc0966ccd331891d554a906840470a5bdb7c8676d9d5",
+      "quotes_micro_usdt": {
+        "sell_1000": 79012573,
+        "buy_600": 47707807,
+        "sell_remainder_400": 31608635
+      },
+      "missing_quotes": {},
+      "comparison": {
+        "independent_dex_quotes_meet_both_limits": false,
+        "mixed": {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 49391365,
+          "upper": 47707806,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        }
+      }
+    },
+    {
+      "kst": "2026-11-27T18:00:00+09:00",
+      "block": 30711432,
+      "block_time_kst": "2026-11-27T17:59:59+09:00",
+      "block_hash": "0x57ecfd69a632ad37e2a6764b81011cbb24871ca45a14fcb7b14a83f01ea19dc4",
+      "quotes_micro_usdt": {
+        "sell_1000": 79182737,
+        "buy_600": 47810568,
+        "sell_remainder_400": 31676713
+      },
+      "missing_quotes": {},
+      "comparison": {
+        "independent_dex_quotes_meet_both_limits": false,
+        "mixed": {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 49323287,
+          "upper": 47810567,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        }
+      }
+    }
+  ]
+}

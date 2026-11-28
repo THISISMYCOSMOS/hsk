@@ -1,0 +1,2103 @@
+{
+  "source_commit": "9ec804a7642befa13a78169e8138f886f48b7857",
+  "chain_id": 177,
+  "sample_selection": "Distinct WHSK swap blocks from swaps.csv, sorted by block number. Select indices floor(i*497/23), i=0..23. Fork at the end of each selected block.",
+  "benchmark": "Reset the fork for A-first and B-first DEX sequences and the 400 WHSK residual sale. Each trader is compared to their most favorable outcome from the two DEX sequences.",
+  "settlement_model": "Hypothetical ordered parties. A sells 1000 WHSK for at least 81 USDT, B buys 600 WHSK for at most 49.2 USDT, 600 direct plus 400 residual through HSKSwap. Service fee zero. A pays the full assumed incremental network cost relative to DEX; B gets no credit for avoided gas. No matching transactions were broadcast.",
+  "monetary_fields_default_unit": "micro-USDT",
+  "equal_gains_definition": "Both gains positive, absolute difference at most one micro-USDT.",
+  "sample_planned_count": 24,
+  "sample_observed_count": 24,
+  "dex_sequence_meeting_both_signed_limits_count": 4,
+  "missing_blocks": [],
+  "chronology_kst": {
+    "2026-11-18": {
+      "observed_blocks": 5,
+      "both_positive_at_0_05": 0
+    },
+    "2026-11-20": {
+      "observed_blocks": 1,
+      "both_positive_at_0_05": 0
+    },
+    "2026-11-21": {
+      "observed_blocks": 11,
+      "both_positive_at_0_05": 7
+    },
+    "2026-11-22": {
+      "observed_blocks": 1,
+      "both_positive_at_0_05": 0
+    },
+    "2026-11-23": {
+      "observed_blocks": 3,
+      "both_positive_at_0_05": 0
+    },
+    "2026-11-24": {
+      "observed_blocks": 3,
+      "both_positive_at_0_05": 0
+    }
+  },
+  "separate_rpc_header_check": {
+    "matched_count": 13,
+    "attempted_count": 24,
+    "note": "The other header requests received HTTP 429. Fork trials also check their requested block number."
+  },
+  "receipt_crosscheck": {
+    "selection": "12 unique WHSK swap transactions at floor(i*655/11) in the source CSV's 656 WHSK rows.",
+    "receipts_matched": 12,
+    "execution_plus_l1_total_hsk": {
+      "min": "0.054094957376883772",
+      "median": "0.057707766280331660",
+      "max": "0.059312452667784036"
+    },
+    "indicative_usdt_from_parent_block_pool_spot": {
+      "min": "0.0043725813",
+      "median": "0.0047356588",
+      "max": "0.0050072759"
+    },
+    "note": "Observed costs of pre-existing DEX swap transactions. Mixed-settlement incremental gas and approvals remain unmeasured.",
+    "representative_hashes": [
+      "0xa350ef46a185da1344d1fc55a93d4f7be3ddbbd2f5185364090b03589576e782",
+      "0xf2c2b4ea8b82e8904509c03ff06f8d04f63de6018ac5c6cfa88a93ef41475886"
+    ]
+  },
+  "summary": [
+    {
+      "a_incremental_cost": 0,
+      "both_positive": 7,
+      "equal_to_token_unit": 5,
+      "both_positive_with_dex_sequence_meeting_signed_limits": 4,
+      "median_equal_gain_per_person_usdt": "0.1376545",
+      "rejections": {
+        "net_improvement_unavailable": 0,
+        "seller_signed_minimum": 7,
+        "buyer_signed_maximum": 10
+      }
+    },
+    {
+      "a_incremental_cost": 5000,
+      "both_positive": 7,
+      "equal_to_token_unit": 6,
+      "both_positive_with_dex_sequence_meeting_signed_limits": 4,
+      "median_equal_gain_per_person_usdt": "0.13504875",
+      "rejections": {
+        "net_improvement_unavailable": 0,
+        "seller_signed_minimum": 7,
+        "buyer_signed_maximum": 10
+      }
+    },
+    {
+      "a_incremental_cost": 20000,
+      "both_positive": 7,
+      "equal_to_token_unit": 6,
+      "both_positive_with_dex_sequence_meeting_signed_limits": 4,
+      "median_equal_gain_per_person_usdt": "0.12754875",
+      "rejections": {
+        "net_improvement_unavailable": 0,
+        "seller_signed_minimum": 7,
+        "buyer_signed_maximum": 10
+      }
+    },
+    {
+      "a_incremental_cost": 50000,
+      "both_positive": 7,
+      "equal_to_token_unit": 6,
+      "both_positive_with_dex_sequence_meeting_signed_limits": 4,
+      "median_equal_gain_per_person_usdt": "0.11254875",
+      "rejections": {
+        "net_improvement_unavailable": 0,
+        "seller_signed_minimum": 7,
+        "buyer_signed_maximum": 10
+      }
+    },
+    {
+      "a_incremental_cost": 100000,
+      "both_positive": 6,
+      "equal_to_token_unit": 6,
+      "both_positive_with_dex_sequence_meeting_signed_limits": 4,
+      "median_equal_gain_per_person_usdt": "0.08754875",
+      "rejections": {
+        "net_improvement_unavailable": 0,
+        "seller_signed_minimum": 7,
+        "buyer_signed_maximum": 11
+      }
+    },
+    {
+      "a_incremental_cost": 200000,
+      "both_positive": 6,
+      "equal_to_token_unit": 5,
+      "both_positive_with_dex_sequence_meeting_signed_limits": 4,
+      "median_equal_gain_per_person_usdt": "0.037443",
+      "rejections": {
+        "net_improvement_unavailable": 0,
+        "seller_signed_minimum": 7,
+        "buyer_signed_maximum": 11
+      }
+    },
+    {
+      "a_incremental_cost": 300000,
+      "both_positive": 0,
+      "equal_to_token_unit": 0,
+      "both_positive_with_dex_sequence_meeting_signed_limits": 0,
+      "median_equal_gain_per_person_usdt": null,
+      "rejections": {
+        "net_improvement_unavailable": 24,
+        "seller_signed_minimum": 0,
+        "buyer_signed_maximum": 0
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "block": 30314062,
+      "utc": "2026-11-18T04:14:19+00:00",
+      "hash": "0xbf4be921dcfe51cbe29b71df5d9537314d0c41d1f03f69ec9854d139c9fe1474",
+      "router_amounts": {
+        "seller_first": 84167868,
+        "buyer_second": 50801124,
+        "buyer_first": 50821073,
+        "seller_second": 84187756,
+        "residual": 33671112
+      },
+      "at_least_one_dex_sequence_meets_both_signed_limits": false,
+      "cases": [
+        {
+          "a_incremental_cost": 0,
+          "b_incremental_cost": 0,
+          "lower": 50516645,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 5000,
+          "b_incremental_cost": 0,
+          "lower": 50521645,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 20000,
+          "b_incremental_cost": 0,
+          "lower": 50536645,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 50566645,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 100000,
+          "b_incremental_cost": 0,
+          "lower": 50616645,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 200000,
+          "b_incremental_cost": 0,
+          "lower": 50716645,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 300000,
+          "b_incremental_cost": 0,
+          "lower": 50816645,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "net_improvement_unavailable",
+          "equal_to_token_unit": false
+        }
+      ]
+    },
+    {
+      "block": 30323324,
+      "utc": "2026-11-18T09:23:03+00:00",
+      "hash": "0x14920c49c3b4f5f65f26d69adacd30ca60ec2dd353cb4d449fafb99ccb4249a9",
+      "router_amounts": {
+        "seller_first": 83978190,
+        "buyer_second": 50686645,
+        "buyer_first": 50706526,
+        "seller_second": 83998011,
+        "residual": 33595227
+      },
+      "at_least_one_dex_sequence_meets_both_signed_limits": false,
+      "cases": [
+        {
+          "a_incremental_cost": 0,
+          "b_incremental_cost": 0,
+          "lower": 50402785,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 5000,
+          "b_incremental_cost": 0,
+          "lower": 50407785,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 20000,
+          "b_incremental_cost": 0,
+          "lower": 50422785,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 50452785,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 100000,
+          "b_incremental_cost": 0,
+          "lower": 50502785,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 200000,
+          "b_incremental_cost": 0,
+          "lower": 50602785,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 300000,
+          "b_incremental_cost": 0,
+          "lower": 50702785,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "net_improvement_unavailable",
+          "equal_to_token_unit": false
+        }
+      ]
+    },
+    {
+      "block": 30323425,
+      "utc": "2026-11-18T09:26:25+00:00",
+      "hash": "0xefeb955b7d0ad1ef6e876fc5a13599ca7d898546d144e0eb13e78c68d4b27e09",
+      "router_amounts": {
+        "seller_first": 83803306,
+        "buyer_second": 50581095,
+        "buyer_first": 50600913,
+        "seller_second": 83823065,
+        "residual": 33525262
+      },
+      "at_least_one_dex_sequence_meets_both_signed_limits": false,
+      "cases": [
+        {
+          "a_incremental_cost": 0,
+          "b_incremental_cost": 0,
+          "lower": 50297804,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 5000,
+          "b_incremental_cost": 0,
+          "lower": 50302804,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 20000,
+          "b_incremental_cost": 0,
+          "lower": 50317804,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 50347804,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 100000,
+          "b_incremental_cost": 0,
+          "lower": 50397804,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 200000,
+          "b_incremental_cost": 0,
+          "lower": 50497804,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 300000,
+          "b_incremental_cost": 0,
+          "lower": 50597804,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "net_improvement_unavailable",
+          "equal_to_token_unit": false
+        }
+      ]
+    },
+    {
+      "block": 30324201,
+      "utc": "2026-11-18T09:52:17+00:00",
+      "hash": "0xcb7b389e975e560411e9989074febe8d8e448d4bd345375b840b3ad2e820f380",
+      "router_amounts": {
+        "seller_first": 83674793,
+        "buyer_second": 50503531,
+        "buyer_first": 50523304,
+        "seller_second": 83694507,
+        "residual": 33473847
+      },
+      "at_least_one_dex_sequence_meets_both_signed_limits": false,
+      "cases": [
+        {
+          "a_incremental_cost": 0,
+          "b_incremental_cost": 0,
+          "lower": 50220661,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 5000,
+          "b_incremental_cost": 0,
+          "lower": 50225661,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 20000,
+          "b_incremental_cost": 0,
+          "lower": 50240661,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 50270661,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 100000,
+          "b_incremental_cost": 0,
+          "lower": 50320661,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 200000,
+          "b_incremental_cost": 0,
+          "lower": 50420661,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 300000,
+          "b_incremental_cost": 0,
+          "lower": 50520661,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "net_improvement_unavailable",
+          "equal_to_token_unit": false
+        }
+      ]
+    },
+    {
+      "block": 30324595,
+      "utc": "2026-11-18T10:05:25+00:00",
+      "hash": "0xaf0528cb611f37171b740138eb2d8fcfd60b71ce22084dc08c2b565c89cab2e5",
+      "router_amounts": {
+        "seller_first": 83566039,
+        "buyer_second": 50437893,
+        "buyer_first": 50457627,
+        "seller_second": 83585714,
+        "residual": 33430338
+      },
+      "at_least_one_dex_sequence_meets_both_signed_limits": false,
+      "cases": [
+        {
+          "a_incremental_cost": 0,
+          "b_incremental_cost": 0,
+          "lower": 50155377,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 5000,
+          "b_incremental_cost": 0,
+          "lower": 50160377,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 20000,
+          "b_incremental_cost": 0,
+          "lower": 50175377,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 50205377,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 100000,
+          "b_incremental_cost": 0,
+          "lower": 50255377,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 200000,
+          "b_incremental_cost": 0,
+          "lower": 50355377,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 300000,
+          "b_incremental_cost": 0,
+          "lower": 50455377,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "net_improvement_unavailable",
+          "equal_to_token_unit": false
+        }
+      ]
+    },
+    {
+      "block": 30399713,
+      "utc": "2026-11-20T03:49:21+00:00",
+      "hash": "0x4fa9d93972b7bd388372a0edf8be365815f639eba8a6ebf1cfa95b6e061f36f2",
+      "router_amounts": {
+        "seller_first": 83464021,
+        "buyer_second": 50376320,
+        "buyer_first": 50396019,
+        "seller_second": 83483660,
+        "residual": 33389524
+      },
+      "at_least_one_dex_sequence_meets_both_signed_limits": false,
+      "cases": [
+        {
+          "a_incremental_cost": 0,
+          "b_incremental_cost": 0,
+          "lower": 50094137,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 5000,
+          "b_incremental_cost": 0,
+          "lower": 50099137,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 20000,
+          "b_incremental_cost": 0,
+          "lower": 50114137,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 50144137,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 100000,
+          "b_incremental_cost": 0,
+          "lower": 50194137,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 200000,
+          "b_incremental_cost": 0,
+          "lower": 50294137,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 300000,
+          "b_incremental_cost": 0,
+          "lower": 50394137,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "net_improvement_unavailable",
+          "equal_to_token_unit": false
+        }
+      ]
+    },
+    {
+      "block": 30420859,
+      "utc": "2026-11-20T15:34:13+00:00",
+      "hash": "0x4d3cec12805e20267971fc35800dfe9cfc41f983647703dd8f13a7ace34513de",
+      "router_amounts": {
+        "seller_first": 82982530,
+        "buyer_second": 50085719,
+        "buyer_first": 50105247,
+        "seller_second": 83002000,
+        "residual": 33196893
+      },
+      "at_least_one_dex_sequence_meets_both_signed_limits": false,
+      "cases": [
+        {
+          "a_incremental_cost": 0,
+          "b_incremental_cost": 0,
+          "lower": 49805108,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 5000,
+          "b_incremental_cost": 0,
+          "lower": 49810108,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 20000,
+          "b_incremental_cost": 0,
+          "lower": 49825108,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 49855108,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 100000,
+          "b_incremental_cost": 0,
+          "lower": 49905108,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 200000,
+          "b_incremental_cost": 0,
+          "lower": 50005108,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 300000,
+          "b_incremental_cost": 0,
+          "lower": 50105108,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "net_improvement_unavailable",
+          "equal_to_token_unit": false
+        }
+      ]
+    },
+    {
+      "block": 30423391,
+      "utc": "2026-11-20T16:58:37+00:00",
+      "hash": "0xc6806e13b9afece2fa6675c4ddef9c59faa2ab25d7018c8c045fac6f7fcda81a",
+      "router_amounts": {
+        "seller_first": 82717260,
+        "buyer_second": 49925616,
+        "buyer_first": 49945051,
+        "seller_second": 82736636,
+        "residual": 33090767
+      },
+      "at_least_one_dex_sequence_meets_both_signed_limits": false,
+      "cases": [
+        {
+          "a_incremental_cost": 0,
+          "b_incremental_cost": 0,
+          "lower": 49645870,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 5000,
+          "b_incremental_cost": 0,
+          "lower": 49650870,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 20000,
+          "b_incremental_cost": 0,
+          "lower": 49665870,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 49695870,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 100000,
+          "b_incremental_cost": 0,
+          "lower": 49745870,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 200000,
+          "b_incremental_cost": 0,
+          "lower": 49845870,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 300000,
+          "b_incremental_cost": 0,
+          "lower": 49945870,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "net_improvement_unavailable",
+          "equal_to_token_unit": false
+        }
+      ]
+    },
+    {
+      "block": 30428875,
+      "utc": "2026-11-20T20:01:25+00:00",
+      "hash": "0xa168c70494621c79f1ecb621a4e0b0cc4513ef028a65932c1b57ccd5ce15e084",
+      "router_amounts": {
+        "seller_first": 82435077,
+        "buyer_second": 49755305,
+        "buyer_first": 49774640,
+        "seller_second": 82454354,
+        "residual": 32977874
+      },
+      "at_least_one_dex_sequence_meets_both_signed_limits": false,
+      "cases": [
+        {
+          "a_incremental_cost": 0,
+          "b_incremental_cost": 0,
+          "lower": 49476481,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 5000,
+          "b_incremental_cost": 0,
+          "lower": 49481481,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 20000,
+          "b_incremental_cost": 0,
+          "lower": 49496481,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 49526481,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 100000,
+          "b_incremental_cost": 0,
+          "lower": 49576481,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 200000,
+          "b_incremental_cost": 0,
+          "lower": 49676481,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 300000,
+          "b_incremental_cost": 0,
+          "lower": 49776481,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "net_improvement_unavailable",
+          "equal_to_token_unit": false
+        }
+      ]
+    },
+    {
+      "block": 30429612,
+      "utc": "2026-11-20T20:25:59+00:00",
+      "hash": "0xd71b4cddc543506c367c5edb0e3be89a630d745d476738e5310030f8d1311363",
+      "router_amounts": {
+        "seller_first": 82176287,
+        "buyer_second": 49599114,
+        "buyer_first": 49618358,
+        "seller_second": 82195473,
+        "residual": 32874340
+      },
+      "at_least_one_dex_sequence_meets_both_signed_limits": false,
+      "cases": [
+        {
+          "a_incremental_cost": 0,
+          "b_incremental_cost": 0,
+          "lower": 49321134,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 5000,
+          "b_incremental_cost": 0,
+          "lower": 49326134,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 20000,
+          "b_incremental_cost": 0,
+          "lower": 49341134,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 49371134,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 100000,
+          "b_incremental_cost": 0,
+          "lower": 49421134,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 200000,
+          "b_incremental_cost": 0,
+          "lower": 49521134,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 300000,
+          "b_incremental_cost": 0,
+          "lower": 49621134,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "net_improvement_unavailable",
+          "equal_to_token_unit": false
+        }
+      ]
+    },
+    {
+      "block": 30429923,
+      "utc": "2026-11-20T20:36:21+00:00",
+      "hash": "0xdda15e07c53f5956ad88b8761c543e95fd415f4c1bcac1b398c791cd61d380cb",
+      "router_amounts": {
+        "seller_first": 81859715,
+        "buyer_second": 49408049,
+        "buyer_first": 49427181,
+        "seller_second": 81878791,
+        "residual": 32747689
+      },
+      "at_least_one_dex_sequence_meets_both_signed_limits": false,
+      "cases": [
+        {
+          "a_incremental_cost": 0,
+          "b_incremental_cost": 0,
+          "lower": 49131103,
+          "upper": 49200000,
+          "eligible": true,
+          "payment": 49200000,
+          "a_net_gain": 68898,
+          "b_net_gain": 208049,
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 5000,
+          "b_incremental_cost": 0,
+          "lower": 49136103,
+          "upper": 49200000,
+          "eligible": true,
+          "payment": 49200000,
+          "a_net_gain": 63898,
+          "b_net_gain": 208049,
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 20000,
+          "b_incremental_cost": 0,
+          "lower": 49151103,
+          "upper": 49200000,
+          "eligible": true,
+          "payment": 49200000,
+          "a_net_gain": 48898,
+          "b_net_gain": 208049,
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 49181103,
+          "upper": 49200000,
+          "eligible": true,
+          "payment": 49200000,
+          "a_net_gain": 18898,
+          "b_net_gain": 208049,
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 100000,
+          "b_incremental_cost": 0,
+          "lower": 49231103,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 200000,
+          "b_incremental_cost": 0,
+          "lower": 49331103,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "buyer_signed_maximum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 300000,
+          "b_incremental_cost": 0,
+          "lower": 49431103,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "net_improvement_unavailable",
+          "equal_to_token_unit": false
+        }
+      ]
+    },
+    {
+      "block": 30429966,
+      "utc": "2026-11-20T20:37:47+00:00",
+      "hash": "0x4fdb488d80020612a9523ba45101a7946df96d1a30d3b9bc5c4ad46ad86f09fc",
+      "router_amounts": {
+        "seller_first": 81621234,
+        "buyer_second": 49264114,
+        "buyer_first": 49283163,
+        "seller_second": 81640226,
+        "residual": 32652280
+      },
+      "at_least_one_dex_sequence_meets_both_signed_limits": false,
+      "cases": [
+        {
+          "a_incremental_cost": 0,
+          "b_incremental_cost": 0,
+          "lower": 48987947,
+          "upper": 49200000,
+          "eligible": true,
+          "payment": 49126030,
+          "a_net_gain": 138084,
+          "b_net_gain": 138084,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 5000,
+          "b_incremental_cost": 0,
+          "lower": 48992947,
+          "upper": 49200000,
+          "eligible": true,
+          "payment": 49128530,
+          "a_net_gain": 135584,
+          "b_net_gain": 135584,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 20000,
+          "b_incremental_cost": 0,
+          "lower": 49007947,
+          "upper": 49200000,
+          "eligible": true,
+          "payment": 49136030,
+          "a_net_gain": 128084,
+          "b_net_gain": 128084,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 49037947,
+          "upper": 49200000,
+          "eligible": true,
+          "payment": 49151030,
+          "a_net_gain": 113084,
+          "b_net_gain": 113084,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 100000,
+          "b_incremental_cost": 0,
+          "lower": 49087947,
+          "upper": 49200000,
+          "eligible": true,
+          "payment": 49176030,
+          "a_net_gain": 88084,
+          "b_net_gain": 88084,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 200000,
+          "b_incremental_cost": 0,
+          "lower": 49187947,
+          "upper": 49200000,
+          "eligible": true,
+          "payment": 49200000,
+          "a_net_gain": 12054,
+          "b_net_gain": 64114,
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 300000,
+          "b_incremental_cost": 0,
+          "lower": 49287947,
+          "upper": 49200000,
+          "eligible": false,
+          "reason": "net_improvement_unavailable",
+          "equal_to_token_unit": false
+        }
+      ]
+    },
+    {
+      "block": 30432945,
+      "utc": "2026-11-20T22:17:05+00:00",
+      "hash": "0x10e1a37b7985acebe7157c70780e0de97eef07d2fbbee3ff84f6795df86cb5f1",
+      "router_amounts": {
+        "seller_first": 81492476,
+        "buyer_second": 49186403,
+        "buyer_first": 49205407,
+        "seller_second": 81511424,
+        "residual": 32600768
+      },
+      "at_least_one_dex_sequence_meets_both_signed_limits": true,
+      "cases": [
+        {
+          "a_incremental_cost": 0,
+          "b_incremental_cost": 0,
+          "lower": 48910657,
+          "upper": 49186402,
+          "eligible": true,
+          "payment": 49048529,
+          "a_net_gain": 137873,
+          "b_net_gain": 137874,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 5000,
+          "b_incremental_cost": 0,
+          "lower": 48915657,
+          "upper": 49186402,
+          "eligible": true,
+          "payment": 49051029,
+          "a_net_gain": 135373,
+          "b_net_gain": 135374,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 20000,
+          "b_incremental_cost": 0,
+          "lower": 48930657,
+          "upper": 49186402,
+          "eligible": true,
+          "payment": 49058529,
+          "a_net_gain": 127873,
+          "b_net_gain": 127874,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 48960657,
+          "upper": 49186402,
+          "eligible": true,
+          "payment": 49073529,
+          "a_net_gain": 112873,
+          "b_net_gain": 112874,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 100000,
+          "b_incremental_cost": 0,
+          "lower": 49010657,
+          "upper": 49186402,
+          "eligible": true,
+          "payment": 49098529,
+          "a_net_gain": 87873,
+          "b_net_gain": 87874,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 200000,
+          "b_incremental_cost": 0,
+          "lower": 49110657,
+          "upper": 49186402,
+          "eligible": true,
+          "payment": 49148529,
+          "a_net_gain": 37873,
+          "b_net_gain": 37874,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 300000,
+          "b_incremental_cost": 0,
+          "lower": 49210657,
+          "upper": 49186402,
+          "eligible": false,
+          "reason": "net_improvement_unavailable",
+          "equal_to_token_unit": false
+        }
+      ]
+    },
+    {
+      "block": 30439335,
+      "utc": "2026-11-21T01:50:05+00:00",
+      "hash": "0x9047757b89ae6615a7b947a4d25689aee620d1e6d04d591af687bcc1350dc664",
+      "router_amounts": {
+        "seller_first": 81358343,
+        "buyer_second": 49105447,
+        "buyer_first": 49124404,
+        "seller_second": 81377243,
+        "residual": 32547105
+      },
+      "at_least_one_dex_sequence_meets_both_signed_limits": true,
+      "cases": [
+        {
+          "a_incremental_cost": 0,
+          "b_incremental_cost": 0,
+          "lower": 48830139,
+          "upper": 49105446,
+          "eligible": true,
+          "payment": 48967792,
+          "a_net_gain": 137654,
+          "b_net_gain": 137655,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 5000,
+          "b_incremental_cost": 0,
+          "lower": 48835139,
+          "upper": 49105446,
+          "eligible": true,
+          "payment": 48970292,
+          "a_net_gain": 135154,
+          "b_net_gain": 135155,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 20000,
+          "b_incremental_cost": 0,
+          "lower": 48850139,
+          "upper": 49105446,
+          "eligible": true,
+          "payment": 48977792,
+          "a_net_gain": 127654,
+          "b_net_gain": 127655,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 48880139,
+          "upper": 49105446,
+          "eligible": true,
+          "payment": 48992792,
+          "a_net_gain": 112654,
+          "b_net_gain": 112655,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 100000,
+          "b_incremental_cost": 0,
+          "lower": 48930139,
+          "upper": 49105446,
+          "eligible": true,
+          "payment": 49017792,
+          "a_net_gain": 87654,
+          "b_net_gain": 87655,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 200000,
+          "b_incremental_cost": 0,
+          "lower": 49030139,
+          "upper": 49105446,
+          "eligible": true,
+          "payment": 49067792,
+          "a_net_gain": 37654,
+          "b_net_gain": 37655,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 300000,
+          "b_incremental_cost": 0,
+          "lower": 49130139,
+          "upper": 49105446,
+          "eligible": false,
+          "reason": "net_improvement_unavailable",
+          "equal_to_token_unit": false
+        }
+      ]
+    },
+    {
+      "block": 30444756,
+      "utc": "2026-11-21T04:50:47+00:00",
+      "hash": "0xcbd37acd0bc525068af3e7cd1dff13a0d93efcbd6be6a02f676c04b9d3259e3f",
+      "router_amounts": {
+        "seller_first": 81229002,
+        "buyer_second": 49027384,
+        "buyer_first": 49046295,
+        "seller_second": 81247858,
+        "residual": 32495360
+      },
+      "at_least_one_dex_sequence_meets_both_signed_limits": true,
+      "cases": [
+        {
+          "a_incremental_cost": 0,
+          "b_incremental_cost": 0,
+          "lower": 48752499,
+          "upper": 49027383,
+          "eligible": true,
+          "payment": 48889941,
+          "a_net_gain": 137443,
+          "b_net_gain": 137443,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 5000,
+          "b_incremental_cost": 0,
+          "lower": 48757499,
+          "upper": 49027383,
+          "eligible": true,
+          "payment": 48892441,
+          "a_net_gain": 134943,
+          "b_net_gain": 134943,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 20000,
+          "b_incremental_cost": 0,
+          "lower": 48772499,
+          "upper": 49027383,
+          "eligible": true,
+          "payment": 48899941,
+          "a_net_gain": 127443,
+          "b_net_gain": 127443,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 48802499,
+          "upper": 49027383,
+          "eligible": true,
+          "payment": 48914941,
+          "a_net_gain": 112443,
+          "b_net_gain": 112443,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 100000,
+          "b_incremental_cost": 0,
+          "lower": 48852499,
+          "upper": 49027383,
+          "eligible": true,
+          "payment": 48939941,
+          "a_net_gain": 87443,
+          "b_net_gain": 87443,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 200000,
+          "b_incremental_cost": 0,
+          "lower": 48952499,
+          "upper": 49027383,
+          "eligible": true,
+          "payment": 48989941,
+          "a_net_gain": 37443,
+          "b_net_gain": 37443,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 300000,
+          "b_incremental_cost": 0,
+          "lower": 49052499,
+          "upper": 49027383,
+          "eligible": false,
+          "reason": "net_improvement_unavailable",
+          "equal_to_token_unit": false
+        }
+      ]
+    },
+    {
+      "block": 30448276,
+      "utc": "2026-11-21T06:48:07+00:00",
+      "hash": "0xef03b066f94da8e1a322d11091aada7e89f852c0b745432aa90500406f75471f",
+      "router_amounts": {
+        "seller_first": 81090308,
+        "buyer_second": 48943676,
+        "buyer_first": 48962539,
+        "seller_second": 81109116,
+        "residual": 32439873
+      },
+      "at_least_one_dex_sequence_meets_both_signed_limits": true,
+      "cases": [
+        {
+          "a_incremental_cost": 0,
+          "b_incremental_cost": 0,
+          "lower": 48669244,
+          "upper": 48943675,
+          "eligible": true,
+          "payment": 48806459,
+          "a_net_gain": 137216,
+          "b_net_gain": 137217,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 5000,
+          "b_incremental_cost": 0,
+          "lower": 48674244,
+          "upper": 48943675,
+          "eligible": true,
+          "payment": 48808959,
+          "a_net_gain": 134716,
+          "b_net_gain": 134717,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 20000,
+          "b_incremental_cost": 0,
+          "lower": 48689244,
+          "upper": 48943675,
+          "eligible": true,
+          "payment": 48816459,
+          "a_net_gain": 127216,
+          "b_net_gain": 127217,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 48719244,
+          "upper": 48943675,
+          "eligible": true,
+          "payment": 48831459,
+          "a_net_gain": 112216,
+          "b_net_gain": 112217,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 100000,
+          "b_incremental_cost": 0,
+          "lower": 48769244,
+          "upper": 48943675,
+          "eligible": true,
+          "payment": 48856459,
+          "a_net_gain": 87216,
+          "b_net_gain": 87217,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 200000,
+          "b_incremental_cost": 0,
+          "lower": 48869244,
+          "upper": 48943675,
+          "eligible": true,
+          "payment": 48906459,
+          "a_net_gain": 37216,
+          "b_net_gain": 37217,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 300000,
+          "b_incremental_cost": 0,
+          "lower": 48969244,
+          "upper": 48943675,
+          "eligible": false,
+          "reason": "net_improvement_unavailable",
+          "equal_to_token_unit": false
+        }
+      ]
+    },
+    {
+      "block": 30460252,
+      "utc": "2026-11-21T13:27:19+00:00",
+      "hash": "0x875d28aeb6f591b269d56b4db8988fcacb7d64c6888ded728724386f84cea74b",
+      "router_amounts": {
+        "seller_first": 80844239,
+        "buyer_second": 48795161,
+        "buyer_first": 48813939,
+        "seller_second": 80862961,
+        "residual": 32341428
+      },
+      "at_least_one_dex_sequence_meets_both_signed_limits": false,
+      "cases": [
+        {
+          "a_incremental_cost": 0,
+          "b_incremental_cost": 0,
+          "lower": 48658572,
+          "upper": 48795160,
+          "eligible": true,
+          "payment": 48658572,
+          "a_net_gain": 137039,
+          "b_net_gain": 136589,
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 5000,
+          "b_incremental_cost": 0,
+          "lower": 48658572,
+          "upper": 48795160,
+          "eligible": true,
+          "payment": 48660847,
+          "a_net_gain": 134314,
+          "b_net_gain": 134314,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 20000,
+          "b_incremental_cost": 0,
+          "lower": 48658572,
+          "upper": 48795160,
+          "eligible": true,
+          "payment": 48668347,
+          "a_net_gain": 126814,
+          "b_net_gain": 126814,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 48658572,
+          "upper": 48795160,
+          "eligible": true,
+          "payment": 48683347,
+          "a_net_gain": 111814,
+          "b_net_gain": 111814,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 100000,
+          "b_incremental_cost": 0,
+          "lower": 48658572,
+          "upper": 48795160,
+          "eligible": true,
+          "payment": 48708347,
+          "a_net_gain": 86814,
+          "b_net_gain": 86814,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 200000,
+          "b_incremental_cost": 0,
+          "lower": 48721534,
+          "upper": 48795160,
+          "eligible": true,
+          "payment": 48758347,
+          "a_net_gain": 36814,
+          "b_net_gain": 36814,
+          "equal_to_token_unit": true
+        },
+        {
+          "a_incremental_cost": 300000,
+          "b_incremental_cost": 0,
+          "lower": 48821534,
+          "upper": 48795160,
+          "eligible": false,
+          "reason": "net_improvement_unavailable",
+          "equal_to_token_unit": false
+        }
+      ]
+    },
+    {
+      "block": 30488615,
+      "utc": "2026-11-22T05:12:45+00:00",
+      "hash": "0x965af6e9520640c3e09d99946618ee2199d6548008c014ab22e1539a47677bd1",
+      "router_amounts": {
+        "seller_first": 80671455,
+        "buyer_second": 48690877,
+        "buyer_first": 48709595,
+        "seller_second": 80690117,
+        "residual": 32272302
+      },
+      "at_least_one_dex_sequence_meets_both_signed_limits": false,
+      "cases": [
+        {
+          "a_incremental_cost": 0,
+          "b_incremental_cost": 0,
+          "lower": 48727698,
+          "upper": 48690876,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 5000,
+          "b_incremental_cost": 0,
+          "lower": 48727698,
+          "upper": 48690876,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 20000,
+          "b_incremental_cost": 0,
+          "lower": 48727698,
+          "upper": 48690876,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 48727698,
+          "upper": 48690876,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 100000,
+          "b_incremental_cost": 0,
+          "lower": 48727698,
+          "upper": 48690876,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 200000,
+          "b_incremental_cost": 0,
+          "lower": 48727698,
+          "upper": 48690876,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 300000,
+          "b_incremental_cost": 0,
+          "lower": 48727698,
+          "upper": 48690876,
+          "eligible": false,
+          "reason": "net_improvement_unavailable",
+          "equal_to_token_unit": false
+        }
+      ]
+    },
+    {
+      "block": 30507283,
+      "utc": "2026-11-22T15:35:01+00:00",
+      "hash": "0x797e314e5105e05d4d851b20370f0848a8131a5c5beba07500e71b83bcdaf528",
+      "router_amounts": {
+        "seller_first": 80567857,
+        "buyer_second": 48628351,
+        "buyer_first": 48647034,
+        "seller_second": 80586483,
+        "residual": 32230856
+      },
+      "at_least_one_dex_sequence_meets_both_signed_limits": false,
+      "cases": [
+        {
+          "a_incremental_cost": 0,
+          "b_incremental_cost": 0,
+          "lower": 48769144,
+          "upper": 48628350,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 5000,
+          "b_incremental_cost": 0,
+          "lower": 48769144,
+          "upper": 48628350,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 20000,
+          "b_incremental_cost": 0,
+          "lower": 48769144,
+          "upper": 48628350,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 48769144,
+          "upper": 48628350,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 100000,
+          "b_incremental_cost": 0,
+          "lower": 48769144,
+          "upper": 48628350,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 200000,
+          "b_incremental_cost": 0,
+          "lower": 48769144,
+          "upper": 48628350,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 300000,
+          "b_incremental_cost": 0,
+          "lower": 48769144,
+          "upper": 48628350,
+          "eligible": false,
+          "reason": "net_improvement_unavailable",
+          "equal_to_token_unit": false
+        }
+      ]
+    },
+    {
+      "block": 30529181,
+      "utc": "2026-11-23T03:44:57+00:00",
+      "hash": "0x4b51f4bef63aeaa057f31388c563e546215c08c1f8a0ed57a5a07699d31c0ce3",
+      "router_amounts": {
+        "seller_first": 80419712,
+        "buyer_second": 48538938,
+        "buyer_first": 48557569,
+        "seller_second": 80438286,
+        "residual": 32171588
+      },
+      "at_least_one_dex_sequence_meets_both_signed_limits": false,
+      "cases": [
+        {
+          "a_incremental_cost": 0,
+          "b_incremental_cost": 0,
+          "lower": 48828412,
+          "upper": 48538937,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 5000,
+          "b_incremental_cost": 0,
+          "lower": 48828412,
+          "upper": 48538937,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 20000,
+          "b_incremental_cost": 0,
+          "lower": 48828412,
+          "upper": 48538937,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 48828412,
+          "upper": 48538937,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 100000,
+          "b_incremental_cost": 0,
+          "lower": 48828412,
+          "upper": 48538937,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 200000,
+          "b_incremental_cost": 0,
+          "lower": 48828412,
+          "upper": 48538937,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 300000,
+          "b_incremental_cost": 0,
+          "lower": 48828412,
+          "upper": 48538937,
+          "eligible": false,
+          "reason": "net_improvement_unavailable",
+          "equal_to_token_unit": false
+        }
+      ]
+    },
+    {
+      "block": 30548724,
+      "utc": "2026-11-23T14:36:23+00:00",
+      "hash": "0xa2c58ba8eb49d4a5ec0ab3a74bdeca36fb08d52fe018f655c21116972c45ca0d",
+      "router_amounts": {
+        "seller_first": 80409044,
+        "buyer_second": 48532500,
+        "buyer_first": 48551127,
+        "seller_second": 80427615,
+        "residual": 32167320
+      },
+      "at_least_one_dex_sequence_meets_both_signed_limits": false,
+      "cases": [
+        {
+          "a_incremental_cost": 0,
+          "b_incremental_cost": 0,
+          "lower": 48832680,
+          "upper": 48532499,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 5000,
+          "b_incremental_cost": 0,
+          "lower": 48832680,
+          "upper": 48532499,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 20000,
+          "b_incremental_cost": 0,
+          "lower": 48832680,
+          "upper": 48532499,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 48832680,
+          "upper": 48532499,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 100000,
+          "b_incremental_cost": 0,
+          "lower": 48832680,
+          "upper": 48532499,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 200000,
+          "b_incremental_cost": 0,
+          "lower": 48832680,
+          "upper": 48532499,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 300000,
+          "b_incremental_cost": 0,
+          "lower": 48832680,
+          "upper": 48532499,
+          "eligible": false,
+          "reason": "net_improvement_unavailable",
+          "equal_to_token_unit": false
+        }
+      ]
+    },
+    {
+      "block": 30550449,
+      "utc": "2026-11-23T15:33:53+00:00",
+      "hash": "0x804eb37f887e212e5e9f91e703ffaf5d18c25cd67bf49d3524c869eb3f6289aa",
+      "router_amounts": {
+        "seller_first": 80525282,
+        "buyer_second": 48602655,
+        "buyer_first": 48621322,
+        "seller_second": 80543893,
+        "residual": 32213823
+      },
+      "at_least_one_dex_sequence_meets_both_signed_limits": false,
+      "cases": [
+        {
+          "a_incremental_cost": 0,
+          "b_incremental_cost": 0,
+          "lower": 48786177,
+          "upper": 48602654,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 5000,
+          "b_incremental_cost": 0,
+          "lower": 48786177,
+          "upper": 48602654,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 20000,
+          "b_incremental_cost": 0,
+          "lower": 48786177,
+          "upper": 48602654,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 48786177,
+          "upper": 48602654,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 100000,
+          "b_incremental_cost": 0,
+          "lower": 48786177,
+          "upper": 48602654,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 200000,
+          "b_incremental_cost": 0,
+          "lower": 48786177,
+          "upper": 48602654,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 300000,
+          "b_incremental_cost": 0,
+          "lower": 48786177,
+          "upper": 48602654,
+          "eligible": false,
+          "reason": "net_improvement_unavailable",
+          "equal_to_token_unit": false
+        }
+      ]
+    },
+    {
+      "block": 30573399,
+      "utc": "2026-11-24T04:18:53+00:00",
+      "hash": "0xc599818a7c494db0acc02e16e29bf1084cdb316b0cc286a97dfb460566ff2aff",
+      "router_amounts": {
+        "seller_first": 80507869,
+        "buyer_second": 48592145,
+        "buyer_first": 48610807,
+        "seller_second": 80526474,
+        "residual": 32206856
+      },
+      "at_least_one_dex_sequence_meets_both_signed_limits": false,
+      "cases": [
+        {
+          "a_incremental_cost": 0,
+          "b_incremental_cost": 0,
+          "lower": 48793144,
+          "upper": 48592144,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 5000,
+          "b_incremental_cost": 0,
+          "lower": 48793144,
+          "upper": 48592144,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 20000,
+          "b_incremental_cost": 0,
+          "lower": 48793144,
+          "upper": 48592144,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 48793144,
+          "upper": 48592144,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 100000,
+          "b_incremental_cost": 0,
+          "lower": 48793144,
+          "upper": 48592144,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 200000,
+          "b_incremental_cost": 0,
+          "lower": 48793144,
+          "upper": 48592144,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 300000,
+          "b_incremental_cost": 0,
+          "lower": 48793144,
+          "upper": 48592144,
+          "eligible": false,
+          "reason": "net_improvement_unavailable",
+          "equal_to_token_unit": false
+        }
+      ]
+    },
+    {
+      "block": 30590488,
+      "utc": "2026-11-24T13:48:31+00:00",
+      "hash": "0xf990a46e1bf287c21473f97009df9326efd2f95c6c993e91cd40acdbb58b2179",
+      "router_amounts": {
+        "seller_first": 80558131,
+        "buyer_second": 48622481,
+        "buyer_first": 48641160,
+        "seller_second": 80576753,
+        "residual": 32226965
+      },
+      "at_least_one_dex_sequence_meets_both_signed_limits": false,
+      "cases": [
+        {
+          "a_incremental_cost": 0,
+          "b_incremental_cost": 0,
+          "lower": 48773035,
+          "upper": 48622480,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 5000,
+          "b_incremental_cost": 0,
+          "lower": 48773035,
+          "upper": 48622480,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 20000,
+          "b_incremental_cost": 0,
+          "lower": 48773035,
+          "upper": 48622480,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 50000,
+          "b_incremental_cost": 0,
+          "lower": 48773035,
+          "upper": 48622480,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 100000,
+          "b_incremental_cost": 0,
+          "lower": 48773035,
+          "upper": 48622480,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 200000,
+          "b_incremental_cost": 0,
+          "lower": 48773035,
+          "upper": 48622480,
+          "eligible": false,
+          "reason": "seller_signed_minimum",
+          "equal_to_token_unit": false
+        },
+        {
+          "a_incremental_cost": 300000,
+          "b_incremental_cost": 0,
+          "lower": 48773035,
+          "upper": 48622480,
+          "eligible": false,
+          "reason": "net_improvement_unavailable",
+          "equal_to_token_unit": false
+        }
+      ]
+    }
+  ]
+}

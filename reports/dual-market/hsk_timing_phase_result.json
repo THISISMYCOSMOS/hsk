@@ -1,0 +1,219 @@
+{
+  "scope": "Local signed test orders and real HSK public quotes; hypothetical route decisions with the repository's synthetic cost bounds; no trade or fill observed.",
+  "quote_pool": "same WHSK/USDT 0.30% pool as archived test",
+  "order_limits": "600 WHSK; sell quote minus 0.05 USDT, buy quote plus 0.05 USDT; computed from the initial quote before either decision",
+  "method": "one shared initial and one follow-up market observation per order; the follow-up is usable only after it is received; book delivery delays injected",
+  "summary": {
+    "fixed_scenarios": 4,
+    "comparable": 4,
+    "no_result": 0,
+    "immediate_full": 4,
+    "comparison_full": 4,
+    "lost": 0,
+    "gained": 0,
+    "got_higher_net": 1,
+    "got_lower_net": 0,
+    "fresh_quote_by_comparison_cutoff": 1,
+    "observed_fresh_change": 0
+  },
+  "cases": [
+    {
+      "scenario": "existing_bid_early",
+      "injected_book_delay_ms": 450,
+      "initial_quote_age_ms": 1111.573,
+      "initial_quote": {
+        "started_ns": 27398818979,
+        "received_ns": 28393961906,
+        "block": 30766518,
+        "hash": "0x715d949d7367ccea866254b78579ad0a2bfb6900014372091d9565c8456d2678",
+        "sell": 47674231,
+        "buy": 47972565
+      },
+      "subsequent_quote": {
+        "started_ns": 29506703261,
+        "received_ns": 30583294064,
+        "block": 30766519,
+        "hash": "0x6b002bd333fb338054d156c1b2363838383b6ce8ec7df807b5497239192415a9",
+        "sell": 47674231,
+        "buy": 47972565
+      },
+      "subsequent_quote_error": null,
+      "subsequent_receipt_ms": 1077.759,
+      "subsequent_quote_used_in_comparison": false,
+      "decision_quote_age_ms": 1580.672,
+      "book_return_ms": 469.099,
+      "decision_ms": 469.099,
+      "existing_opposing_orders": 1,
+      "opposing_orders_evaluated": 1,
+      "late_new_orders_excluded": 0,
+      "immediate": {
+        "route": "DEX_ONLY",
+        "executable_full": true,
+        "seller_net_micro_usdt": 47674081,
+        "buyer_saving_micro_usdt": null,
+        "candidate_reasons": [
+          null
+        ]
+      },
+      "compare_1500ms": {
+        "route": "DIRECT_MATCH",
+        "executable_full": true,
+        "seller_net_micro_usdt": 47823178,
+        "buyer_saving_micro_usdt": 148947,
+        "candidate_reasons": [
+          null,
+          null
+        ]
+      },
+      "local_executions": 0
+    },
+    {
+      "scenario": "existing_bid_after_cutoff",
+      "injected_book_delay_ms": 1650,
+      "initial_quote_age_ms": 506.423,
+      "initial_quote": {
+        "started_ns": 30612503932,
+        "received_ns": 31877489960,
+        "block": 30766519,
+        "hash": "0x6b002bd333fb338054d156c1b2363838383b6ce8ec7df807b5497239192415a9",
+        "sell": 47674231,
+        "buy": 47972565
+      },
+      "subsequent_quote": {
+        "started_ns": 32384687831,
+        "received_ns": 33097398694,
+        "block": 30766520,
+        "hash": "0x34bac08ae05ef1cc82390e9d7412f209f5a9b2afa54012709d4ee40bb5603089",
+        "sell": 47674231,
+        "buy": 47972565
+      },
+      "subsequent_quote_error": null,
+      "subsequent_receipt_ms": 713.486,
+      "subsequent_quote_used_in_comparison": true,
+      "decision_quote_age_ms": 786.514,
+      "book_return_ms": 1674.887,
+      "decision_ms": 1500.0,
+      "existing_opposing_orders": 1,
+      "opposing_orders_evaluated": 0,
+      "late_new_orders_excluded": 0,
+      "immediate": {
+        "route": "DEX_ONLY",
+        "executable_full": true,
+        "seller_net_micro_usdt": 47674081,
+        "buyer_saving_micro_usdt": null,
+        "candidate_reasons": [
+          null
+        ]
+      },
+      "compare_1500ms": {
+        "route": "DEX_ONLY",
+        "executable_full": true,
+        "seller_net_micro_usdt": 47674081,
+        "buyer_saving_micro_usdt": null,
+        "candidate_reasons": [
+          null
+        ]
+      },
+      "local_executions": 0
+    },
+    {
+      "scenario": "no_buy_order",
+      "injected_book_delay_ms": 0,
+      "initial_quote_age_ms": 534.32,
+      "initial_quote": {
+        "started_ns": 34088667523,
+        "received_ns": 35177062129,
+        "block": 30766521,
+        "hash": "0x52db98c6e81e0c580cde523ae58ce63cc4dab2e5acf996e55752409cfb552d6f",
+        "sell": 47674231,
+        "buy": 47972565
+      },
+      "subsequent_quote": {
+        "started_ns": 35713080853,
+        "received_ns": 36695602179,
+        "block": 30766522,
+        "hash": "0x2ab80b25acfb1c576e62eda242fbdca5f33b42404acb7049e7b46a56bae25faf",
+        "sell": 47674231,
+        "buy": 47972565
+      },
+      "subsequent_quote_error": null,
+      "subsequent_receipt_ms": 984.22,
+      "subsequent_quote_used_in_comparison": false,
+      "decision_quote_age_ms": 549.499,
+      "book_return_ms": 15.179,
+      "decision_ms": 15.179,
+      "existing_opposing_orders": 0,
+      "opposing_orders_evaluated": 0,
+      "late_new_orders_excluded": 0,
+      "immediate": {
+        "route": "DEX_ONLY",
+        "executable_full": true,
+        "seller_net_micro_usdt": 47674081,
+        "buyer_saving_micro_usdt": null,
+        "candidate_reasons": [
+          null
+        ]
+      },
+      "compare_1500ms": {
+        "route": "DEX_ONLY",
+        "executable_full": true,
+        "seller_net_micro_usdt": 47674081,
+        "buyer_saving_micro_usdt": null,
+        "candidate_reasons": [
+          null
+        ]
+      },
+      "local_executions": 0
+    },
+    {
+      "scenario": "buy_order_added_after_start",
+      "injected_book_delay_ms": 850,
+      "initial_quote_age_ms": 474.156,
+      "initial_quote": {
+        "started_ns": 36718070378,
+        "received_ns": 37864346022,
+        "block": 30766522,
+        "hash": "0x2ab80b25acfb1c576e62eda242fbdca5f33b42404acb7049e7b46a56bae25faf",
+        "sell": 47674231,
+        "buy": 47972565
+      },
+      "subsequent_quote": {
+        "started_ns": 38339148918,
+        "received_ns": 39422336050,
+        "block": 30766523,
+        "hash": "0xf6c9acd32c53764034680712110a153d8540f76ca5860140edafa702c40a7a77",
+        "sell": 47674231,
+        "buy": 47972565
+      },
+      "subsequent_quote_error": null,
+      "subsequent_receipt_ms": 1083.834,
+      "subsequent_quote_used_in_comparison": false,
+      "decision_quote_age_ms": 1445.128,
+      "book_return_ms": 970.972,
+      "decision_ms": 970.972,
+      "existing_opposing_orders": 0,
+      "opposing_orders_evaluated": 0,
+      "late_new_orders_excluded": 1,
+      "immediate": {
+        "route": "DEX_ONLY",
+        "executable_full": true,
+        "seller_net_micro_usdt": 47674081,
+        "buyer_saving_micro_usdt": null,
+        "candidate_reasons": [
+          null
+        ]
+      },
+      "compare_1500ms": {
+        "route": "DEX_ONLY",
+        "executable_full": true,
+        "seller_net_micro_usdt": 47674081,
+        "buyer_saving_micro_usdt": null,
+        "candidate_reasons": [
+          null
+        ]
+      },
+      "local_executions": 0
+    }
+  ],
+  "missing": []
+}

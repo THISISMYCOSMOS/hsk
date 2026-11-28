@@ -1,0 +1,18 @@
+{
+  "mode": "actual repository worker/API, local SQLite and synthetic settlement",
+  "trials": 1,
+  "registered_order_whsk": 600,
+  "initial_fill_whsk": 400,
+  "concurrent_workers": 2,
+  "second_worker_attempted_while_first_had_write": true,
+  "new_submission_events": 1,
+  "new_execution_records": 1,
+  "total_seller_fill_whsk": 600,
+  "remaining_seller_whsk": 0,
+  "worker_step_results": [
+    true,
+    false
+  ],
+  "blockchain_broadcasts": 0,
+  "source_commit": "a4fa7bff50623a9bbe0f1e46ebf836044526a651"
+}

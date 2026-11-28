@@ -1,0 +1,111 @@
+{
+  "kind": "offline_model_all_legal_interleavings",
+  "cases": [
+    {
+      "events": "aAbB",
+      "snapshot_only": {
+        "submitted": [
+          "a"
+        ],
+        "reserved_total_if_executed": 600,
+        "exceeds_order_total": false
+      },
+      "recheck_and_reserve": {
+        "submitted": [
+          "a"
+        ],
+        "reserved_total_if_executed": 600,
+        "exceeds_order_total": false
+      }
+    },
+    {
+      "events": "abAB",
+      "snapshot_only": {
+        "submitted": [
+          "a",
+          "b"
+        ],
+        "reserved_total_if_executed": 800,
+        "exceeds_order_total": true
+      },
+      "recheck_and_reserve": {
+        "submitted": [
+          "a"
+        ],
+        "reserved_total_if_executed": 600,
+        "exceeds_order_total": false
+      }
+    },
+    {
+      "events": "abBA",
+      "snapshot_only": {
+        "submitted": [
+          "b",
+          "a"
+        ],
+        "reserved_total_if_executed": 800,
+        "exceeds_order_total": true
+      },
+      "recheck_and_reserve": {
+        "submitted": [
+          "b"
+        ],
+        "reserved_total_if_executed": 600,
+        "exceeds_order_total": false
+      }
+    },
+    {
+      "events": "baAB",
+      "snapshot_only": {
+        "submitted": [
+          "a",
+          "b"
+        ],
+        "reserved_total_if_executed": 800,
+        "exceeds_order_total": true
+      },
+      "recheck_and_reserve": {
+        "submitted": [
+          "a"
+        ],
+        "reserved_total_if_executed": 600,
+        "exceeds_order_total": false
+      }
+    },
+    {
+      "events": "baBA",
+      "snapshot_only": {
+        "submitted": [
+          "b",
+          "a"
+        ],
+        "reserved_total_if_executed": 800,
+        "exceeds_order_total": true
+      },
+      "recheck_and_reserve": {
+        "submitted": [
+          "b"
+        ],
+        "reserved_total_if_executed": 600,
+        "exceeds_order_total": false
+      }
+    },
+    {
+      "events": "bBaA",
+      "snapshot_only": {
+        "submitted": [
+          "b"
+        ],
+        "reserved_total_if_executed": 600,
+        "exceeds_order_total": false
+      },
+      "recheck_and_reserve": {
+        "submitted": [
+          "b"
+        ],
+        "reserved_total_if_executed": 600,
+        "exceeds_order_total": false
+      }
+    }
+  ]
+}

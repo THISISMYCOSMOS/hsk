@@ -1,0 +1,733 @@
+{
+  "archived_quote_input_sha256": "846317f2dbc54e0fd74894f2bbe7e2866f25d518acb481838312df8f15791ef9",
+  "units": "micro-USDT unless indicated as gas or wei",
+  "assumptions": {
+    "seller_whsk": 1000,
+    "buyer_whsk": 600,
+    "dex_residual_sell_whsk": 400,
+    "seller_signed_min": 81000000,
+    "buyer_signed_max": 49200000,
+    "seller_incremental_cost": 50000,
+    "buyer_incremental_cost": 0,
+    "minimum_net_each": 1,
+    "approved_fee_cap_each": 30000,
+    "fixed_fee_each": 30000,
+    "fairness_percent_of_combined_post_fee_net": 3,
+    "dynamic_savings_cap_percent": 3,
+    "fixed_comparator": "The legacy fixed fee does not require DEX proof. Rows violating proof are reported separately.",
+    "budget": "Hypothetical no net deficit budget after revenue. Settlement still needs gross upfront funding.",
+    "cost_proxy": "Same upper estimate from one archived zero-fee hybrid fork receipt applied across all policies and 24 market blocks. Paid fee transfers, retries, and fixed costs are outside this success-only model.",
+    "approvals": "Charged to users when needed. Existing seller incremental cost is preserved and the separate approval estimate is not added to it or the operator cost."
+  },
+  "cost_evidence": {
+    "fork_block": 30592078,
+    "fork_block_hash": "0x8e9ec7357cca666d04911b91bb3f5cf0292a7b4e5150a4e6febe30daa1280bda",
+    "anvil_chain_id": 31337,
+    "receipt_crosschecks": {
+      "approve-WHSK": {
+        "scenario": "approve-WHSK",
+        "gasUsed": 46261,
+        "calldataBytes": 68,
+        "status": 1,
+        "localTxHash": "0xda24b8cbc51cf07810977b5432880f235422ae72c9569eca036b2a61472735ec"
+      },
+      "approve-USDT": {
+        "scenario": "approve-USDT",
+        "gasUsed": 46195,
+        "calldataBytes": 68,
+        "status": 1,
+        "localTxHash": "0x55868232f8c545330a53702a55c5c82cd13b56fc5f17bf8897a7c75b121ae247"
+      },
+      "hybrid-sell": {
+        "scenario": "hybrid-sell",
+        "gasUsed": 656132,
+        "calldataBytes": 2052,
+        "status": 1,
+        "localTxHash": "0xe05d990291a50f15c53ed41a10cffc667490205843e1631785f25cf3cd605a87"
+      }
+    },
+    "matching_economics_fork_receipt_hash": "0x7440c01075a825b3714cd18343b00e3c89aa5d0a713a4aac69ad6a4d9733278d",
+    "matching_economics_fork_gas": 680872,
+    "matching_browser_fork_gas": 686104,
+    "matching_browser_fork_receipt_hash": "0x9e961f02a885ad0e49d44cbd780efc044b4b284eb7abd420948112792656418f",
+    "archived_base_fee_per_gas_wei": "500000000000",
+    "archived_assumed_tip_wei": "1000000000",
+    "estimated_wei_before_l1": "341116872000000000",
+    "estimated_l1_fee_upper_wei": "572362812659609",
+    "modeled_avoided_cost_lower_at_fork_anchor": 27485,
+    "modeled_operator_replenishment_cost_upper_at_fork_anchor": 27698,
+    "approval_costs_by_route": {
+      "seller_whsk": {
+        "dex_router": {
+          "gas_used": 46273,
+          "receipt_hash": "0x019d3eaa55082d590de01666ccb7c0cd6325c75621dd35a27b9ab6cf73df3d8c",
+          "modeled_avoided_cost_lower": 1867,
+          "modeled_replenishment_upper": 1887
+        },
+        "matching": {
+          "gas_used": 46261,
+          "receipt_hash": "0xb0e80d49435bfdcfed2a317a6e720687a279bc622d59a42605fe3fc059f342ea",
+          "modeled_avoided_cost_lower": 1867,
+          "modeled_replenishment_upper": 1887
+        }
+      },
+      "buyer_usdt": {
+        "dex_router": {
+          "gas_used": 46219,
+          "receipt_hash": "0x0d1da4b8c7626ce9561af3b536e937244917b8ad66c27fe6955f10223e242829",
+          "modeled_avoided_cost_lower": 1865,
+          "modeled_replenishment_upper": 1885
+        },
+        "matching": {
+          "gas_used": 46207,
+          "receipt_hash": "0xd827acb1d78b931e277a037b2a52c8f1d82f948bb0533b154df9c284becdd8ef",
+          "modeled_avoided_cost_lower": 1865,
+          "modeled_replenishment_upper": 1884
+        }
+      }
+    }
+  },
+  "blocks": 24,
+  "archive_candidates_before_fairness": 7,
+  "summary": {
+    "zero": {
+      "passes_user_conditions": 6,
+      "fee_induced_losses_relative_to_zero": [],
+      "count_positive_fee": 0,
+      "count_positive_fee_with_dex_proof": 0,
+      "positive_fee_without_dex_proof": [],
+      "positive_fee_each_range": null,
+      "seller_net_range": [
+        111814,
+        113084
+      ],
+      "buyer_net_range": [
+        111814,
+        113084
+      ],
+      "hypothetical_revenue_before_budget_check": 0,
+      "modeled_direct_cost_if_all_passes_execute": 166188,
+      "unrecovered_direct_cost_if_all_passes_execute": 166188,
+      "passes_if_no_net_deficit_budget": 0
+    },
+    "fixed": {
+      "passes_user_conditions": 5,
+      "fee_induced_losses_relative_to_zero": [
+        30460252
+      ],
+      "count_positive_fee": 5,
+      "count_positive_fee_with_dex_proof": 4,
+      "positive_fee_without_dex_proof": [
+        30429966
+      ],
+      "positive_fee_each_range": [
+        30000,
+        30000
+      ],
+      "seller_net_range": [
+        82216,
+        83084
+      ],
+      "buyer_net_range": [
+        82217,
+        83084
+      ],
+      "hypothetical_revenue_before_budget_check": 300000,
+      "modeled_direct_cost_if_all_passes_execute": 138490,
+      "unrecovered_direct_cost_if_all_passes_execute": 0,
+      "passes_if_no_net_deficit_budget": 5
+    },
+    "dynamic": {
+      "passes_user_conditions": 6,
+      "fee_induced_losses_relative_to_zero": [],
+      "count_positive_fee": 4,
+      "count_positive_fee_with_dex_proof": 4,
+      "positive_fee_without_dex_proof": [],
+      "positive_fee_each_range": [
+        3366,
+        3386
+      ],
+      "seller_net_range": [
+        108850,
+        113084
+      ],
+      "buyer_net_range": [
+        108851,
+        113084
+      ],
+      "hypothetical_revenue_before_budget_check": 27008,
+      "modeled_direct_cost_if_all_passes_execute": 166188,
+      "unrecovered_direct_cost_if_all_passes_execute": 139180,
+      "passes_if_no_net_deficit_budget": 0
+    }
+  },
+  "approval_sensitivity_same_price_example": {
+    "block": 30444756,
+    "same_recorded_payment": 48914941,
+    "assumption": "For this separate sensitivity the existing 0.05 seller cost excludes these approval deltas. Either participant may need approval for either path, based on their independent allowance state. The scenario labels apply the same illustrative allowance condition to each side.",
+    "scenarios": {
+      "already_approved_for_both": {
+        "conservative_change_to_seller_pre_fee_net": 0,
+        "conservative_change_to_buyer_pre_fee_net": 0,
+        "seller_pre_fee_net": 112443,
+        "buyer_pre_fee_net": 112443,
+        "dynamic": {
+          "fee_each": 3373,
+          "seller_net_if_applied": 109070,
+          "buyer_net_if_applied": 109070,
+          "user_conditions_pass": true,
+          "user_condition_failures": [],
+          "potential_revenue_if_executed": 6746,
+          "operator_cost_if_executed": 27698,
+          "unrecovered_direct_cost_if_executed": 20952
+        }
+      },
+      "initial_approval_for_both": {
+        "conservative_change_to_seller_pre_fee_net": -20,
+        "conservative_change_to_buyer_pre_fee_net": -19,
+        "seller_pre_fee_net": 112423,
+        "buyer_pre_fee_net": 112424,
+        "dynamic": {
+          "fee_each": 3372,
+          "seller_net_if_applied": 109051,
+          "buyer_net_if_applied": 109052,
+          "user_conditions_pass": true,
+          "user_condition_failures": [],
+          "potential_revenue_if_executed": 6744,
+          "operator_cost_if_executed": 27698,
+          "unrecovered_direct_cost_if_executed": 20954
+        }
+      },
+      "initial_approval_for_matching_only": {
+        "conservative_change_to_seller_pre_fee_net": -1887,
+        "conservative_change_to_buyer_pre_fee_net": -1884,
+        "seller_pre_fee_net": 110556,
+        "buyer_pre_fee_net": 110559,
+        "dynamic": {
+          "fee_each": 3316,
+          "seller_net_if_applied": 107240,
+          "buyer_net_if_applied": 107243,
+          "user_conditions_pass": true,
+          "user_condition_failures": [],
+          "potential_revenue_if_executed": 6632,
+          "operator_cost_if_executed": 27698,
+          "unrecovered_direct_cost_if_executed": 21066
+        }
+      },
+      "initial_approval_for_dex_only": {
+        "conservative_change_to_seller_pre_fee_net": 1867,
+        "conservative_change_to_buyer_pre_fee_net": 1865,
+        "seller_pre_fee_net": 114310,
+        "buyer_pre_fee_net": 114308,
+        "dynamic": {
+          "fee_each": 3429,
+          "seller_net_if_applied": 110881,
+          "buyer_net_if_applied": 110879,
+          "user_conditions_pass": true,
+          "user_condition_failures": [],
+          "potential_revenue_if_executed": 6858,
+          "operator_cost_if_executed": 27698,
+          "unrecovered_direct_cost_if_executed": 20840
+        }
+      }
+    }
+  },
+  "previous_assumed_cost_comparisons": {
+    "5000": {
+      "passes_user_conditions": 6,
+      "fee_induced_losses_relative_to_zero": [],
+      "count_positive_fee": 4,
+      "count_positive_fee_with_dex_proof": 4,
+      "positive_fee_without_dex_proof": [],
+      "positive_fee_each_range": [
+        2500,
+        2500
+      ],
+      "seller_net_range": [
+        109716,
+        113084
+      ],
+      "buyer_net_range": [
+        109717,
+        113084
+      ],
+      "hypothetical_revenue_before_budget_check": 20000,
+      "modeled_direct_cost_if_all_passes_execute": 30000,
+      "unrecovered_direct_cost_if_all_passes_execute": 10000,
+      "passes_if_no_net_deficit_budget": 4
+    },
+    "8000": {
+      "passes_user_conditions": 6,
+      "fee_induced_losses_relative_to_zero": [],
+      "count_positive_fee": 4,
+      "count_positive_fee_with_dex_proof": 4,
+      "positive_fee_without_dex_proof": [],
+      "positive_fee_each_range": [
+        3366,
+        3386
+      ],
+      "seller_net_range": [
+        108850,
+        113084
+      ],
+      "buyer_net_range": [
+        108851,
+        113084
+      ],
+      "hypothetical_revenue_before_budget_check": 27008,
+      "modeled_direct_cost_if_all_passes_execute": 48000,
+      "unrecovered_direct_cost_if_all_passes_execute": 20992,
+      "passes_if_no_net_deficit_budget": 0
+    }
+  },
+  "rows": [
+    {
+      "block": 30314062,
+      "archive_price_candidate": false,
+      "dex_proof": false,
+      "archive_rejection": "buyer_signed_maximum"
+    },
+    {
+      "block": 30323324,
+      "archive_price_candidate": false,
+      "dex_proof": false,
+      "archive_rejection": "buyer_signed_maximum"
+    },
+    {
+      "block": 30323425,
+      "archive_price_candidate": false,
+      "dex_proof": false,
+      "archive_rejection": "buyer_signed_maximum"
+    },
+    {
+      "block": 30324201,
+      "archive_price_candidate": false,
+      "dex_proof": false,
+      "archive_rejection": "buyer_signed_maximum"
+    },
+    {
+      "block": 30324595,
+      "archive_price_candidate": false,
+      "dex_proof": false,
+      "archive_rejection": "buyer_signed_maximum"
+    },
+    {
+      "block": 30399713,
+      "archive_price_candidate": false,
+      "dex_proof": false,
+      "archive_rejection": "buyer_signed_maximum"
+    },
+    {
+      "block": 30420859,
+      "archive_price_candidate": false,
+      "dex_proof": false,
+      "archive_rejection": "buyer_signed_maximum"
+    },
+    {
+      "block": 30423391,
+      "archive_price_candidate": false,
+      "dex_proof": false,
+      "archive_rejection": "buyer_signed_maximum"
+    },
+    {
+      "block": 30428875,
+      "archive_price_candidate": false,
+      "dex_proof": false,
+      "archive_rejection": "buyer_signed_maximum"
+    },
+    {
+      "block": 30429612,
+      "archive_price_candidate": false,
+      "dex_proof": false,
+      "archive_rejection": "buyer_signed_maximum"
+    },
+    {
+      "block": 30429923,
+      "archive_price_candidate": true,
+      "dex_proof": false,
+      "recorded_payment": 49200000,
+      "pre_fee_seller_net": 18898,
+      "pre_fee_buyer_net": 208049,
+      "seller_signed_price_headroom": 947689,
+      "buyer_signed_price_headroom": 0,
+      "dynamic_caps": {
+        "operator_cost_half": 13849,
+        "smaller_savings_three_percent": 566,
+        "common_approved_cap": 30000,
+        "signed_price_headroom": 0,
+        "minimum_net_headroom": 18897,
+        "distribution_headroom": 0
+      },
+      "zero": {
+        "fee_each": 0,
+        "seller_net_if_applied": 18898,
+        "buyer_net_if_applied": 208049,
+        "user_conditions_pass": false,
+        "user_condition_failures": [
+          "distribution"
+        ],
+        "potential_revenue_if_executed": 0,
+        "operator_cost_if_executed": null,
+        "unrecovered_direct_cost_if_executed": null
+      },
+      "fixed": {
+        "fee_each": 30000,
+        "seller_net_if_applied": -11102,
+        "buyer_net_if_applied": 178049,
+        "user_conditions_pass": false,
+        "user_condition_failures": [
+          "signed_price",
+          "minimum_net",
+          "distribution"
+        ],
+        "potential_revenue_if_executed": 0,
+        "operator_cost_if_executed": null,
+        "unrecovered_direct_cost_if_executed": null
+      },
+      "dynamic": {
+        "fee_each": 0,
+        "seller_net_if_applied": 18898,
+        "buyer_net_if_applied": 208049,
+        "user_conditions_pass": false,
+        "user_condition_failures": [
+          "distribution"
+        ],
+        "potential_revenue_if_executed": 0,
+        "operator_cost_if_executed": null,
+        "unrecovered_direct_cost_if_executed": null
+      }
+    },
+    {
+      "block": 30429966,
+      "archive_price_candidate": true,
+      "dex_proof": false,
+      "recorded_payment": 49151030,
+      "pre_fee_seller_net": 113084,
+      "pre_fee_buyer_net": 113084,
+      "seller_signed_price_headroom": 803310,
+      "buyer_signed_price_headroom": 48970,
+      "dynamic_caps": {
+        "operator_cost_half": 13849,
+        "smaller_savings_three_percent": 3392,
+        "common_approved_cap": 30000,
+        "signed_price_headroom": 48970,
+        "minimum_net_headroom": 113083,
+        "distribution_headroom": 113084
+      },
+      "zero": {
+        "fee_each": 0,
+        "seller_net_if_applied": 113084,
+        "buyer_net_if_applied": 113084,
+        "user_conditions_pass": true,
+        "user_condition_failures": [],
+        "potential_revenue_if_executed": 0,
+        "operator_cost_if_executed": 27698,
+        "unrecovered_direct_cost_if_executed": 27698
+      },
+      "fixed": {
+        "fee_each": 30000,
+        "seller_net_if_applied": 83084,
+        "buyer_net_if_applied": 83084,
+        "user_conditions_pass": true,
+        "user_condition_failures": [],
+        "potential_revenue_if_executed": 60000,
+        "operator_cost_if_executed": 27698,
+        "unrecovered_direct_cost_if_executed": 0
+      },
+      "dynamic": {
+        "fee_each": 0,
+        "seller_net_if_applied": 113084,
+        "buyer_net_if_applied": 113084,
+        "user_conditions_pass": true,
+        "user_condition_failures": [],
+        "potential_revenue_if_executed": 0,
+        "operator_cost_if_executed": 27698,
+        "unrecovered_direct_cost_if_executed": 27698
+      }
+    },
+    {
+      "block": 30432945,
+      "archive_price_candidate": true,
+      "dex_proof": true,
+      "recorded_payment": 49073529,
+      "pre_fee_seller_net": 112873,
+      "pre_fee_buyer_net": 112874,
+      "seller_signed_price_headroom": 674297,
+      "buyer_signed_price_headroom": 126471,
+      "dynamic_caps": {
+        "operator_cost_half": 13849,
+        "smaller_savings_three_percent": 3386,
+        "common_approved_cap": 30000,
+        "signed_price_headroom": 126471,
+        "minimum_net_headroom": 112872,
+        "distribution_headroom": 112856
+      },
+      "zero": {
+        "fee_each": 0,
+        "seller_net_if_applied": 112873,
+        "buyer_net_if_applied": 112874,
+        "user_conditions_pass": true,
+        "user_condition_failures": [],
+        "potential_revenue_if_executed": 0,
+        "operator_cost_if_executed": 27698,
+        "unrecovered_direct_cost_if_executed": 27698
+      },
+      "fixed": {
+        "fee_each": 30000,
+        "seller_net_if_applied": 82873,
+        "buyer_net_if_applied": 82874,
+        "user_conditions_pass": true,
+        "user_condition_failures": [],
+        "potential_revenue_if_executed": 60000,
+        "operator_cost_if_executed": 27698,
+        "unrecovered_direct_cost_if_executed": 0
+      },
+      "dynamic": {
+        "fee_each": 3386,
+        "seller_net_if_applied": 109487,
+        "buyer_net_if_applied": 109488,
+        "user_conditions_pass": true,
+        "user_condition_failures": [],
+        "potential_revenue_if_executed": 6772,
+        "operator_cost_if_executed": 27698,
+        "unrecovered_direct_cost_if_executed": 20926
+      }
+    },
+    {
+      "block": 30439335,
+      "archive_price_candidate": true,
+      "dex_proof": true,
+      "recorded_payment": 48992792,
+      "pre_fee_seller_net": 112654,
+      "pre_fee_buyer_net": 112655,
+      "seller_signed_price_headroom": 539897,
+      "buyer_signed_price_headroom": 207208,
+      "dynamic_caps": {
+        "operator_cost_half": 13849,
+        "smaller_savings_three_percent": 3379,
+        "common_approved_cap": 30000,
+        "signed_price_headroom": 207208,
+        "minimum_net_headroom": 112653,
+        "distribution_headroom": 112637
+      },
+      "zero": {
+        "fee_each": 0,
+        "seller_net_if_applied": 112654,
+        "buyer_net_if_applied": 112655,
+        "user_conditions_pass": true,
+        "user_condition_failures": [],
+        "potential_revenue_if_executed": 0,
+        "operator_cost_if_executed": 27698,
+        "unrecovered_direct_cost_if_executed": 27698
+      },
+      "fixed": {
+        "fee_each": 30000,
+        "seller_net_if_applied": 82654,
+        "buyer_net_if_applied": 82655,
+        "user_conditions_pass": true,
+        "user_condition_failures": [],
+        "potential_revenue_if_executed": 60000,
+        "operator_cost_if_executed": 27698,
+        "unrecovered_direct_cost_if_executed": 0
+      },
+      "dynamic": {
+        "fee_each": 3379,
+        "seller_net_if_applied": 109275,
+        "buyer_net_if_applied": 109276,
+        "user_conditions_pass": true,
+        "user_condition_failures": [],
+        "potential_revenue_if_executed": 6758,
+        "operator_cost_if_executed": 27698,
+        "unrecovered_direct_cost_if_executed": 20940
+      }
+    },
+    {
+      "block": 30444756,
+      "archive_price_candidate": true,
+      "dex_proof": true,
+      "recorded_payment": 48914941,
+      "pre_fee_seller_net": 112443,
+      "pre_fee_buyer_net": 112443,
+      "seller_signed_price_headroom": 410301,
+      "buyer_signed_price_headroom": 285059,
+      "dynamic_caps": {
+        "operator_cost_half": 13849,
+        "smaller_savings_three_percent": 3373,
+        "common_approved_cap": 30000,
+        "signed_price_headroom": 285059,
+        "minimum_net_headroom": 112442,
+        "distribution_headroom": 112443
+      },
+      "zero": {
+        "fee_each": 0,
+        "seller_net_if_applied": 112443,
+        "buyer_net_if_applied": 112443,
+        "user_conditions_pass": true,
+        "user_condition_failures": [],
+        "potential_revenue_if_executed": 0,
+        "operator_cost_if_executed": 27698,
+        "unrecovered_direct_cost_if_executed": 27698
+      },
+      "fixed": {
+        "fee_each": 30000,
+        "seller_net_if_applied": 82443,
+        "buyer_net_if_applied": 82443,
+        "user_conditions_pass": true,
+        "user_condition_failures": [],
+        "potential_revenue_if_executed": 60000,
+        "operator_cost_if_executed": 27698,
+        "unrecovered_direct_cost_if_executed": 0
+      },
+      "dynamic": {
+        "fee_each": 3373,
+        "seller_net_if_applied": 109070,
+        "buyer_net_if_applied": 109070,
+        "user_conditions_pass": true,
+        "user_condition_failures": [],
+        "potential_revenue_if_executed": 6746,
+        "operator_cost_if_executed": 27698,
+        "unrecovered_direct_cost_if_executed": 20952
+      }
+    },
+    {
+      "block": 30448276,
+      "archive_price_candidate": true,
+      "dex_proof": true,
+      "recorded_payment": 48831459,
+      "pre_fee_seller_net": 112216,
+      "pre_fee_buyer_net": 112217,
+      "seller_signed_price_headroom": 271332,
+      "buyer_signed_price_headroom": 368541,
+      "dynamic_caps": {
+        "operator_cost_half": 13849,
+        "smaller_savings_three_percent": 3366,
+        "common_approved_cap": 30000,
+        "signed_price_headroom": 271332,
+        "minimum_net_headroom": 112215,
+        "distribution_headroom": 112199
+      },
+      "zero": {
+        "fee_each": 0,
+        "seller_net_if_applied": 112216,
+        "buyer_net_if_applied": 112217,
+        "user_conditions_pass": true,
+        "user_condition_failures": [],
+        "potential_revenue_if_executed": 0,
+        "operator_cost_if_executed": 27698,
+        "unrecovered_direct_cost_if_executed": 27698
+      },
+      "fixed": {
+        "fee_each": 30000,
+        "seller_net_if_applied": 82216,
+        "buyer_net_if_applied": 82217,
+        "user_conditions_pass": true,
+        "user_condition_failures": [],
+        "potential_revenue_if_executed": 60000,
+        "operator_cost_if_executed": 27698,
+        "unrecovered_direct_cost_if_executed": 0
+      },
+      "dynamic": {
+        "fee_each": 3366,
+        "seller_net_if_applied": 108850,
+        "buyer_net_if_applied": 108851,
+        "user_conditions_pass": true,
+        "user_condition_failures": [],
+        "potential_revenue_if_executed": 6732,
+        "operator_cost_if_executed": 27698,
+        "unrecovered_direct_cost_if_executed": 20966
+      }
+    },
+    {
+      "block": 30460252,
+      "archive_price_candidate": true,
+      "dex_proof": false,
+      "recorded_payment": 48683347,
+      "pre_fee_seller_net": 111814,
+      "pre_fee_buyer_net": 111814,
+      "seller_signed_price_headroom": 24775,
+      "buyer_signed_price_headroom": 516653,
+      "dynamic_caps": {
+        "operator_cost_half": 13849,
+        "smaller_savings_three_percent": 3354,
+        "common_approved_cap": 30000,
+        "signed_price_headroom": 24775,
+        "minimum_net_headroom": 111813,
+        "distribution_headroom": 111814
+      },
+      "zero": {
+        "fee_each": 0,
+        "seller_net_if_applied": 111814,
+        "buyer_net_if_applied": 111814,
+        "user_conditions_pass": true,
+        "user_condition_failures": [],
+        "potential_revenue_if_executed": 0,
+        "operator_cost_if_executed": 27698,
+        "unrecovered_direct_cost_if_executed": 27698
+      },
+      "fixed": {
+        "fee_each": 30000,
+        "seller_net_if_applied": 81814,
+        "buyer_net_if_applied": 81814,
+        "user_conditions_pass": false,
+        "user_condition_failures": [
+          "signed_price"
+        ],
+        "potential_revenue_if_executed": 0,
+        "operator_cost_if_executed": null,
+        "unrecovered_direct_cost_if_executed": null
+      },
+      "dynamic": {
+        "fee_each": 0,
+        "seller_net_if_applied": 111814,
+        "buyer_net_if_applied": 111814,
+        "user_conditions_pass": true,
+        "user_condition_failures": [],
+        "potential_revenue_if_executed": 0,
+        "operator_cost_if_executed": 27698,
+        "unrecovered_direct_cost_if_executed": 27698
+      }
+    },
+    {
+      "block": 30488615,
+      "archive_price_candidate": false,
+      "dex_proof": false,
+      "archive_rejection": "seller_signed_minimum"
+    },
+    {
+      "block": 30507283,
+      "archive_price_candidate": false,
+      "dex_proof": false,
+      "archive_rejection": "seller_signed_minimum"
+    },
+    {
+      "block": 30529181,
+      "archive_price_candidate": false,
+      "dex_proof": false,
+      "archive_rejection": "seller_signed_minimum"
+    },
+    {
+      "block": 30548724,
+      "archive_price_candidate": false,
+      "dex_proof": false,
+      "archive_rejection": "seller_signed_minimum"
+    },
+    {
+      "block": 30550449,
+      "archive_price_candidate": false,
+      "dex_proof": false,
+      "archive_rejection": "seller_signed_minimum"
+    },
+    {
+      "block": 30573399,
+      "archive_price_candidate": false,
+      "dex_proof": false,
+      "archive_rejection": "seller_signed_minimum"
+    },
+    {
+      "block": 30590488,
+      "archive_price_candidate": false,
+      "dex_proof": false,
+      "archive_rejection": "seller_signed_minimum"
+    }
+  ]
+}
